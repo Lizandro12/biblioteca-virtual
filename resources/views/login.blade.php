@@ -31,6 +31,7 @@
                 </div>
                 <input type="submit" value="Entrar" class="btn btn-primary">
             </form>
+            {{  }}
         </div>
         <div class="rigth-side"></div>
     </div>
