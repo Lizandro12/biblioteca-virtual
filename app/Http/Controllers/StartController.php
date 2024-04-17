@@ -9,5 +9,6 @@ class StartController extends Controller
     public function start() {
         return view('start');
     }
+    
 }
 
