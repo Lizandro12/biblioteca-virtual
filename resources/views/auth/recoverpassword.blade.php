@@ -16,7 +16,11 @@
 <body>
     <div class="content d-flex">
             <div class="left-side d-flex flex-column">
-                <form action="" class="form form-recoverpassword form-login d-flex flex-column">
+                @if(session()->has('status'))
+                <span class="text text-success">{{ session()->get('status')}}</span>
+                @endif
+                <form action="{{ route('password.email')}}" method="POST" class="form form-recoverpassword form-login d-flex flex-column">
+                    @csrf
                     <div class="image-container">
                             <a href="/"><img src="/img/logotipo.png" alt="" class="logo-form"></a>
                     </div>
@@ -25,7 +29,16 @@
                     </div>
                     <div class="mb-3 d-flex flex-column">
                         <label for="email" class="label">E-mail:</label>
-                        <input type="text" name="email" id="email" class="form-control" placeholder="Informe o seu endereço de e-mail">
+                        <input type="text" name="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Informe o seu endereço de e-mail">
+                        @error('email')
+                        <p class="text invalid-feedback">
+                            @if( $message == 'The email field is required.')
+                            {{ __('O campo email é obrigatório.') }}
+                            @else
+                            {{ __('Nao existe usuario com este email.') }}
+                            @endif
+                        </p>
+                        @enderror
                     </div>
                     <input type="submit" value="Enviar" class="btn btn-primary">
                 </form>

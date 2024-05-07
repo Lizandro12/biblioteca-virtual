@@ -16,20 +16,39 @@
 <body>
     <div class="content d-flex">
             <div class="left-side d-flex flex-column">
-                <form action="" class="form form-login d-flex flex-column">
+                @if(session()->has('status'))
+                <span class="text text-success">{{ session()->get('status')}}</span>
+                @endif
+                <form action="{{ route('user.auth')}}" method="POST" class="form form-login d-flex flex-column">
+                @csrf
                     <div class="header-form">
                         <p class="sub-title">Bem-vindo!</p>
-                        <p class="text">Primeira vez aqui? <a href="/cadastrar" class="header-form-link">Inscrever-se</a></p>
+                        <p class="text">Primeira vez aqui? <a href="/register" class="header-form-link">Inscrever-se</a></p>
                     </div>
                     <div class="mb-3 d-flex flex-column">
                         <label for="email" class="label">E-mail:</label>
-                        <input type="text" name="email" id="email" class="form-control" placeholder="Informe o seu endereço de e-mail">
-                        <p class="error"></p>
+                        <input type="text" name="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Informe o seu endereço de e-mail">
+                        @error('email')
+                        <p class="text invalid-feedback">
+                            @if( $message == 'The email field is required.')
+                            {{ __('O campo email é obrigatório.') }}
+                            @else
+                                {{ $message }}
+                            @endif
+                        </p>
+                        @enderror
                     </div>
                     <div class="mb-3 d-flex flex-column">
                         <label for="password" class="label">Senha:</label>
-                        <input type="text" name="password" id="password" class="form-control" placeholder="Informe a sua senha">
-                        <a href="/recover" class="align-self-end reset-password">Esqueceu a senha?</a>
+                        <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="Informe a sua senha">
+                        @error('password')
+                        <p class="text invalid-feedback">
+                            @if( $message == 'The password field is required.')
+                            {{ __('O campo senha é obrigatório.') }}
+                            @endif
+                        </p>
+                        @enderror
+                        <a href="{{ route('password.request')}}" class="align-self-end reset-password">Esqueceu a senha?</a>
                     </div>
                     <input type="submit" value="Entrar" class="btn btn-primary">
                 </form>

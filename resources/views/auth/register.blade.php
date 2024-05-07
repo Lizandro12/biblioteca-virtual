@@ -16,25 +16,60 @@
 <body>
     <div class="content d-flex">
             <div class="left-side d-flex flex-column">
-                <form action="" class="form form-signup d-flex flex-column">
+                <form action="{{ route('user.store') }}" method="POST" class="form form-signup d-flex flex-column">
+                    @csrf
                     <div class="header-form">
                         <h2 class="sub-title">Faça sua inscrição!</h2>
                         <p class="text my-4">Já possui conta? <a href="/login" class="header-form-link">Iniciar sessão</a></p>
                     </div>
                     <div class="mb-3 d-flex flex-column">
                         <label for="name" class="label">Nome:</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Informe o seu nome">
-                        <p class="error"></p>
+                        <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" placeholder="Informe o seu nome">
+                        @error('name')
+                        <p class="text invalid-feedback">
+                            @if($message == "The name field is required.")
+                            {{ __('O campo nome e obrigatório.') }}
+                            @elseif($message == "The name field format is invalid.")
+                            {{ __('O campo nome possui um formato inválido') }}
+                            @elseif($message == "The name field must be at least 5 characters.")
+                            {{ __('O campo nome deve ter pelo menos 5 caracteres.') }}
+                            @else
+                            {{ $message }}
+                            @endif
+                        </p>
+                        @enderror
                     </div>
                     <div class="mb-3 d-flex flex-column">
                         <label for="email" class="label">E-mail:</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Informe o seu endereço de e-mail">
+                        <input type="text" name="email" id="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Informe o seu endereço de e-mail">
+                        @error('email')
+                        <p class="text invalid-feedback">
+                            @if($message == "The email field is required.")
+                            {{ __('O campo email e obrigatório.') }}
+                            @elseif('O campo email deve ter um email válido')
+                            {{ __('O O formato de email e invalido.') }}
+                            @elseif($message == "The email field format is invalid.")
+                            {{ __($message == 'The email field must be a valid email address.') }}
+                            @else
+                            {{ $message }}
+                            @endif
+                        </p>
+                        @enderror
                     </div>
                     <div class="mb-3 d-flex flex-column">
                         <label for="password" class="label">Senha:</label>
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Informe a sua senha">
+                        <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="Informe a sua senha">
+                        @error('password')
+                        <div class="text invalid-feedback">
+                            @if($message == 'The password field is required.')
+                            {{ __('O campo senha e obrigatório.') }}
+                            @elseif($message == 'The password field must be at least 8 characters.')
+                            {{ __('O campo senha deve ter pelo menos 8 caracteres.') }}
+                            @endif
+                        </div>
+                        @enderror
                     </div>
-                    <input type="submit" value="Entrar" class="btn btn-primary">
+                    <input type="submit" value="Cadastrar" class="btn btn-primary">
                 </form>
             </div>
     </div>
