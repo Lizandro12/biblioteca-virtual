@@ -1,0 +1,32 @@
+
+.btn-orange{
+    background-color: #FFA500; /* Código hexadecimal para a cor laranja */
+    color: #fff; /* Cor do texto dentro do botão */
+    padding: 15px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada para suavizar as arestas */
+    cursor: pointer; /* Cursor do mouse mudará para indicar que é clicável */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+    }
+    .navbar-custom {
+        background-color: #ffffff;
+        font-family: Poppins; }
+
+    .form-control{
+    width: 400px;
+    height: 50px;
+    top: 51px;
+    left: 461px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    }
+
+    .nav-link{font-family: Poppins;}
+
+    .nav-link:hover {color: orange;}
