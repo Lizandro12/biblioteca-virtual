@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.18.0/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
@@ -24,6 +25,7 @@
 
 
 <style>
+
 
 .btn-orange{
 background-color: #FFA500; /* Código hexadecimal para a cor laranja */
@@ -67,6 +69,49 @@ font-family: Poppins;
     .justify-content-end {
       justify-content: flex-end !important;
     }
+
+
+    .rig{width: 20cm;
+              height: 5cm;
+              float: right; /* para ocupar a parte direita */
+              border: 5px solid #DFDFDF; /* apenas para visualização */
+              margin-right: 85px; /* Define a margem esquerda como 50 pixels */
+              padding: 2px;
+              border-radius: 15px;
+
+
+    }
+    .ver {
+              width: 12cm;
+              height: 28cm;
+              float: left; /* para ocupar a parte esquerda */
+              border: 5px solid #DFDFDF; /* apenas para visualização */
+              margin-left: 15px; /* Define a margem esquerda como 50 pixels */
+              padding: 2px;
+              border-radius: 15px;
+
+          }
+
+          /* Estilo para as colunas dentro da div */
+          .coluna {
+              width: 33.33%;
+              float: left;
+          }
+
+          /* Estilo para os dados dentro das colunas */
+          .dados {
+              margin: 10px;
+          }
+
+
+  .pesquisar-form {
+    display: flex;
+    align-items: center;
+  }
+  .pesquisar-input {
+    flex: 1;
+    margin-right: 10px;
+  }
 
 </style>
 
@@ -120,21 +165,92 @@ font-family: Poppins;
       </nav>
     </header>
 
-    <li style="padding:1px;"class="list-group-item"><h3 style="padding:1px">Todos Livros</h3></listyle=>
-    <li class="list-group-item"><h6>Procure pelo livro do seu interesse</h6></li>
+    <li style="margin-left: 100px;padding:10px;"class="list-group-item"><h3 style="padding:1px">Todos Livros</h3></listyle=>
+    <hr><li style="margin-left: 100px;padding:2px;"class="list-group-item"><h5 style="padding:1px"> Procure o livro do seu interesse</h5></listyle=>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagem 1">
-    </div>
-    <div class="carousel-item">
-      <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagem 2">
-    </div>
-    <div class="carousel-item">
-      <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagem 3">
+
+
+    <div  class="ver">
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Pesquisar</h3>
+      <form class="pesquisar-form">
+        <input class="form-control me-2" type="search" placeholder="" aria-label="">
+      <button style="width: 15cm;height: 10px,text-align: center;" class="btn btn-orange me-2">Filtrar</button></form>
     </div>
   </div>
+</div>
+
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Estantes</h5>
+      <form class="pesquisar-form">
+      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
+       </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Autores</h5>
+      <form class="pesquisar-form">
+      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
+       </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Titulos</h5>
+      <form class="pesquisar-form">
+      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
+       </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Editoras</h5>
+      <form class="pesquisar-form">
+      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
+       </div>
+  </div>
+</div>
+<br><br>
+</div>
+
+
+
+<div class="rig">
+
+        <img  style="position: relative; width: 60px;height: 60px;" src="/img/logotipo.png" >
+          <div class="coluna">
+            <img  style="position: relative; width: 60px;height: 60px;" src="/img/logotipo.png" >
+
+        </div>
+
+          <div class="coluna">
+            <img  style="position: relative; width: 60px;height: 60px;" src="/img/logotipo.png" >
+          </div>
+      </div>
+</div>
+
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>      <br><br><br><br>      <br><br><br><br>     <br><br><br><br>      <br><br><br><br>
+      <br><br><br><br>      <br><br><br><br> <br><br><br><br><br>     <br><br><br><br>
+
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Anterior</span>
@@ -155,8 +271,7 @@ font-family: Poppins;
     <li class="page-item"><a style="border: none"class="page-link" href="#">2</a></li>
     <li class="page-item"><a  style="border: none"class="page-link" href="#">3</a></li>
     <li class="page-item"><a  style="border: none"class="page-link" href="#">4</a></li>
-    <li class="page-item">
-      <a  style=" border: none"class="page-link" href="#" aria-label="Next">
+    <li class="page-item"><a  style=" border: none"class="page-link" href="#" aria-label="Next">
         <i style="color:orange" class="bi bi-chevron-right"></i></a>
     </li>
   </ul>
