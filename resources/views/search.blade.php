@@ -25,8 +25,6 @@
 
 
 <style>
-
-
 .btn-orange{
 background-color: #FFA500; /* Código hexadecimal para a cor laranja */
 color: #fff; /* Cor do texto dentro do botão */
@@ -59,34 +57,22 @@ font-family: Poppins;
 
 .nav-link:hover {color: orange;}
 
-.carousel-item img {
-      width: 100%;
-      height: auto;
-    }
-    .pagination {
-      padding: 30px 0;
-    }
-    .justify-content-end {
-      justify-content: flex-end !important;
-    }
-
-
-    .rig{width: 20cm;
+    .rig{width: 18cm;
               height: 5cm;
               float: right; /* para ocupar a parte direita */
               border: 5px solid #DFDFDF; /* apenas para visualização */
-              margin-right: 85px; /* Define a margem esquerda como 50 pixels */
-              padding: 2px;
+              margin-right: 100px; /* Define a margem esquerda como 50 pixels */
+              padding: 1px;
               border-radius: 15px;
 
 
     }
     .ver {
-              width: 12cm;
-              height: 28cm;
+              width: 11cm;
+              height: 34cm;
               float: left; /* para ocupar a parte esquerda */
               border: 5px solid #DFDFDF; /* apenas para visualização */
-              margin-left: 15px; /* Define a margem esquerda como 50 pixels */
+              margin-left: 5px; /* Define a margem esquerda como 50 pixels */
               padding: 2px;
               border-radius: 15px;
 
@@ -117,7 +103,7 @@ font-family: Poppins;
 
 </head>
 
-<body>
+<body style="">
     <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
         <div class="container">
@@ -140,7 +126,7 @@ font-family: Poppins;
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul class="navbar-nav ms-auto"style="width:601px;height: 40px;top: 169px;left: 674px;gap: 0px;opacity: 0px;">
+            <ul style="padding:10;" class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link " href="#">Início</a>
               </li>
@@ -166,7 +152,7 @@ font-family: Poppins;
     </header>
 
     <li style="margin-left: 100px;padding:10px;"class="list-group-item"><h3 style="padding:1px">Todos Livros</h3></listyle=>
-    <hr><li style="margin-left: 100px;padding:2px;"class="list-group-item"><h5 style="padding:1px"> Procure o livro do seu interesse</h5></listyle=>
+    <hr><li style="margin-left: 110px;padding:2px;"class="list-group-item"><h5 style="padding:1px"> Procure pelo livro do seu interesse</h5></listyle=>
 
 
 
@@ -175,110 +161,216 @@ font-family: Poppins;
   <div class="row">
     <div class="col-md-6">
       <h3>Pesquisar</h3>
-      <form class="pesquisar-form">
-        <input class="form-control me-2" type="search" placeholder="" aria-label="">
-      <button style="width: 15cm;height: 10px,text-align: center;" class="btn btn-orange me-2">Filtrar</button></form>
+      <form style="width: 10cm;"class="pesquisar-form">
+        <input  style="width: 10cm;height: 1cm;" class="form-control me-2" type="search" placeholder="" aria-label="">
+      <button style="height:1cm,text-align: center;" class="btn btn-orange me-2">Filtrar</button></form>
     </div>
   </div>
 </div>
 
 
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-6">
-      <h5>Estantes</h5>
-      <form class="pesquisar-form">
-      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
-       </div>
+
+<div  style="width: 10cm;"class="container mt-4">
+    <div class="row">
+      <div style="padding:2px;width: 10cm;"class="col-md-6">
+        <hr><h5>Estantes</h5>
+        <form class="pesquisar-form">
+        <input type="text" style="width: 10cm;height: 1cm;" class="form-control pesquisar-input">
+         </div>
+    </div>
   </div>
-</div>
 
 <br><br><br><br><br><br>
 
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-6">
-      <h5>Autores</h5>
-      <form class="pesquisar-form">
-      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
-       </div>
+<div  style="width: 10cm;"class="container mt-4">
+    <div class="row">
+      <div style="padding:2px;width: 10cm;"class="col-md-6">
+        <hr><h5>Autores</h5>
+        <form class="pesquisar-form">
+        <input type="text" style="width: 10cm;height: 1cm;" class="form-control pesquisar-input">
+         </div>
+    </div>
   </div>
-</div>
 
 <br><br><br><br><br><br>
 
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-6">
-      <h5>Titulos</h5>
-      <form class="pesquisar-form">
-      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
-       </div>
+
+<div  style="width: 10cm;"class="container mt-4">
+    <div class="row">
+      <div style="padding:2px;width: 10cm;"class="col-md-6">
+        <hr><h5>Titulos</h5>
+        <form class="pesquisar-form">
+        <input type="text" style="width: 10cm;height: 1cm;" class="form-control pesquisar-input">
+         </div>
+    </div>
   </div>
-</div>
 
 <br><br><br><br><br><br>
 
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-6">
-      <h5>Editoras</h5>
-      <form class="pesquisar-form">
-      <input type="text" style="width: 9cm;height: 1cm;" class="form-control pesquisar-input">
-       </div>
+<div  style="width: 10cm;"class="container mt-4">
+    <div class="row">
+      <div style="padding:2px;width: 10cm;"class="col-md-6">
+        <hr><h5>Editoras</h5>
+        <form class="pesquisar-form">
+        <input type="text" style="width: 10cm;height: 1cm;" class="form-control pesquisar-input">
+         </div>
+    </div>
   </div>
+<br><br><br><br>
 </div>
-<br><br>
-</div>
 
 
+<!-- Lado Direito da Pagina  Zona de visualização dos livros  -->
 
-<div class="rig">
-
-        <img  style="position: relative; width: 60px;height: 60px;" src="/img/logotipo.png" >
-          <div class="coluna">
-            <img  style="position: relative; width: 60px;height: 60px;" src="/img/logotipo.png" >
-
-        </div>
-
-          <div class="coluna">
-            <img  style="position: relative; width: 60px;height: 60px;" src="/img/logotipo.png" >
+<div style="font-family: Poppins;" class="rig">
+        <div style="padding:20px;"class="container">
+            <div class="row">
+              <div class="col-auto">
+                <img src="/img/capa de livro.png"  alt="Capa do Livro" class="img-fluid" style="height: 100%;">
+              </div>
+              <div class="col">
+                <h6>Nome do Livro</h6>
+                <p>Autor do Livro</p>
+                <br>
+               <h6>Editora:</h6>
+              </div>
+              <div style="display: flex;padding: 2px;flex-direction: column;"class="col-auto">
+                <p style="margin-left:40px;margin-top:30px;">Preço: $XX.XX</p>
+                <button style="padding: 1px 1px;color:white;text-align: center; width: 160px;height: 30px;background-color: orange;border: 5px solid orange;border-radius: 10px;"class="btn btn-primary">Pagar</button>
+                <button style="padding: 1px 1px;margin-top:10px;color:black;text-align: center; width: 160px;height: 30px;background-color: white;border: 2px solid black;border-radius: 10px;"class="btn btn-secondary">Ver Detalhes</button>
+              </div>
+            </div>
           </div>
+          </div>
+
+          <div style=" margin-top:20px;font-family: Poppins;" class="rig">
+            <div style="padding:20px;"class="container">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="/img/capa de livro.png"  alt="Capa do Livro" class="img-fluid" style="height: 100%;">
+                  </div>
+                  <div class="col">
+                    <h6>Nome do Livro</h6>
+                    <p>Autor do Livro</p>
+                    <br>
+                   <h6>Editora:</h6>
+                  </div>
+                  <div style="display: flex;padding: 2px;flex-direction: column;"class="col-auto">
+                    <p style="margin-left:40px;margin-top:30px;">Preço: $XX.XX</p>
+                    <button style="padding: 1px 1px;color:white;text-align: center; width: 160px;height: 30px;background-color: orange;border: 5px solid orange;border-radius: 10px;"class="btn btn-primary">Pagar</button>
+                    <button style="padding: 1px 1px;margin-top:10px;color:black;text-align: center; width: 160px;height: 30px;background-color: white;border: 2px solid black;border-radius: 10px;"class="btn btn-secondary">Ver Detalhes</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div style=" margin-top:20px;font-family: Poppins;" class="rig">
+                        <div style="padding:20px;"class="container">
+                          <div class="row">
+                            <div class="col-auto">
+                              <img src="/img/capa de livro.png"  alt="Capa do Livro" class="img-fluid" style="height: 100%;">
+                            </div>
+                            <div class="col">
+                              <h6>Nome do Livro</h6>
+                              <p>Autor do Livro</p>
+                              <br>
+                             <h6>Editora:</h6>
+                            </div>
+                            <div style="display: flex;padding: 2px;flex-direction: column;"class="col-auto">
+                              <p style="margin-left:40px;margin-top:30px;">Preço: $XX.XX</p>
+                              <button style="padding: 1px 1px;color:white;text-align: center; width: 160px;height: 30px;background-color: orange;border: 5px solid orange;border-radius: 10px;"class="btn btn-primary">Pagar</button>
+                              <button style="padding: 1px 1px;margin-top:10px;color:black;text-align: center; width: 160px;height: 30px;background-color: white;border: 2px solid black;border-radius: 10px;"class="btn btn-secondary">Ver Detalhes</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+
+<div style=" margin-top:20px;font-family: Poppins;" class="rig">
+    <div style="padding:20px;"class="container">
+        <div class="row">
+          <div class="col-auto">
+            <img src="/img/capa de livro.png"  alt="Capa do Livro" class="img-fluid" style="height: 100%;">
+          </div>
+          <div class="col">
+            <h6>Nome do Livro</h6>
+            <p>Autor do Livro</p>
+            <br>
+           <h6>Editora:</h6>
+          </div>
+          <div style="display: flex;padding: 2px;flex-direction: column;"class="col-auto">
+            <p style="margin-left:40px;margin-top:30px;">Preço: $XX.XX</p>
+            <button style="padding: 1px 1px;color:white;text-align: center; width: 160px;height: 30px;background-color: orange;border: 5px solid orange;border-radius: 10px;"class="btn btn-primary">Pagar</button>
+            <button style="padding: 1px 1px;margin-top:10px;color:black;text-align: center; width: 160px;height: 30px;background-color: white;border: 2px solid black;border-radius: 10px;"class="btn btn-secondary">Ver Detalhes</button>
+          </div>
+        </div>
       </div>
-</div>
+      </div>
+
+      <div style=" margin-top:20px;font-family: Poppins;" class="rig">
+        <div style="padding:20px;"class="container">
+            <div class="row">
+              <div class="col-auto">
+                <img src="/img/capa de livro.png"  alt="Capa do Livro" class="img-fluid" style="height: 100%;">
+              </div>
+              <div class="col">
+                <h6>Nome do Livro</h6>
+                <p>Autor do Livro</p>
+                <br>
+               <h6>Editora:</h6>
+              </div>
+              <div style="display: flex;padding: 2px;flex-direction: column;"class="col-auto">
+                <p style="margin-left:40px;margin-top:30px;">Preço: $XX.XX</p>
+                <button style="padding: 1px 1px;color:white;text-align: center; width: 160px;height: 30px;background-color: orange;border: 5px solid orange;border-radius: 10px;"class="btn btn-primary">Pagar</button>
+                <button style="padding: 1px 1px;margin-top:10px;color:black;text-align: center; width: 160px;height: 30px;background-color: white;border: 2px solid black;border-radius: 10px;"class="btn btn-secondary">Ver Detalhes</button>
+              </div>
+            </div>
+          </div>
+          </div>
 
 
+          <div style=" margin-top:20px;font-family: Poppins;" class="rig">
+    <div style="padding:20px;"class="container">
+        <div class="row">
+          <div class="col-auto">
+            <img src="/img/capa de livro.png"  alt="Capa do Livro" class="img-fluid" style="height: 100%;">
+          </div>
+          <div class="col">
+            <h6>Nome do Livro</h6>
+            <p>Autor do Livro</p>
+            <br>
+           <h6>Editora:</h6>
+          </div>
+          <div style="display: flex;padding: 2px;flex-direction: column;"class="col-auto">
+            <p style="margin-left:40px;margin-top:30px;">Preço: $XX.XX</p>
+            <button style="padding: 1px 1px;color:white;text-align: center; width: 160px;height: 30px;background-color: orange;border: 5px solid orange;border-radius: 10px;"class="btn btn-primary">Pagar</button>
+            <button style="padding: 1px 1px;margin-top:10px;color:black;text-align: center; width: 160px;height: 30px;background-color: white;border: 2px solid black;border-radius: 10px;"class="btn btn-secondary">Ver Detalhes</button>
+          </div>
+        </div>
+      </div>
+      </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>      <br><br><br><br>      <br><br><br><br>     <br><br><br><br>      <br><br><br><br>
-      <br><br><br><br>      <br><br><br><br> <br><br><br><br><br>     <br><br><br><br>
+      <br><br><br><br> <br><br><br><br><br><br>     <br><br><br><br> <br><br><br><br><br>     <br><br><br><br>
 
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div>
 
-<div class="container">
+<div style="margin-right:70px" class="container">
   <ul class="pagination justify-content-end">
     <li class="page-item">
       <a  style="border: none" class="page-link" href="#" aria-label="Previous">
         <i style="color:orange"class="bi bi-chevron-left"></i></a>
     </li>
-    <li class="page-item"><a style="border: none"class="page-link" href="#">1</a></li>
-    <li class="page-item"><a style="border: none"class="page-link" href="#">2</a></li>
-    <li class="page-item"><a  style="border: none"class="page-link" href="#">3</a></li>
-    <li class="page-item"><a  style="border: none"class="page-link" href="#">4</a></li>
-    <li class="page-item"><a  style=" border: none"class="page-link" href="#" aria-label="Next">
-        <i style="color:orange" class="bi bi-chevron-right"></i></a>
+    <li class="page-item"><a style="color:black;border: none"class="page-link" href="#">1</a></li>
+    <li class="page-item"><a style="color:black;border: none"class="page-link" href="#">2</a></li>
+    <li class="page-item"><a style="color:black;border: none"class="page-link" href="#">3</a></li>
+    <li class="page-item"><a style="color:black;border: none"class="page-link" href="#">4</a></li>
+    <li class="page-item"><a style="color:black;border: none"class="page-link" href="#" aria-label="Next">
+    <i style="color:orange;" class="bi bi-chevron-right"></i></a>
     </li>
   </ul>
 </div>
 
 
- <footer class="container-fluid bg-dark text-light py-4">
+ <footer style="margin-right: 100px; "class="container-fluid bg-dark text-light py-4">
         <div  class="container">
             <div class="row">
                 <!-- Primeira coluna -->
@@ -301,7 +393,7 @@ font-family: Poppins;
                         <a style=" padding:4px" href="#"><i  style="color:white"class="bi bi-instagram"></i></a>
                         <a style=" padding:4px" href="#"><i style= "color:white"class="bi bi-linkedin"></i></a>
                         <a style=" padding:4px" href="#"><i style=" color:white"class="bi bi-youtube"></i></a>
-                                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -322,7 +414,6 @@ font-family: Poppins;
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
 
     </html>
 
