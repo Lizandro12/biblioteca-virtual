@@ -36,7 +36,7 @@
                 <img src="/img/logotipo.png" alt="Logo">
             </div>
             <div class="navbar-search">
-                <input type="text" placeholder="Pesquisar...">
+                <input style="background-color:#DFDFDF"type="text" placeholder="">
                 <button class="btn btn-orange">
                     <i class="fas fa-search"></i>
                 </button>
@@ -80,8 +80,8 @@
 
 <!-- Corpo da página -->
 
-<div class="textbody">
-    <h3> Todos Livros</h3><hr>
+<div style="margin-top:60px"class="textbody">
+    <h3> Todos os Livros</h3><hr>
     <h5> Procure pelo livro do seu interesse</h5>
 </div>
 
@@ -90,7 +90,7 @@
     <div class="pes">
         <h3 style="padding-top:40px;padding-left:10px;">Pesquisar</h3>
         <div class="navbar-search">
-            <input type="text" placeholder="Pesquisar...">
+            <input style="background-color:#DFDFDF" type="text" placeholder="">
             <button class="btn btn-orange">
                 Filtrar
             </button>
@@ -98,8 +98,9 @@
         <hr>
 
         <br><br><br><br><br><br><br><br><br><br><hr>
-        <br><br><br><br><br><br><br><br><br><hr>
         <br><br><br><br><br><br><br><br><br><br><hr>
+        <br><br><br><br><br><br><br><br><br><br><hr>
+        <br><br><br><br><br><br><hr>
 
     </div>
 
@@ -110,7 +111,7 @@
         <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capa de livro.png"  alt="Capa do Livro">
+                <img src="/img/transferir.png" style="height:150px;" alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -120,29 +121,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar">Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
-              </div>
-            </div>
-          </div>
-
-
-
-        <div class="liv">
-            <div class="row book-row">
-              <div class="col-md-3 book-cover">
-                <img src="/img/capa de livro.png"  alt="Capa do Livro">
-              </div>
-              <div class="col-md-3 book-details">
-                <p><strong>Autor:</strong> Nome do Autor</p>
-                <p><strong>Título:</strong> Título do Livro</p>
-                <p><strong>Editora:</strong> Nome da Editora</p>
-              </div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3 book-actions">
-                <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar">Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
+                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -150,7 +130,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capa de livro.png"  alt="Capa do Livro">
+                <img src="/img/transferir.jpeg" style="height:150px;" alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -160,8 +140,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar">Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
+                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -169,7 +149,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capa de livro.png"  alt="Capa do Livro">
+                <img src="/img/capap.jpg"  style="height:150px" alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -179,18 +159,16 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar">Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
+                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
               </div>
             </div>
           </div>
 
-
-
-        <div class="liv">
+          <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capa de livro.png"  alt="Capa do Livro">
+                <img src="/img/transferir (1).jpeg" style="height:150px" alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -200,11 +178,31 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar">Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
+                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
               </div>
             </div>
           </div>
+
+          <div class="liv">
+            <div class="row book-row">
+              <div class="col-md-3 book-cover">
+                <img src="/img/capahtml.jpeg" style="height:150px"alt="Capa do Livro">
+              </div>
+              <div class="col-md-3 book-details">
+                <p><strong>Autor:</strong> Nome do Autor</p>
+                <p><strong>Título:</strong> Título do Livro</p>
+                <p><strong>Editora:</strong> Nome da Editora</p>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3 book-actions">
+                <p><strong>2000 AOA</strong></p>
+                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
+                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
+              </div>
+            </div>
+          </div>
+
 
         </div>
 </div>

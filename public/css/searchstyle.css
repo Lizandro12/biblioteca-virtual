@@ -1,26 +1,16 @@
-header, nav, footer {
-    position: fixed;
-    width: 100%;
 
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-image: url('sua-imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    text-align: center; /* Centraliza o conteúdo horizontalmente, ajuste conforme necessário */
-    z-index: 1000; /* Garante que os elementos fixos estejam na frente de outros conteúdos */
-  }
-
-  header {
-    top: 0;
-  }
-
-  nav {
-    top: 50px; /* Altura do cabeçalho, ajuste conforme necessário */
-  }
-
-  main {
-    margin-top: 100px; /* Espaçamento superior para compensar o cabeçalho e a navegação fixos */
-  }
-
-  footer {
-    bottom: 0;
+nav {
+    top: 40px; /* Altura do cabeçalho, ajuste conforme necessário */
   }
 
 
@@ -37,7 +27,7 @@ header, nav, footer {
 /* Estilo para o logotipo */
 .navbar-logo img {
     margin-left: 140px;
-    height: 100px;
+    height: 90px;
 }
 
 /* Estilo para a barra de pesquisa */
@@ -78,7 +68,7 @@ header, nav, footer {
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 /* Estilo específico para o botão "Entrar" */
@@ -94,18 +84,8 @@ header, nav, footer {
     color: white;
 }
 
-/* Hover effects for buttons */
-.navbar-buttons .btn1:hover,
-.navbar-buttons .btn:hover,
-.navbar-search .btn.btn-orange:hover {
-    opacity: 0.8;
-}
 
-
-
-/* -------------------------------------------------------------------------------------------- */
-
-
+/* ----CSS da  Segunda Barra --------------------------------------------- */
 
     .navbar-light.bg-custom {
       height: 40px;
@@ -118,37 +98,26 @@ header, nav, footer {
         color: white; /* Substitua #ffffff pela cor desejada */}
 
 
-    .navbar-nav .nav-link.a:hover {
+    .navbar-nav .nav-link:hover {
 
         color: orange /* cor dos links ao passar o mouse */
     }
-    .a:hover{color: orange;}
 
+    .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .navbar-nav .nav-link .a:hover {
+        background-color: orange;
+        color:orange;
+
+    }
 
 .bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
     display: flex; }
 
-.custom-btn:active {
-    background-color:orange }
-
-.btn:hover{background-color:  #FF8C00;}
-/* Estilo para o botão primário */
-.custom-btn {
-    background-color: #FFA500; /* Cor de fundo laranja */
-    height: 40px;
-}
-
-.custom-btn:hover {
-    background-color: #FF8C00; /* Cor de fundo laranja mais escura quando o botão é passado por cima */
-}
-
-
-
-
-
 
 /*---------------------------------------------------------------------------------------------*/
-
 
 .list {
             display: flex;
@@ -156,9 +125,7 @@ header, nav, footer {
             margin-left: 100px;
 
         }
-        .left{
-            width: 30%;
-        }
+
         .right {
 
             margin-top: -24px;
@@ -166,10 +133,9 @@ header, nav, footer {
             width: 70%;
         }
         .left {
+            width: 30%;
             border-right: 20px
         }
-
-
 
 
         .pes{border: 5px solid #DFDFDF;
@@ -187,7 +153,7 @@ header, nav, footer {
 
 /* Estilo para a classe 'navbar-search' */
 
-.pes.h3{ padding-left: 10px;
+.pes.h3{ padding-left: px;
 }
 .navbar-search {
     padding: 10px;
@@ -218,14 +184,13 @@ header, nav, footer {
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
 
-        .liv{border: 5px solid #DFDFDF;border-radius: 15px;margin-top: 20px; margin-right: 32px;}
+.liv{border: 5px solid #DFDFDF;border-radius: 15px;margin-top: 20px; margin-right: 32px;}
 
 
 
 /* Estilo para a classe book-row, adicionando margem entre as linhas de livros */
 .book-row {
     padding: 1px;
-
 }
 
 
@@ -258,6 +223,7 @@ header, nav, footer {
 
 .book-actions p {
   margin: 0 0 10px;
+  margin-left: 75px;
 }
 
 /* Estilos para os botões */
@@ -296,7 +262,7 @@ header, nav, footer {
   background-color: transparent;
   border-color: #6c757d;
   weight: 80px;
-  height: 35px;
+  height: 40px;
 }
 
 .bt-secondar:hover {
@@ -315,20 +281,9 @@ header, nav, footer {
     margin-right: 120px;
     margin-top: -180px;
   }
-  .pagination .page-link{border: none;
-color: black;
-font-size: 20px;}
+  .pagination .page-link{border: none;color: black;font-size: 20px;}
 
-
-  .page-link i {
-    width: 100px;
-    height: 100px;
-    color: orange;
-    border: none;
-  }
-
-
-
+  .page-link i {width: 100px;height: 100px;color: orange;border: none;}
 
 /*---------------------------------------------------------------------------------------------*/
 /* Estilos para o footer */
@@ -354,7 +309,7 @@ font-size: 20px;}
         .footer .col-md-4:nth-child(3) {
     text-decoration: none;
     text-align: left;
-    padding-left: 40px;
+    padding-left: 10px;
 
 
 
