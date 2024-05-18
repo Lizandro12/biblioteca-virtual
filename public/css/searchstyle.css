@@ -1,48 +1,42 @@
 
-nav {
-    top: 40px; /* Altura do cabeçalho, ajuste conforme necessário */
-  }
+@import url(style.css);
 
 
 /* Estilo para a barra de navegação */
-.navbar {
+.header-top{
+    background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-    font-family: poppins;
-}
+    justify-content: space-between;
+    padding: 30px 140px;
 
+}
+.navbar-logo{
+    width: 20%;
+}
 /* Estilo para o logotipo */
 .navbar-logo img {
-    margin-left: 140px;
-    height: 90px;
+    width: 70%;
 }
 
 /* Estilo para a barra de pesquisa */
 .navbar-search {
-
-    display: flex;
     align-items: center;
+    gap: 0.1rem;
+    width: 35%;
 }
 
-.navbar-search input[type="text"] {
-    padding: 5px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    margin-right: 5px;
-    width: 350px;
-
+.form-control{
+    width: 100%;
 }
-.navbar-buttons { margin-right: 130px;}
+
 .navbar-search .btn.btn-orange {
     background-color: orange;
     border: none;
-    padding: 6px 10px;
+    padding: 7px 10px;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
 
 }
 
@@ -61,16 +55,10 @@ nav {
     margin-left: 20px;
 }
 
-/* Estilo específico para o botão "Entrar" */
-.navbar-buttons .btn1 {
-    margin-top: 1px;
-    background-color:orange;
-    color: white;
-}
-
-/* Estilo específico para o botão "Cadastrar" */
+/* Estilo específico para o botão "Entrar" e "Cadastrar" */
+.navbar-buttons .btn1,
 .navbar-buttons .btn2 {
-    background-color: orange;
+    background-color:orange;
     color: white;
 }
 
@@ -143,8 +131,7 @@ nav {
 
 /* Estilo para a classe 'navbar-search' */
 
-.pes.h3{ padding-left: px;
-}
+
 .navbar-search {
     padding: 10px;
     padding-left: 10px;
@@ -269,7 +256,6 @@ nav {
 
 .containerca {
     margin-right: 120px;
-    margin-top: -180px;
   }
   .pagination .page-link{border: none;color: black;font-size: 20px;}
 
@@ -278,32 +264,27 @@ nav {
 /*---------------------------------------------------------------------------------------------*/
 /* Estilos para o footer */
 
-        .footer{
+.footer{
 
 
-            background-color:#0D2226;
-            color: white;
-            padding: 20px;
-            padding-left: 140px;
-            margin-top: 200px
+    background-color:#0D2226;
+    color: white;
+    padding: 20px;
+    padding-left: 140px;
 
 
-        }
-        .footer .col-md-4:nth-child(2) {
+}
+.footer .col-md-4:nth-child(2) {
 
 
 
-        }
-        /* Estilos para a terceira coluna */
+}
+/* Estilos para a terceira coluna */
 
-        .footer .col-md-4:nth-child(3) {
+.footer .col-md-4:nth-child(3) {
     text-decoration: none;
     text-align: left;
     padding-left: 10px;
-
-
-
-
 }
 
 /* Estilos para os ícones das redes sociais */
