@@ -3,9 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\StartController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', [StartController::class, 'start']);
+
+
+Route::get('/search', [SearchController::class, 'search']);
 
 /* Auth */
 Route::get('/login', [UserController::class, 'login'])->name('login');
