@@ -11,15 +11,18 @@ use Illuminate\Support\Str;
 
 class UserController extends Controller
 {
-    public function login(){
+    public function login()
+    {
         return view('auth.login');
     }
 
-    public function cadastrar(){
+    public function cadastrar()
+    {
         return view('auth.register');
     }
 
-    public function auth( Request $request){
+    public function auth( Request $request)
+    {
 
         $credencial = $request->validate([
             'email' => ['required'],
@@ -33,7 +36,7 @@ class UserController extends Controller
             $request->session()->regenerate();
 
 
-            return redirect()->intended('/');
+            return redirect()->intended('/profile');
         }
 
         return back()->withErrors([
@@ -42,7 +45,8 @@ class UserController extends Controller
 
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
 
         $request->validate( [
             'name' =>['required', 'string' , 'regex:/^[a-zA-Z\s]+$/', 'min:5','max:255'],
@@ -68,12 +72,13 @@ class UserController extends Controller
 
             $user->save();
             Auth::login($user);
-            return redirect('/');
+            return redirect('/profile');
 
 
     }
 
-    public function logout(Request $request){
+    public function logout(Request $request)
+    {
 
         Auth::logout();
 
@@ -84,7 +89,8 @@ class UserController extends Controller
         return redirect('/login');
     }
 
-    public function forgotpassword(){
+    public function forgotpassword()
+    {
         return view('auth.recoverpassword');
     }
 
@@ -105,12 +111,14 @@ class UserController extends Controller
                     : back()->withErrors(['email' => __($status)]);
     }
 
-    public function newpassword( string $token){
+    public function newpassword( string $token)
+    {
 
         return view('auth.newpassword', ['token' => $token]);
     }
 
-    public function updatepassword( Request $request){
+    public function updatepassword( Request $request)
+    {
 
         $request->validate([
             'token' => ['required'],
