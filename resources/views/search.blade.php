@@ -96,10 +96,10 @@
             <button class="btn btn-orangel">Filtrar</button>
         </div>
         <div class="grid-container">
-            <div class="grid-item1">Linha 1</div>
-            <div class="grid-item">Linha 2</div>
-            <div class="grid-item">Linha 3</div>
-            <div class="grid-item">Linha 4</div>
+            <div class="grid-item1"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
           </div>
 
     </div>
