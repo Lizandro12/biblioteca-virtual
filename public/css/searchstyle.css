@@ -1,7 +1,9 @@
 
 @import url(style.css);
 
-
+body{
+    font-family: Poppins;
+}
 /* Estilo para a barra de navegação */
 .header-top{
     background-color: #ffffff;
@@ -9,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px 140px;
+    font-family: Poppins;
 
 }
 .navbar-logo{
@@ -24,10 +27,12 @@
     align-items: center;
     gap: 0.1rem;
     width: 35%;
+
 }
 
-.form-control{
+.header-top .navbar-search .form-control{
     width: 100%;
+    background-color: #DFDFDF;
 }
 
 .navbar-search .btn.btn-orange {
@@ -37,11 +42,14 @@
     color: white;
     cursor: pointer;
     border-radius: 6px;
+    font-family: Poppins;
+
 
 }
 
 .navbar-search .btn.btn-orange i {
     font-size: 16px;
+
 }
 
 /* Estilo para os botões de navegação */
@@ -63,11 +71,11 @@
 }
 
 
-/* ----CSS da  Segunda Barra --------------------------------------------- */
+/* ----CSS da Segunda Barra --------------------------------------------- */
 
     .navbar-light.bg-custom {
       height: 40px;
-      background-color: #0D2226; /* Substitua #ff0000 pela cor desejada */
+      background-color: #0D2226;
     }
 
     .nav-item  {
@@ -76,26 +84,21 @@
         color: white; /* Substitua #ffffff pela cor desejada */}
 
 
-    .navbar-nav .nav-link:hover {
 
-        color: orange /* cor dos links ao passar o mouse */
-    }
 
-    .navbar-nav .nav-link {
-        color: white;
-    }
+    .header .container .navbar-nav .nav-item .nav-link {color: white;}
 
-    .navbar-nav .nav-link .a:hover {
-        background-color: orange;
-        color:orange;
+    .header .container .navbar-nav .nav-item .nav-link :hover {color:orange;}
 
-    }
-
-.bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
-    display: flex; }
+     .bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
+    display: flex;
+    color: white; }
 
 
 /*---------------------------------------------------------------------------------------------*/
+
+.textbody{margin-top:60px;
+}
 
 .list {
             display: flex;
@@ -123,21 +126,67 @@
              margin-top: -5px;
              margin-right: 18px;
              margin-left: 35px;
-            font-family: poppins;}
+            font-family: poppins;
+        }
 
 
-/*------------------------------ Estilo para o lado da pesquisa'--------------------- */
+
+            .list .pes h3{
+                padding-top:40px;
+
+                padding-left:10px;
+
+            }
+
+            .navbar2-search{margin-left: 10px;}
+
+            .barl {
+                background-color: #DFDFDF;
+                border-radius: 8px;
+                border-color: #DFDFDF;
+                height: 38px;
+                width: 200px;
+            }
+
+            .btn.btn-orangel {
+                background-color: orange;
+                border: none;
+                padding: 7px 10px;
+                color: white;
+                cursor: pointer;
+                border-radius: 6px;
+                font-family: Poppins;
+
+
+            }
+
+
+            .grid-container {
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                height: 160vh; /* Ajuste conforme necessário */
+              }
+
+              .grid-item1{
+                margin-top: 40px;
+                border: 1px solid#DFDFDF; /* Apenas para visualização */
+              }
+              .grid-item {
+                border: 1px solid#DFDFDF; /* Apenas para visualização */
+              }
+
+/*------------------------------ Estilo para o lado da pesquisa'-------------------------------------- */
 
 
 /* Estilo para a classe 'navbar-search' */
 
 
-.navbar-search {
+.navbar-search2{
     padding: 10px;
     padding-left: 10px;
     margin-right: 10px;
+    font-family: Poppins;
 
-    /* Outros estilos */
 }
 
 /* Estilo para o botão com classe 'btn' */
@@ -221,10 +270,11 @@
 
 .bt.bt-primar {
   color: #fff;
-  weight: 180px;
+  width:160px;
   height: 35px;
   background-color: orange;
   border-color: orange;
+  font-family: Poppins;
 }
 
 .bt-primar:hover {
@@ -238,8 +288,10 @@
   color: black;
   background-color: transparent;
   border-color: #6c757d;
-  weight: 80px;
-  height: 40px;
+  width: 160px;
+  height: 35px;
+  font-family: Poppins;
+
 }
 
 .bt-secondar:hover {
@@ -250,6 +302,7 @@
 
 }
 
+.imagli{height:50px;width: 110px;}
 
 
 /* -------------------------Estilos para os botões do carrousel---------------------------------- */
@@ -271,12 +324,12 @@
     color: white;
     padding: 20px;
     padding-left: 140px;
-
+    padding-right: 70px;
 
 }
-.footer .col-md-4:nth-child(2) {
-
-
+.footer .foo .row .col-md-4 a {
+    text-decoration: none;
+    color: white;
 
 }
 /* Estilos para a terceira coluna */
@@ -286,6 +339,8 @@
     text-align: left;
     padding-left: 10px;
 }
+
+
 
 /* Estilos para os ícones das redes sociais */
 

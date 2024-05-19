@@ -29,15 +29,15 @@
 
 
 </head>
-<body >
+<body>
 
     <header>
         <div class="header-top">
             <div class="navbar-logo">
                 <img src="/img/logotipo.png" alt="Logo">
             </div>
-            <div class="navbar-search d-flex"><!-- Remover este estilo inline e todos os outros que existem nesta pagine e enviar para o arquivo de estilos-->
-                <input style="background-color:#DFDFDF"type="text" placeholder="Procure por um livro..." class="form-control">
+            <div class="navbar-search d-flex">
+                <input type="text" placeholder="Procure por um livro..." class="form-control">
                 <button class="btn btn-orange">
                     <i class="fas fa-search"></i>
                 </button>
@@ -47,28 +47,30 @@
                 <a href="/cadastrar"><button class="btn2">Cadastrar</button></a>
             </div>
         </div>
+
             <!--segunda barra ----------------------------------------------------------------------- -->
-          <div class="header">
-            <nav class="navbar navbar-expand-md navbar-light bg-dark"> <!-- Mudar a cor desta seçao para a cor do prototipo no figma -->
-                <div class="container">
+
+            <div class="header">
+            <nav class="navbar navbar-expand-md navbar-light bg-dark">
+                    <div class="container">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Início</a>
+                            <a class="nav-link" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Livros</a>
+                            <a class="nav-link" href="#" >Livros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Autores</a>
+                            <a class="nav-link" href="#" >Autores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Categorias</a>
+                            <a class="nav-link" href="#" >Categorias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Blog</a>
+                            <a class="nav-link" href="#" >Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi-cart3" style="color: white;"></i></a>
+                            <a href="#" class="nav-link"><i class="bi-cart3"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -80,7 +82,7 @@
 
 <!-- Corpo da página -->
 <!-- Envolver  -->
-<div style="margin-top:60px"class="textbody"><!-- Remover este estilo inline e colocar no arquivo de estilos -->
+<div class="textbody">
     <h3> Todos os Livros</h3><hr>
     <h5> Procure pelo livro do seu interesse</h5>
 </div>
@@ -88,19 +90,17 @@
 
 <div class="list">
     <div class="pes">
-        <h3 style="padding-top:40px;padding-left:10px;">Pesquisar</h3><!-- Remoer estilo inline -->
-        <div class="navbar-search">
-            <input style="background-color:#DFDFDF" type="text" placeholder="">Adicionar placeholder
-            <button class="btn btn-orange">
-                Filtrar
-            </button>
+        <h3>Pesquisar</h3>
+        <div class="navbar2-search">
+            <input  class="barl" type="text"placeholder="Procure por um livro...">
+            <button class="btn btn-orangel">Filtrar</button>
         </div>
-        <hr>
-
-        <br><br><br><br><br><br><br><br><br><br><hr><!-- Remover este espaçamento com br e usar o flex box junto com algumas divs pra deixar mais facil de manter -->
-        <br><br><br><br><br><br><br><br><br><br><hr>
-        <br><br><br><br><br><br><br><br><br><br><hr>
-        <br><br><br><br><br><br><hr>
+        <div class="grid-container">
+            <div class="grid-item1">Linha 1</div>
+            <div class="grid-item">Linha 2</div>
+            <div class="grid-item">Linha 3</div>
+            <div class="grid-item">Linha 4</div>
+          </div>
 
     </div>
 
@@ -111,7 +111,7 @@
         <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/transferir.png" style="height:150px;" alt="Capa do Livro">
+                <img src="/img/transferir.png" class ="imagli"alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -121,8 +121,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
-                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
+                <button class="bt bt-primar" >Pagar</button>
+                <button class="bt bt-secondar">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/transferir.jpeg" style="height:150px;" alt="Capa do Livro">
+                <img src="/img/transferir.jpeg" class ="imagli"alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -140,8 +140,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
-                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
+                <button class="bt bt-primar" >Pagar</button>
+                <button class="bt bt-secondar">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capap.jpg"  style="height:150px" alt="Capa do Livro">
+                <img src="/img/capap.jpg"  class ="imagli"alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -159,8 +159,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
-                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
+                <button class="bt bt-primar" >Pagar</button>
+                <button class="bt bt-secondar">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/transferir (1).jpeg" style="height:150px" alt="Capa do Livro">
+                <img src="/img/transferir (1).jpeg" class ="imagli" alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -178,8 +178,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
-                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
+                <button class="bt bt-primar" >Pagar</button>
+                <button class="bt bt-secondar">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capahtml.jpeg" style="height:150px"alt="Capa do Livro">
+                <img src="/img/capahtml.jpeg" class ="imagli"alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -197,8 +197,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
-                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
+                <button class="bt bt-primar" >Pagar</button>
+                <button class="bt bt-secondar">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capahtml.jpeg" style="height:150px"alt="Capa do Livro">
+                <img src="/img/capahtml.jpeg" class ="imagli" alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -216,8 +216,8 @@
               <div class="col-md-3"></div>
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
-                <button class="bt bt-primar" style="width: 160px;height:30px;">Pagar</button>
-                <button class="bt bt-secondar"style="width: 160px;height:30px;">Ver Detalhes</button>
+                <button class="bt bt-primar" >Pagar</button>
+                <button class="bt bt-secondar">Ver Detalhes</button>
               </div>
             </div>
           </div>
@@ -250,10 +250,9 @@
                 <!-- Primeira coluna -->
                 <div class="col-md-4">
                     <h3>Institucional</h3>
-                    <!-- Adicionar esses itens em links -->
-                    <p>Quem somos</p>
-                    <p>Direitos Autorias</p>
-                    <p>Blog</p>
+                    <a href="#"><p>Quem somos</p></a>
+                    <a href="#"><p>Direitos Autorias</p></a>
+                    <a href="#"><p>Blog</p></a>
                 </div>
                 <!-- Segunda coluna -->
                 <div class="col-md-4">
