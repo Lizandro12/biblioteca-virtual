@@ -10,6 +10,9 @@ Route::get('/', [StartController::class, 'start']);
 
 
 Route::get('/search', [SearchController::class, 'search']);
+Route::get('/authorpage', [SearchController::class, 'authorpage']);
+Route::get('/categorypage', [SearchController::class, 'categorypage']);
+
 
 /* Auth */
 Route::get('/login', [UserController::class, 'login'])->name('login');

@@ -58,13 +58,13 @@
                             <a class="nav-link" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >Livros</a>
+                            <a class="nav-link" href="/search" >Livros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >Autores</a>
+                            <a class="nav-link" href="/authorpage" >Autores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >Categorias</a>
+                            <a class="nav-link" href="/categorypage" >Categorias</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" >Blog</a>

@@ -36,7 +36,7 @@ body{
 }
 
 .navbar-search .btn.btn-orange {
-    background-color: orange;
+    background-color: #F18324;
     border: none;
     padding: 7px 10px;
     color: white;
@@ -66,7 +66,7 @@ body{
 /* Estilo específico para o botão "Entrar" e "Cadastrar" */
 .navbar-buttons .btn1,
 .navbar-buttons .btn2 {
-    background-color:orange;
+    background-color:#F18324;
     color: white;
 }
 
@@ -88,7 +88,7 @@ body{
 
     .header .container .navbar-nav .nav-item .nav-link {color: white;}
 
-    .header .container .navbar-nav .nav-item .nav-link :hover {color:orange;}
+    .header .container .navbar-nav .nav-item .nav-link :hover {color:#F18324;}
 
      .bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
     display: flex;
@@ -149,7 +149,7 @@ body{
             }
 
             .btn.btn-orangel {
-                background-color: orange;
+                background-color: #F18324;
                 border: none;
                 padding: 7px 10px;
                 color: white;
@@ -191,7 +191,7 @@ body{
 
 /* Estilo para o botão com classe 'btn' */
 .btn {
-    background-color: orange;
+    background-color: #F18324;
     color: #fff;
     padding: 8px 16px;
     border: none;
@@ -202,7 +202,7 @@ body{
 
 /* Estilo para o botão com classe 'btn-orange' */
 .btn-orange {
-    background-color: orange;
+    background-color: #F18324;
     /* Outros estilos */
 }
 
@@ -272,15 +272,15 @@ body{
   color: #fff;
   width:160px;
   height: 35px;
-  background-color: orange;
-  border-color: orange;
+  background-color: #F18324;
+  border-color: #F18324;
   font-family: Poppins;
 }
 
 .bt-primar:hover {
   color: #fff;
-  background-color: orange;
-  border-color: orange;
+  background-color: #F18324;
+  border-color: #F18324;
 
 }
 
@@ -312,7 +312,7 @@ body{
   }
   .pagination .page-link{border: none;color: black;font-size: 20px;}
 
-  .page-link i {width: 100px;height: 100px;color: orange;border: none;}
+  .page-link i {width: 100px;height: 100px;color: #F18324;border: none;}
 
 /*---------------------------------------------------------------------------------------------*/
 /* Estilos para o footer */
