@@ -44,7 +44,7 @@
             </div>
             <div class="navbar-buttons">
                 <a href="/login"><button class="btn1">Entrar</button></a>
-                <a href="/cadastrar"><button class="btn2">Cadastrar</button></a>
+                <a href="/register"><button class="btn2">Cadastrar</button></a>
             </div>
         </div>
 
