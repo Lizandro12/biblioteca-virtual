@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo Literário</title>
+    <title>Cadastro</title>
     <!-- Font do google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,27 +16,50 @@
 <body>
     <div class="content d-flex">
             <div class="left-side d-flex flex-column">
-                <form action="" class="form form-newpassword form-login d-flex flex-column">
+                <form action="{{ route('password.update') }}" method="POST" class="form form-newpassword d-flex flex-column">
+                    @csrf
                     <div class="image-container">
                             <a href="/"><img src="/img/logotipo.png" alt="" class="logo-form"></a>
                     </div>
                     <div class="header-form">
-                        <p class="text text-center">Informe o seu e-mail</p>
+                    <p class="text text-center">Informe a sua nova senha</p>
+                    </div>
+                    <input type="hidden" name="token" value="{{ $token }}">
+                    <div class="mb-3 d-flex flex-column">
+                        <label for="email" class="label">E-mail:</label>
+                        <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Informe o seu endereço de e-mail">
+                        @error('email')
+                        <p class="invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                     <div class="mb-3 d-flex flex-column">
                         <label for="password" class="label">Senha:</label>
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Informe a nova senha">
+                        <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="Informe a sua senha">
+                        @error('password')
+                        <div class="invalid-feedback">
+                                {{ $message }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="mb-3 d-flex flex-column">
-                        <label for="newpassword" class="label">Confirmar senha:</label>
-                        <input type="newpassword" name="newpassword" id="newpassword" class="form-control" placeholder="Confirme a senha">
+                        <label for="password_confirmation" class="label">Confirmar senha:</label>
+                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" placeholder="Repita a senha">
+                        @error('password_confirmation')
+                        <p class="text invalid-feedback">
+                            {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                     <input type="submit" value="Enviar" class="btn btn-primary">
                 </form>
             </div>
     </div>
 
-
+    <script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Biblioteca de icones -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

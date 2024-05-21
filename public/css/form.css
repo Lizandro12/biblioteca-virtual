@@ -1,5 +1,18 @@
 @import url(style.css);
 
+.message-success{
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    animation: fade-down 0.5s;
+}
+
 .content{
     width: 100vw;
     height: 100vh;
@@ -59,7 +72,7 @@
 }
 
 .form-newpassword{
-    height: 510px;
+    height: 615px;
 }
 
 .text{
@@ -154,4 +167,18 @@
     }
 
 
+}
+
+/* Animations */
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-8px);
+    }
 }
