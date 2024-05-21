@@ -55,7 +55,7 @@
                     <div class="container">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Início</a>
+                            <a class="nav-link" href="/">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/search" >Livros</a>
@@ -91,10 +91,13 @@
 <div class="list">
     <div class="pes">
         <h3>Pesquisar</h3>
-        <div class="navbar2-search">
-            <input  class="barl" type="text"placeholder="Procure por um livro...">
+
+        <div class="navbar-search-container">
+            <input type="text" placeholder="Procure por um livro..." class="form-control">
             <button class="btn btn-orangel">Filtrar</button>
         </div>
+
+
         <div class="grid-container">
             <div class="grid-item1"></div>
             <div class="grid-item"></div>
@@ -206,7 +209,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capahtml.jpeg" class ="imagli" alt="Capa do Livro">
+                <img src="/img/cyber.jpg" class ="imagli" alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>

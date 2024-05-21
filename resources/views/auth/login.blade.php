@@ -26,6 +26,7 @@
                 <form action="{{ route('user.auth')}}" method="POST" class="form form-login d-flex flex-column">
                 @csrf
                     <div class="header-form">
+                        <a href="/"><img src="/img/logotipo.png" alt="" class="logoim"></a>
                         <p class="sub-title">Bem-vindo!</p>
                         <p class="text">Primeira vez aqui? <a href="/register" class="header-form-link">Inscrever-se</a></p>
                     </div>

@@ -19,6 +19,7 @@
                 <form action="{{ route('user.store') }}" method="POST" class="form form-signup d-flex flex-column">
                     @csrf
                     <div class="header-form">
+                        <a href="/"><img src="/img/logotipo.png" alt="" class="logoim"></a>
                         <h2 class="sub-title">Faça sua inscrição!</h2>
                         <p class="text my-4">Já possui conta? <a href="/login" class="header-form-link">Iniciar sessão</a></p>
                     </div>
