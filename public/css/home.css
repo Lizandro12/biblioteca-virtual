@@ -1,0 +1,345 @@
+@import url(style.css);
+
+nav {
+    top: 40px; /* Altura do cabeçalho, ajuste conforme necessário */
+  }
+
+
+/* Estilo para a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: poppins;
+}
+
+/* Estilo para o logotipo */
+.navbar-logo img {
+    margin-left: 140px;
+    height: 90px;
+}
+
+/* Estilo para a barra de pesquisa */
+.navbar-search {
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input[type="text"] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 350px;
+
+}
+.navbar-buttons { margin-right: 130px;}
+.navbar-search .btn.btn-orange {
+    background-color: orange;
+    border: none;
+    padding: 6px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.navbar-search .btn.btn-orange i {
+    font-size: 16px;
+}
+
+/* Estilo para os botões de navegação */
+.navbar-buttons .btn1,
+.navbar-buttons .btn2 {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* Estilo específico para o botão "Entrar" */
+.navbar-buttons .btn1 {
+    margin-top: 1px;
+    background-color:orange;
+    color: white;
+}
+
+/* Estilo específico para o botão "Cadastrar" */
+.navbar-buttons .btn2 {
+    background-color: orange;
+    color: white;
+}
+
+
+/* ----CSS da  Segunda Barra --------------------------------------------- */
+
+    .navbar-light.bg-custom {
+      height: 40px;
+      background-color: #0D2226; /* Substitua #ff0000 pela cor desejada */
+    }
+
+    .nav-item  {
+        font-family: Poppins;
+        padding-right: 5px;
+        color: white; /* Substitua #ffffff pela cor desejada */}
+
+
+    .navbar-nav .nav-link:hover {
+
+        color: orange /* cor dos links ao passar o mouse */
+    }
+
+    .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .navbar-nav .nav-link .a:hover {
+        background-color: orange;
+        color:#fff;
+    }
+
+.bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
+    display: flex; }
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+        .pes{border: 5px solid #DFDFDF;
+             height:1200px;
+             width: 320px;
+             border-radius: 15px;
+             margin-top: -5px;
+             margin-right: 18px;
+             margin-left: 35px;
+            font-family: poppins;}
+
+           
+            
+
+
+/* -----------------Estilo geral para a visualização dos livros ----------- */
+
+
+.col{border: 5px solid #DFDFDF;border-radius:20px; margin-top: 20px; margin-right: 20px;}
+
+
+/* Estilos para os botões */
+.bt {
+  font-family: Poppins;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 2px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 5rem;
+  margin: 5px;
+}
+
+.bt.bt-primar {
+  color: #fff;
+  width: 180px;
+  height: 35px;
+  background-color: orange;
+  border-color: orange;
+}
+
+.bt-primar:hover {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+
+}
+
+.bt-secondar {
+  color: black;
+  background-color: transparent;
+  border-color:  orange;
+  width: 5opx;
+  height: 40px;
+}
+
+.bt-secondar:hover {
+  color: #fff;
+  background-color: orange;
+  border-color:  orange;
+
+}
+
+
+.section {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.background-image {
+    background-image: url('/img/livros.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajuste conforme necessário */
+    margin-top: 80px;
+    text-align: left;
+}
+
+
+/*.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.5);  Transparência ajustável 
+}
+*/
+
+.btn {
+    display: inline-block;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    padding: 10px 20px;
+    background-color:  orange; /* Cor do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+.row .livro-1{
+    background-color:#0D2226;
+    
+}
+
+
+.livro-1  {
+    background-color:#0D2226;
+    color: white;
+    text-align: center;
+}
+
+.col-sm-3 {
+    width: 25%; /* 4 colunas em uma linha */
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.col-sm-4 {
+    width: 25%; /* 3 colunas em uma linha */
+    float: left;
+    padding: 0 15px;
+    
+}
+
+.livro {
+    background-color: #f9f9f9; /* Cor de fundo do bloco do livro */
+    padding: 15px;
+    border-radius: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.livro img {
+    max-width: 100%;
+    border-radius: none;
+}
+
+.livro h6 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.livro p {
+    margin-top: 5px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color:  orange; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: orange; /* Cor do botão ao passar o mouse */
+}
+
+/* -------------------------Estilos para os botões do carrousel---------------------------------- */
+
+.containerca {
+    margin-right: 120px;
+    margin-top: -180px;
+  }
+  .pagination .page-link{border: none;color: black;font-size: 20px;}
+
+  .page-link i {width: 100px;height: 100px;color: orange;border: none;}
+
+/*---------------------------------------------------------------------------------------------*/
+/* Estilos para o footer */
+
+        .footer{
+
+
+            background-color:#0D2226;
+            color: white;
+            padding: 20px;
+            padding-left: 140px;
+            margin-top: 200px
+
+
+        }
+        .footer .col-md-4:nth-child(2) {
+
+
+
+        }
+        /* Estilos para a terceira coluna */
+
+        .footer .col-md-4:nth-child(3) {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
+
+
+
+
+}
+
+/* Estilos para os ícones das redes sociais */
+
+
+.social-icons a {
+    padding: 4px;
+}
+
+.social-icons a i {
+    color: white;
+}
+
+/* Estilo para o texto no rodapé */
+.footer-text {
+    text-align: center;
+    font-family: Poppins;
+}
+
+.textbody{
+    margin-right: 130px;
+    margin-left: 130px;
+}
+.textbody.h3{
+    font-size: 32px;
+}
