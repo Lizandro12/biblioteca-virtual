@@ -103,7 +103,7 @@ nav {
         color:#fff;
     }
 
-.bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
+.bi-cart3 { font-size: 1rem;/* Adicione estilos conforme necessário */
     display: flex; }
 
 
@@ -245,14 +245,14 @@ nav {
 .livro {
     background-color: #f9f9f9; /* Cor de fundo do bloco do livro */
     padding: 15px;
-    border-radius: none;
+    border-radius: 5px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .livro img {
     max-width: 100%;
-    border-radius: none;
+    border-radius: 5px;
 }
 
 .livro h6 {
@@ -269,7 +269,7 @@ button {
     background-color:  orange; /* Cor do botão */
     color: white;
     border: none;
-    border-radius: none;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -302,11 +302,7 @@ button:hover {
 
 
         }
-        .footer .col-md-4:nth-child(2) {
-
-
-
-        }
+       
         /* Estilos para a terceira coluna */
 
         .footer .col-md-4:nth-child(3) {

@@ -84,54 +84,45 @@
         <a href="comecaragora.php" class="btn">Começar Agora</a>
     </div>
 </section>
-
 <div class="row">
     <h3>Livros Mais Comprados</h3>
     <div class="col-sm-3">
         <div class="livro">
             <img src="img/pequeno.png" alt="Livro 1">
             <h6>O Pequeno Príncipe</h6>
-            <p>Autor: Antoine de Saint-Exupéry</p>
-            <button>Ler Mais</button>
+            <p>Antoine de Saint-Exupéry</p>
+            <button>Ler livro</button>
         </div>
     </div>
     <div class="col-sm-3">
         <div class="livro">
             <img src="img/pequeno.png" alt="Livro 1">
             <h6>O Pequeno Príncipe</h6>
-            <p>Autor: Antoine de Saint-Exupéry</p>
-            <button>Ler Mais</button>
+            <p>Antoine de Saint-Exupéry</p>
+            <button>Ler livro</button>
         </div>
     </div>
     <div class="col-sm-3">
         <div class="livro">
             <img src="img/pequeno.png" alt="Livro 1">
             <h6>O Pequeno Príncipe</h6>
-            <p>Autor: Antoine de Saint-Exupéry</p>
-            <button>Ler Mais</button>
+            <p>Antoine de Saint-Exupéry</p>
+            <button>Ler livro</button>
         </div>
     </div>
     <div class="col-sm-3">
         <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 1">
+            <img src="img/pequeno.png" alt="Livro 4">
             <h6>O Pequeno Príncipe</h6>
-            <p>Autor: Antoine de Saint-Exupéry</p>
-            <button>Ler Mais</button>
+            <p>Antoine de Saint-Exupéry</p>
+            <button>Ler livro</button>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-    <!-- Outros livros mais comprados aqui -->
+    <!-- Outros livros mais lidos aqui -->
 </div>
 
+<h3>Principais Autores</h3>
 <div class="row">
-    <h3>Principais Autores</h3>
     <div class="col-sm-3">
         <div class="livro-1">
             <img src="img/autores.png" alt="Autor 1">
@@ -194,7 +185,7 @@
     </div>
     <!-- Outros livros mais lidos aqui -->
 </div>
-< class="row">
+<div class="row">
     <h3>ler mais</h3>
     <div class="col-sm-4">
         <div class="livro">
