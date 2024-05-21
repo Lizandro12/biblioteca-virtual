@@ -58,6 +58,36 @@
             </nav>
         </div>
     </header>
+
     @yield('content')
+
+    <div class="footer">
+        <div class="foo">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Institucional</h3>
+                    <a href="#"><p>Quem somos</p></a>
+                    <a href="#"><p>Direitos Autorias</p></a>
+                    <a href="#"><p>Blog</p></a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Ajuda</h3>
+                    <p></p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Nossas Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>© 2024 Universo Literário - Todos os direitos reservados</p>
+        </div>
+    </div>
 </body>
 </html>
