@@ -125,7 +125,36 @@
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
                 <button class="bt bt-primar" >Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <div class="verdet">
+                    <!--Botão de Detalhes -->
+                    <button type="button" class="bdetalhes" data-toggle="modal" data-target="#bookInfoModal">
+                      Ver detalhes
+                    </button>
+
+                    <!-- os detalhes do Livro-->
+                    <div class="modal fade" id="bookInfoModal" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bookInfoModalLabel">Detalhes do Livro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3>Lógica de Programação</h3>
+                            <p><strong>Autor:</strong>André Luiz Villar Formentini</p>
+                            <p><strong>Categoria:</strong> Educacional</p>
+                            <p><strong>Data de Lançamento:</strong>2007</p>
+                            <p class="resumo"><strong>Resumo:</strong> "Lógica de Programação" é um livro essencial para quem está iniciando no mundo da programação. Escrito por André Luiz Villar Formentini, o livro aborda os fundamentos da lógica de programação de maneira didática e prática. É uma obra destinada tanto a iniciantes quanto a profissionais que desejam revisar conceitos básicos. O conteúdo abrange desde os primeiros passos na lógica de programação até a elaboração de algoritmos mais complexos.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -144,7 +173,36 @@
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
                 <button class="bt bt-primar" >Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <div class="verdet">
+                    <!--Botão de Detalhes -->
+                    <button type="button" class="bdetalhes" data-toggle="modal" data-target="#bookInfoModal2">
+                      Ver detalhes
+                    </button>
+
+                    <!-- os detalhes do Livro-->
+                    <div class="modal fade" id="bookInfoModal2" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bookInfoModalLabel2">Detalhes do Livro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3> 10 Passos para Você Se Dar Bem em Matemática</h3>
+                            <p><strong>Autor:</strong>César Ribeiro</p>
+                            <p><strong>Categoria:</strong> Educacional</p>
+                            <p><strong>Data de Lançamento:</strong> 2008</p>
+                            <p class="resumo"><strong>Resumo:</strong> Se você está buscando melhorar suas habilidades em matemática, este livro pode ser uma excelente ferramenta, pois fornece dicas práticas e estratégias para facilitar o aprendizado e a aplicação dos conceitos matemáticos.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -152,7 +210,7 @@
           <div class="liv">
             <div class="row book-row">
               <div class="col-md-3 book-cover">
-                <img src="/img/capap.jpg"  class ="imagli"alt="Capa do Livro">
+                <img src="/img/jorg.jpg"  class ="imagli"alt="Capa do Livro">
               </div>
               <div class="col-md-3 book-details">
                 <p><strong>Autor:</strong> Nome do Autor</p>
@@ -163,7 +221,36 @@
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
                 <button class="bt bt-primar" >Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <div class="verdet">
+                    <!--Botão de Detalhes -->
+                    <button type="button" class="bdetalhes" data-toggle="modal" data-target="#bookInfoModal3">
+                      Ver detalhes
+                    </button>
+
+                    <!-- os detalhes do Livro-->
+                    <div class="modal fade" id="bookInfoModal3" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bookInfoModalLabel">Detalhes do Livro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3> 1984</h3>
+                            <p><strong>Autor:</strong> George Orwell</p>
+                            <p><strong>Categoria:</strong> Distopia, Ficção Científica, Romance Político</p>
+                            <p><strong>Data de Lançamento:</strong> 2008</p>
+                            <p class="resumo"><strong>Resumo:</strong> "1984" é um romance distópico que retrata uma sociedade totalitária sob o controle do Partido, liderado pelo enigmático Grande Irmão. A história é centrada em Winston Smith, um homem que trabalha para o governo reescrevendo a história e começa a questionar o regime opressor. O livro explora temas como vigilância, censura, manipulação da verdade e a natureza do poder.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -182,7 +269,36 @@
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
                 <button class="bt bt-primar" >Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <div class="verdet">
+                    <!--Botão de Detalhes -->
+                    <button type="button" class="bdetalhes" data-toggle="modal" data-target="#bookInfoModal4">
+                      Ver detalhes
+                    </button>
+
+                    <!-- os detalhes do Livro-->
+                    <div class="modal fade" id="bookInfoModal4" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bookInfoModalLabel">Detalhes do Livro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3> Algebra Linear</h3>
+                            <p><strong>Autor:</strong> Prof. Dr. João Silva</p>
+                            <p><strong>Categoria:</strong> Educacional</p>
+                            <p><strong>Data de Lançamento:</strong> 2023</p>
+                            <p class="resumo"><strong>Resumo:</strong>Este livro oferece uma introdução abrangente e acessível aos conceitos fundamentais da álgebra linear. Ideal para estudantes de graduação em matemática, engenharia e áreas afins, o texto aborda desde os fundamentos básicos até tópicos mais avançados, apresentando uma ampla gama de aplicações práticas. Com exemplos claros e exercícios bem elaborados, este livro é uma ferramenta indispensável para aqueles que desejam compreender e aplicar os princípios da álgebra linear em diversos contextos.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -201,7 +317,36 @@
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
                 <button class="bt bt-primar" >Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <div class="verdet">
+                    <!--Botão de Detalhes -->
+                    <button type="button" class="bdetalhes" data-toggle="modal" data-target="#bookInfoModal5">
+                      Ver detalhes
+                    </button>
+
+                    <!-- os detalhes do Livro-->
+                    <div class="modal fade" id="bookInfoModal5" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bookInfoModalLabel">Detalhes do Livro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3>HTML, XHTML e CSS para Leigos: Guia Completo para Iniciantes</h3>
+                            <p><strong>Autor:</strong> Maria da Silva e João Oliveira</p>
+                            <p><strong>Categoria:</strong> Educacional</p>
+                            <p><strong>Data de Lançamento:</strong> 2022</p>
+                            <p class="resumo"><strong>Resumo:</strong>Este livro é um guia prático e acessível para iniciantes que desejam aprender a criar páginas da web usando HTML, XHTML e CSS. Os autores explicam os conceitos fundamentais de forma clara e simples, com exemplos ilustrativos e passo a passo. Desde a estrutura básica de um documento HTML até a formatação avançada com CSS, este livro cobre tudo o que você precisa saber para começar a desenvolver seus próprios sites. Com dicas úteis e exercícios práticos, é o recurso ideal para quem está dando os primeiros passos no mundo do desenvolvimento web.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -220,7 +365,36 @@
               <div class="col-md-3 book-actions">
                 <p><strong>2000 AOA</strong></p>
                 <button class="bt bt-primar" >Pagar</button>
-                <button class="bt bt-secondar">Ver Detalhes</button>
+                <div class="verdet">
+                    <!--Botão de Detalhes -->
+                    <button type="button" class="bdetalhes" data-toggle="modal" data-target="#bookInfoModal6">
+                      Ver detalhes
+                    </button>
+
+                    <!-- os detalhes do Livro-->
+                    <div class="modal fade" id="bookInfoModal6" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bookInfoModalLabel">Detalhes do Livro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3> Segurança Cibernética: Princípios e Práticas</h3>
+                            <p><strong>Autor:</strong> Dr. Carlos Santos</p>
+                            <p><strong>Categoria:</strong> Cientifico</p>
+                            <p><strong>Data de Lançamento:</strong> 2023</p>
+                            <p class="resumo"><strong>Resumo:</strong>Este livro oferece uma visão abrangente e atualizada da segurança cibernética, abordando desde os princípios básicos até as práticas avançadas. O autor explora os desafios e as ameaças enfrentadas no mundo digital, fornecendo estratégias e técnicas para proteger sistemas, redes e dados contra ataques cibernéticos. Com exemplos do mundo real e estudos de caso, este livro é uma leitura essencial para profissionais de TI, estudantes e qualquer pessoa interessada em compreender e fortalecer a segurança online.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -287,7 +461,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
+<!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

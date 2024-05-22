@@ -3,11 +3,9 @@
 
 body{
     font-family: Poppins;
-
-    font-family: Poppins;
     position: relative;
-            width: 100%;
-            height: 80vh;
+    width: 100%;
+    height: 80vh;
 }
 /* Estilo para a barra de navegação */
 .header-top{
@@ -197,7 +195,11 @@ body{
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
 
-.liv{border: 5px solid #DFDFDF;border-radius: 15px;margin-top: 20px; margin-right: 32px;}
+.liv{border: 5px solid #DFDFDF;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-right: 32px;
+height: 185px;}
 
 
 
@@ -264,30 +266,30 @@ body{
   font-family: Poppins;
 }
 
-.bt-primar:hover {
-  color: #fff;
-  background-color: #F18324;
-  border-color: #F18324;
 
-}
 
-.bt-secondar {
+.bdetalhes{
+  margin-top: 6px;
   color: black;
-  background-color: transparent;
-  border-color: #6c757d;
+  background-color:white;
+  border: 2px solid  #6c757d;
+  border-radius: 25px;
   width: 160px;
   height: 35px;
   font-family: Poppins;
 
+
 }
 
-.bt-secondar:hover {
-  color: #fff;
-  background-color: #5a6268;
+.bdetalhes:hover {
+  color: black;
+  background-color: transparent;
   border-color: #4e555b;
 
 
 }
+
+.resumo{padding-right: 50px;}
 
 .imagli{height:50px;width: 110px;}
 
