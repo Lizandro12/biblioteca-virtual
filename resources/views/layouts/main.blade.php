@@ -15,6 +15,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <header>
@@ -27,8 +28,10 @@
                 <button class="btn btn-orange"><i class="bi bi-search"></i></button>
             </div>
             <div class="navbar-buttons d-flex">
+            @if(!Auth::check())
                 <a href="/login"><button class="btn--dif">Entrar</button></a>
                 <a href="/register"><button class="btn--dif">Cadastrar</button></a>
+            @endif
             </div>
         </div>
         <div class="header">
@@ -39,16 +42,16 @@
                             <a class="nav-link" href="/">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/search" >Livros</a>
+                            <a class="nav-link" href="/search">Livros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/authorpage" >Autores</a>
+                            <a class="nav-link" href="/authorpage">Autores</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/categorypage" >Categorias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link"><i class="bi-cart3"></i></a>

@@ -53,7 +53,7 @@ class UserController extends Controller
             'email' => ['required', 'string','email'],
             'password' => ['required', 'string', 'min:8'],
         ], [
-            'name.required' => 'O campo email é obrigatório',
+            'name.required' => 'O campo nome é obrigatório',
             'name.string' => 'O formato é invalido',
             'name.regex' => 'O nome não deve ter números',
             'name.min' => 'O nome deve ter pelo menos 5 caracteres',

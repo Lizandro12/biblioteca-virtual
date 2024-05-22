@@ -1,93 +1,142 @@
 @import url(style.css);
-
-/* Estilo para a barra de navegação */
-.header-top{
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 140px;
-    transition: all .5s;
-
+.profile-content{
+    padding: 30px 145px;
+    gap: 1rem;
 }
 
-.navbar-logo{
-    width: 20%;
-}
 
-.navbar-logo img {
-    width: 70%;
-}
-
-.navbar-search {
-    align-items: center;
-    gap: 0.1rem;
-    width: 35%;
-
-}
-
-.header-top .navbar-search .form-control{
-    width: 100%;
-    background-color: #DFDFDF;
-}
-
-.navbar-search .btn.btn-orange {
-    background-color: #F18324;
-    border: none;
-    padding: 7px 10px;
-    color: #ffffff;
+.photo-upload{
+    position: absolute;
     cursor: pointer;
+    line-height: 30px;
+    opacity: 0;
+}
+
+
+.btn-upload{
+    border: none;
+    padding: 0.4rem 0.5rem;
     border-radius: 6px;
-    font-family: Poppins;
+    background-color: #F18324;
+    color: #ffffff;
+}
 
+.bi-cloud-arrow-up-fill{
+    margin-right: 6px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.user-name{
+    font-weight: 700;
+}
+.profile-options{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #cdcdcd;
+    width: 300px;
+    justify-content: center;
+}
+
+.profile-link{
+    color: #0d2226;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: all 0.5s;
 
 }
 
-.navbar-search .btn.btn-orange i {
-    font-size: 16px;
-
+.selected{
+    background-color: #F18324;
+    color: #ffffff;
 }
 
-.navbar-buttons{
-    gap: 1rem;
-}
-
-.btn--dif {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
+.profile-link:hover{
+    background-color: #F18324;
     cursor: pointer;
-    font-size: 14px;
-    background-color:#F18324;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
-.header{
-    background-color: #0D2226;
+.btn-logout{
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
 }
 
-.navbar-nav{
+.profile-dashboard{
+    width: 69%;
+
+}
+
+.profile-card{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: 200px;
+    margin-top: 35px;
+    padding: 2rem;
+    color: #0d2226;
+    transition: all 1s;
+}
+
+.profile-tile-box{
+    border-bottom: dashed 1px #cdcdcd;
+    padding: 0 0 0.5rem 0;
+    margin-bottom: 0.8rem;
+}
+
+.dashboard-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form{
     gap: 1rem;
 }
 
-.nav-link {
+.account-details,
+.change-password{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: 340px;
+    margin: 35px 0 35px 0;
+    padding: 2rem;
+    display: none;
+}
+
+.form-top,
+.form-center {
+    width: 100%;
+    gap: 1rem;
+}
+
+.form-top-content{
+    width: 100%;
+}
+
+.form-center-content{
+    width: 50%;
+}
+
+.label{
+    font-size: 16px;
+    margin-bottom: 0.3rem;
+}
+
+.form-control:focus{
+    border-color: #F18324 !important;
+    box-shadow: none !important;
+}
+
+.btn-savechanges{
+    padding: 0.5rem;
+    background-color: #0d2226;
+    border: none;
+    outline: none;
     color: #ffffff;
-    transition: all .5s;
+    margin-top: 1rem;
 }
 
-.nav-link:hover {
-    color:#F18324;
-}
-
-.bi-cart3 {
-    font-size: 1.5rem;/* Adicione estilos conforme necessário */
-    display: flex;
-    color: #ffffff;
-    transition: all .5s;
-}
-
-.bi-cart3:hover{
-    color: #F18324;
-}
 
 
