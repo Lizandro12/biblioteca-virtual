@@ -7,7 +7,7 @@
 </head>
 <body>
     @if(Auth::check())
-    <h3>O usuario logado e o {{Auth::user()->name}}</h3>
+    <h1>{{Auth::user()->name}}</h1>
     <form action="{{ route('user.logout')}}" method="POST">
         @csrf
         <button type="submit">Logout</button>
