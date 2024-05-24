@@ -99,29 +99,29 @@
 
 
         <div class="grid-container">
-            <div class="grid-item1">
+            <div class="grid-item">
                 <div class="modal-body">
-                    <h3>Estantes</h3>
+                    <h3 class="leftp">Estantes</h3>
                     <input type="text" placeholder="" class="form-control">
                 </div>
               </div>
             <div class="grid-item">
                 <div class="modal-body">
-                    <h3>Autores</h3>
+                    <h3 class="leftp">Autores</h3>
                     <input type="text" placeholder="" class="form-control">
                 </div>
 
             </div>
             <div class="grid-item">
                 <div class="modal-body">
-                <h3>Titulos</h3>
+                <h3 class="leftp">Titulos</h3>
                 <input type="text" placeholder="" class="form-control">
             </div>
 
         </div>
             <div class="grid-item">
                 <div class="modal-body">
-                    <h3>Editoras</h3>
+                    <h3 class="leftp">Editoras</h3>
                     <input type="text" placeholder="" class="form-control">
                 </div>
 
@@ -167,10 +167,10 @@
                           </div>
                           <div class="modal-body">
                             <h3>Lógica de Programação</h3>
-                            <p><strong>Autor:</strong>André Luiz Villar Formentini</p>
-                            <p><strong>Categoria:</strong> Educacional</p>
-                            <p><strong>Data de Lançamento:</strong>2007</p>
-                            <p class="resumo"><strong>Resumo:</strong> "Lógica de Programação" é um livro essencial para quem está iniciando no mundo da programação. Escrito por André Luiz Villar Formentini, o livro aborda os fundamentos da lógica de programação de maneira didática e prática. É uma obra destinada tanto a iniciantes quanto a profissionais que desejam revisar conceitos básicos. O conteúdo abrange desde os primeiros passos na lógica de programação até a elaboração de algoritmos mais complexos.</p>
+                            <p class="alitex"><strong>Autor:</strong>André Luiz Villar Formentini</p>
+                            <p class="alitex"><strong>Categoria:</strong> Educacional</p>
+                            <p class="alitex"><strong>Data de Lançamento:</strong>2007</p>
+                            <p class="alitex"><strong>Resumo:</strong> "Lógica de Programação" é um livro essencial para quem está iniciando no mundo da programação. Escrito por André Luiz Villar Formentini,  É uma obra destinada tanto a iniciantes quanto a profissionais que desejam revisar conceitos básicos. O conteúdo abrange desde os primeiros passos na lógica de programação até a elaboração de algoritmos mais complexos.</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -215,10 +215,10 @@
                           </div>
                           <div class="modal-body">
                             <h3> 10 Passos para Você Se Dar Bem em Matemática</h3>
-                            <p><strong>Autor:</strong>César Ribeiro</p>
-                            <p><strong>Categoria:</strong> Educacional</p>
-                            <p><strong>Data de Lançamento:</strong> 2008</p>
-                            <p class="resumo"><strong>Resumo:</strong> Se você está buscando melhorar suas habilidades em matemática, este livro pode ser uma excelente ferramenta, pois fornece dicas práticas e estratégias para facilitar o aprendizado e a aplicação dos conceitos matemáticos.</p>
+                            <p class="alitex"><strong>Autor:</strong>César Ribeiro</p>
+                            <p class="alitex"><strong>Categoria:</strong> Educacional</p>
+                            <p class="alitex"><strong>Data de Lançamento:</strong> 2008</p>
+                            <p class="alitex"><strong>Resumo:</strong> Se você está buscando melhorar suas habilidades em matemática, este livro pode ser uma excelente ferramenta, pois fornece dicas práticas e estratégias para facilitar o aprendizado e a aplicação dos conceitos matemáticos.</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -263,10 +263,10 @@
                           </div>
                           <div class="modal-body">
                             <h3> 1984</h3>
-                            <p><strong>Autor:</strong> George Orwell</p>
-                            <p><strong>Categoria:</strong> Distopia, Ficção Científica, Romance Político</p>
-                            <p><strong>Data de Lançamento:</strong> 2008</p>
-                            <p class="resumo"><strong>Resumo:</strong> "1984" é um romance distópico que retrata uma sociedade totalitária sob o controle do Partido, liderado pelo enigmático Grande Irmão. A história é centrada em Winston Smith, um homem que trabalha para o governo reescrevendo a história e começa a questionar o regime opressor. O livro explora temas como vigilância, censura, manipulação da verdade e a natureza do poder.</p>
+                            <p class="alitex"><strong>Autor:</strong> George Orwell</p>
+                            <p class="alitex"><strong>Categoria:</strong> Distopia, Ficção Científica, Romance Político</p>
+                            <p class="alitex"><strong>Data de Lançamento:</strong> 2008</p>
+                            <p class="alitex"><strong>Resumo:</strong> "1984" é um romance distópico que retrata uma sociedade totalitária sob o controle do Partido, liderado pelo enigmático Grande Irmão. A história é centrada em Winston Smith, um homem que trabalha para o governo reescrevendo a história e começa a questionar o regime opressor. O livro explora temas como vigilância, censura, manipulação da verdade e a natureza do poder.</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -311,10 +311,10 @@
                           </div>
                           <div class="modal-body">
                             <h3> Algebra Linear</h3>
-                            <p><strong>Autor:</strong> Prof. Dr. João Silva</p>
-                            <p><strong>Categoria:</strong> Educacional</p>
-                            <p><strong>Data de Lançamento:</strong> 2023</p>
-                            <p class="resumo"><strong>Resumo:</strong>Este livro oferece uma introdução abrangente e acessível aos conceitos fundamentais da álgebra linear. Ideal para estudantes de graduação em matemática, engenharia e áreas afins, o texto aborda desde os fundamentos básicos até tópicos mais avançados, apresentando uma ampla gama de aplicações práticas. Com exemplos claros e exercícios bem elaborados, este livro é uma ferramenta indispensável para aqueles que desejam compreender e aplicar os princípios da álgebra linear em diversos contextos.</p>
+                            <p class="alitex"><strong>Autor:</strong> Prof. Dr. João Silva</p>
+                            <p class="alitex"><strong>Categoria:</strong> Educacional</p>
+                            <p class="alitex"><strong>Data de Lançamento:</strong> 2023</p>
+                            <p class="alitex"><strong>Resumo:</strong>Este livro aborda desde os fundamentos básicos até tópicos mais avançados, apresentando uma ampla gama de aplicações práticas, este livro é uma ferramenta indispensável para aqueles que desejam compreender e aplicar os princípios da álgebra linear em diversos contextos.</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -359,10 +359,10 @@
                           </div>
                           <div class="modal-body">
                             <h3>HTML, XHTML e CSS para Leigos: Guia Completo para Iniciantes</h3>
-                            <p><strong>Autor:</strong> Maria da Silva e João Oliveira</p>
-                            <p><strong>Categoria:</strong> Educacional</p>
-                            <p><strong>Data de Lançamento:</strong> 2022</p>
-                            <p class="resumo"><strong>Resumo:</strong>Este livro é um guia prático e acessível para iniciantes que desejam aprender a criar páginas da web usando HTML, XHTML e CSS. Os autores explicam os conceitos fundamentais de forma clara e simples, com exemplos ilustrativos e passo a passo. Desde a estrutura básica de um documento HTML até a formatação avançada com CSS, este livro cobre tudo o que você precisa saber para começar a desenvolver seus próprios sites. Com dicas úteis e exercícios práticos, é o recurso ideal para quem está dando os primeiros passos no mundo do desenvolvimento web.</p>
+                            <p class="alitex"><strong>Autor:</strong> Maria da Silva e João Oliveira</p>
+                            <p class="alitex"><strong>Categoria:</strong> Educacional</p>
+                            <p class="alitex"><strong>Data de Lançamento:</strong> 2022</p>
+                            <p class="alitex"><strong>Resumo:</strong>Este livro é um guia prático e acessível para iniciantes que desejam aprender a criar páginas da web usando HTML, XHTML e CSS. Os autores explicam  desde a estrutura básica de um documento HTML até a formatação avançada com CSS, este livro cobre tudo o que você precisa saber para começar a desenvolver seus próprios sites.</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -407,10 +407,10 @@
                           </div>
                           <div class="modal-body">
                             <h3> Segurança Cibernética: Princípios e Práticas</h3>
-                            <p><strong>Autor:</strong> Dr. Carlos Santos</p>
-                            <p><strong>Categoria:</strong> Cientifico</p>
-                            <p><strong>Data de Lançamento:</strong> 2023</p>
-                            <p class="resumo"><strong>Resumo:</strong>Este livro oferece uma visão abrangente e atualizada da segurança cibernética, abordando desde os princípios básicos até as práticas avançadas. O autor explora os desafios e as ameaças enfrentadas no mundo digital, fornecendo estratégias e técnicas para proteger sistemas, redes e dados contra ataques cibernéticos. Com exemplos do mundo real e estudos de caso, este livro é uma leitura essencial para profissionais de TI, estudantes e qualquer pessoa interessada em compreender e fortalecer a segurança online.</p>
+                            <p class="alitex"><strong>Autor:</strong> Dr. Carlos Santos</p>
+                            <p class="alitex"><strong>Categoria:</strong> Cientifico</p>
+                            <p class="alitex"><strong>Data de Lançamento:</strong> 2023</p>
+                            <p class="alitex"><strong>Resumo:</strong>O autor explora os desafios e as ameaças enfrentadas no mundo digital, fornecendo estratégias e técnicas para proteger sistemas, redes e dados contra ataques cibernéticos. Com exemplos do mundo real e estudos de caso</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

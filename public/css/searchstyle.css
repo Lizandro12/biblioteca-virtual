@@ -129,7 +129,7 @@ body{
              margin-top: -5px;
              margin-right: 18px;
              margin-left: 35px;
-            font-family: poppins;
+             font-family: poppins;
         }
 
 
@@ -173,13 +173,17 @@ body{
 .navbar-search-container {
     display: flex;
     align-items: center;
+    padding: 10px;
+
+
 }
 
 .navbar-search-container .form-control {
     flex-grow: 1;
     margin-right: 4px; /* Espaço entre a barra de pesquisa e o botão */
     background-color: #DFDFDF;
-    margin-left: 10px;
+
+
 }
 
 .navbar-search-container .form-control:hover,
@@ -199,6 +203,10 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.grid-item{padding-right: 10px;padding-left: 10px;}
+
+.leftp{margin-left: -10px;}
 
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
@@ -300,6 +308,8 @@ height: 185px;}
 .resumo{padding-right: 50px;}
 
 .imagli{height:50px;width: 110px;}
+
+.alitex{text-align: justify; padding-right: 60px;}
 
 
 /* -------------------------Estilos para os botões do carrousel---------------------------------- */
