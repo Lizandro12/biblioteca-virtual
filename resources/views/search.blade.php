@@ -99,10 +99,34 @@
 
 
         <div class="grid-container">
-            <div class="grid-item1"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
+            <div class="grid-item1">
+                <div class="modal-body">
+                    <h3>Estantes</h3>
+                    <input type="text" placeholder="" class="form-control">
+                </div>
+              </div>
+            <div class="grid-item">
+                <div class="modal-body">
+                    <h3>Autores</h3>
+                    <input type="text" placeholder="" class="form-control">
+                </div>
+
+            </div>
+            <div class="grid-item">
+                <div class="modal-body">
+                <h3>Titulos</h3>
+                <input type="text" placeholder="" class="form-control">
+            </div>
+
+        </div>
+            <div class="grid-item">
+                <div class="modal-body">
+                    <h3>Editoras</h3>
+                    <input type="text" placeholder="" class="form-control">
+                </div>
+
+
+            </div>
           </div>
 
     </div>

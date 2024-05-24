@@ -160,7 +160,7 @@ body{
               }
 
               .grid-item1{
-                margin-top: 40px;
+                margin-top: 5px;
                 border: 1px solid#DFDFDF; /* Apenas para visualização */
               }
               .grid-item {
@@ -191,6 +191,14 @@ body{
 }
 .btn.btn-orangel:hover,
 .btn.btn-orangel:active {background-color:#F18324;}
+
+
+
+
+.modal-body1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
