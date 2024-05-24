@@ -180,7 +180,7 @@ body{
 
 .navbar-search-container .form-control {
     flex-grow: 1;
-    margin-right: 4px; /* Espaço entre a barra de pesquisa e o botão */
+    margin-right: 8px; /* Espaço entre a barra de pesquisa e o botão */
     background-color: #DFDFDF;
 
 
@@ -195,6 +195,9 @@ body{
 }
 .btn.btn-orangel:hover,
 .btn.btn-orangel:active {background-color:#F18324;}
+
+.btn.btn-orangel{margin-right: -1px;}
+
 
 
 
