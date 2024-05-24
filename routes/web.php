@@ -24,10 +24,12 @@ Route::get('/reset-password/{token}', [UserController::class, 'newpassword'])->m
 Route::post('/reset-password', [UserController::class, 'updatepassword'])->middleware('guest')->name('password.update');
 
 /* Profile */
-Route::get('/profile', [ProfileController::class, 'profile'])->middleware('auth')->name('user.profile');
+Route::get('/profile', [ProfileController::class, 'profile'])->name('user.profile'); //->middleware('auth')
 
-Route::post('/profile', [ProfileController::class, 'update'])->middleware('auth')->name('update.profile');
+Route::post('/profile', [ProfileController::class, 'update'])->name('update.profile'); //->middleware('auth')
 
 /* Book store */
-Route::get('/book-store', [BookController::class, 'index'])->middleware('auth')->name('book.form');
-Route::post('/book-store', [BookController::class, 'store'])->middleware('auth')->name('book.store');
+Route::get('/create-book', [BookController::class, 'create'])->name('book.create'); /*->middleware('auth')->name('book.form');*/
+Route::post('/book-store', [BookController::class, 'store'])->name('book.store'); /*->middleware('auth')->name('book.store');*/
+
+/*Registrar livros */
