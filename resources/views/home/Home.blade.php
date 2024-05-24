@@ -9,25 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.18.0/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-HNRX5JSRQ+x0jfzFjf0Nj1oToTFwlRk7YLVor2gEoIUjbwIeD9A8FyXv5I4Td+dqGf82Z9rBCmUjS5S8v2LbIw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/searchstyle.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+    <!-- CSS no swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js"></script>
+
 
 
 </head>
@@ -58,6 +47,9 @@
                 <ul class="navbar-nav ms-auto">
                     < class="nav-item">
                     <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#" style="color: white;">Livros</a>
                     </li>
                     <li class="nav-item">
@@ -77,137 +69,188 @@
         </nav>
     </div>
 
-    <section class="section">
-    <div class="background-image">
-        <div class="overlay"></div>
-        <h2>Descubra Novos Livros</h2>
-        <a href="comecaragora.php" class="btn">Começar Agora</a>
+    <div class="section">
+        <div class="background-image">
+            <h1>Descubra Novos Livros</h1>
+            <a href="#" class="btn">Começar Agora</a>
+        </div>
+    </div>
+    <div class="row">
+    <h3>Livros Mais Comprados</h3>
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="col-sm-3">
+        <div class="swiper-slide">
+        <div class="card">
+            <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Ler livro</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="swiper-slide">
+    <div class="card">
+    <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Ler livro</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="swiper-slide">
+    <div class="card">
+    <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Ler livro</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="swiper-slide">
+    <div class="card">
+    <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Ler livro</a>
+        </div>
+        </div>
+    </div>
+        </div>
+        </div>
+    <!-- Outros livros mais lidos aqui -->
+    </div>
+    <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+    </div>
+    </div>
+    <section>
+    <div class="row">
+    <h3>Principais Autores</h3>
+    <p> Autores mais lidos e vendidos no Universo Literário</p>
+    <div class="swiper-container">
+     <div class="swiper-wrapper">
+         <div class="col-sm-3">
+           <div class="swiper-slide">
+                <img src="img/autores.png" alt="Autor 1">
+            </div>
+          </div>
+         <div class="col-sm-3">
+           <div class="swiper-slide">
+                <img src="img/autores.png" alt="Autor 1">
+            </div>
+          </div>
+        <div class="col-sm-3">
+            <div class="swiper-slide">
+                <img src="img/autores.png" alt="Autor 1">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="swiper-slide">
+              <img src="img/autores.png" alt="Autor 1">
+            </div>
+        </div>
+        <!-- Outros autores principais aqui -->
+    </div>
+    <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+    </div>
     </div>
 </section>
-<div class="row">
-    <h3>Livros Mais Comprados</h3>
-    <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 1">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>Ler livro</button>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 1">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>Ler livro</button>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 1">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>Ler livro</button>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 4">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>Ler livro</button>
-        </div>
-    </div>
-    <!-- Outros livros mais lidos aqui -->
-</div>
-
-<h3>Principais Autores</h3>
-<div class="row">
-    <div class="col-sm-3">
-        <div class="livro-1">
-            <img src="img/autores.png" alt="Autor 1">
-            <h6>Autores</h6>
-        </div>
-    </div><div class="col-sm-3">
-        <div class="livro-1">
-            <img src="img/autores.png" alt="Autor 1">
-            <h6>Autores</h6>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="livro-1">
-            <img src="img/autores.png" alt="Autor 1">
-            <h6>Autores</h6>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="livro-1">
-            <img src="img/autores.png" alt="Autor 1">
-            <h6>Autores</h6>
-        </div>
-    </div>
-    <!-- Outros autores principais aqui -->
-</div>
 
 <div class="row">
     <h3>Livros Mais Lidos</h3>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
     <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 1">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>Lcomprar</button>
+    <div class="swiper-slide">
+    <div class="card">
+    <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 1">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>comprar</button>
-        </div>
     </div>
     <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 1">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>comprar</button>
+    <div class="swiper-slide">
+    <div class="card">
+    <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
         </div>
     </div>
+    </div>
     <div class="col-sm-3">
-        <div class="livro">
-            <img src="img/pequeno.png" alt="Livro 4">
-            <h6>O Pequeno Príncipe</h6>
-            <p>Antoine de Saint-Exupéry</p>
-            <button>comprar</button>
+    <div class="swiper-slide">
+    <div class="card">
+    <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3">
+    <div class="swiper-slide">
+    <div class="card">
+    <img  class="card-img-top" src="img/principe.png" alt="card image">
+            <h6 class="card-title">O Pequeno Príncipe</h6>
+            <p  class="card-text">Antoine de Saint-Exupéry</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
         </div>
     </div>
     <!-- Outros livros mais lidos aqui -->
+</div>
+<div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+</div>
 </div>
 <div class="row">
     <h3>ler mais</h3>
+    <div class="swiper-container">
+   <div class="swiper-wrapper">
     <div class="col-sm-4">
-        <div class="livro">
-            <img src="img/classicos.png" alt="Livro 1">
-            <h6>classicos</h6>
+    <div class="swiper-slide">
+      <a href="#">
+         <img src="img/classicos.png" alt="Livro 1">
+      </a>
+    </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="swiper-slide">
+       <a href="#">
+            <img src="img/novoslancamentos.png" alt="Livro 1">
+            </a>
         </div>
     </div>
     <div class="col-sm-4">
-        <div class="livro">
-        <img src="img/novoslancamentos.png" alt="Livro 1">
-            <h6>Novos Lançamentos</h6>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="livro">
-        <img src="img/parajovens.png" alt="Livro 1">
-            <h6>O Pequeno Príncipe</h6>
+    <div class="swiper-slide">
+       <a href="#">
+            <img src="img/parajovens.png" alt="Livro 1">
+            </a>
         </div>
     </div>
     <!-- Outros livros mais lidos aqui -->
+    </div>
+    <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
 </div>
-
+    </div>
+    </div>
      <!-- Rodapé -->
      <div class="footer">
         <div class="foo">
@@ -249,7 +292,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
 
 </body>
 </html>
