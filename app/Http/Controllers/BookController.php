@@ -18,6 +18,16 @@ class BookController extends Controller
 
     }
 
+    public function categorys()
+    {
+        return view('registercategorys');
+    }
+
+    public function registercategorys()
+    {
+
+    }
+
     public function catalogbooks()
     {
         return view('catalogbooks');

@@ -116,11 +116,13 @@
     gap: 1rem;
 }
 
-.form-top-content{
-    width: 100%;
+.email-box,
+.name-box{
+    width: 50%;
 }
 
-.form-center-content{
+.phone-box,
+.birthday-box{
     width: 50%;
 }
 

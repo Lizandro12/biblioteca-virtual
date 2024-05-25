@@ -21,17 +21,17 @@
                     <i class="bi bi-speedometer"></i>
                     Dashboard
                 </a>
-                <a class="profile-link selected" href="{{ route('accountdetails.profile') }}" data-target="target2">
+                <a class="profile-link selected" href="{{  route('updateaccountdetails.profile') }}" data-target="target2">
                     <i class="bi bi-person-fill"></i>
                     Detalhes da conta
                 </a>
                 @if(Auth::user()->is_admin)
-                <a class="profile-link" href="{{ route('catalogbooks.profile') }}" data-target="target3">
-                    <i class="bi bi-book-fill"></i>
+                <a class="profile-link" href="{{ route('authors.form') }}" data-target="target3">
+                    <i class="bi bi-people-fill"></i>
                     Cadastrar Autores
                 </a>
                 <a class="profile-link" href="{{ route('catalogbooks.profile') }}" data-target="target3">
-                    <i class="bi bi-book-fill"></i>
+                    <i class="bi bi-bookmarks-fill"></i>
                     Cadastrar Categorias
                 </a>
                 <a class="profile-link" href="{{ route('catalogbooks.profile') }}" data-target="target3">
@@ -63,21 +63,21 @@
             @csrf
             @method('PUT')
                 <div class="form-top d-flex">
-                    <div class="name-box form-top-content d-flex flex-column">
+                    <div class="name-box d-flex flex-column">
                         <label for="name" class="label">Nome completo</label>
                         <input type="text" name="name" id="name" class="form-control" value="{{ $user->name }}">
                     </div>
-                    <div class="email-box form-top-content d-flex flex-column">
+                    <div class="email-box d-flex flex-column">
                         <label for="email" class="label">E-mail</label>
                         <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}">
                     </div>
                 </div>
                 <div class="form-center d-flex">
-                    <div class="phone-box form-center-content d-flex flex-column">
+                    <div class="phone-box d-flex flex-column">
                         <label for="phone" class="label">Telefone</label>
                         <input type="text" name="phone" id="phone" class="form-control" value="{{ $contact->phone }}">
                     </div>
-                    <div class="birthday-box form-center-content d-flex flex-column">
+                    <div class="birthday-box d-flex flex-column">
                         <label for="address" class="label">Endereço</label>
                         <input type="text" name="address" id="address" class="form-control" value="{{ $contact->address }}">
                     </div>

@@ -30,7 +30,7 @@ Route::put('profile/account-details', [ProfileController::class, 'updateaccountd
 
 
 /* Book store */
-Route::get('profile/catalog-books', [ProfileController::class, 'catalogbooks'])->middleware('auth')->name('catalogbooks.profile');
-Route::post('profile/catalog-books', [ProfileController::class, 'storecatalogbooks'])->middleware('auth')->name('storecatalogbooks.profile');
-Route::get('/book-store', [BookController::class, 'authors'])->middleware('auth')->name('authors.form');
-Route::post('/book-store', [BookController::class, 'registerauthors'])->middleware('auth')->name('registerauthors.store');
+Route::get('profile/catalog-books', [BookController::class, 'catalogbooks'])->middleware('auth')->name('catalogbooks.profile');
+Route::post('profile/catalog-books', [BookController::class, 'storecatalogbooks'])->middleware('auth')->name('storecatalogbooks.profile');
+Route::get('/book-authors', [BookController::class, 'authors'])->middleware('auth')->name('authors.form');
+Route::post('/book-authors', [BookController::class, 'registerauthors'])->middleware('auth')->name('registerauthors.store');

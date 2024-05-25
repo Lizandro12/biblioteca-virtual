@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/profile.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/books.css">
 </head>
 <body>
     <header>
