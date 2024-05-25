@@ -12,10 +12,15 @@
     height: 150px;
 }
 
-.register-author{
+.register-author,
+.register-category{
     border: 1px solid #cdcdcd;
     width: 70%;
     height: 530px;
     margin: 35px 0 35px 0;
     padding: 2rem;
+}
+
+.register-category{
+    height: 450px !important;
 }

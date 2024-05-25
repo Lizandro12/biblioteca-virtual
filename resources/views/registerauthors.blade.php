@@ -3,7 +3,7 @@
 @section('title', 'Seu Perfil')
 
 @section('content')
-<section class="d-flex">
+<section class="d-flex section">
 
     <div class="profile-content d-flex flex-column">
         <div>
@@ -30,7 +30,7 @@
                     <i class="bi bi-people-fill"></i>
                     Cadastrar Autores
                 </a>
-                <a class="profile-link" href="{{ route('catalogbooks.profile') }}" data-target="target3">
+                <a class="profile-link" href="{{ route('categorys.form') }}" data-target="target3">
                     <i class="bi bi-bookmarks-fill"></i>
                     Cadastrar Categorias
                 </a>
@@ -52,7 +52,7 @@
 
         <!-- Formulario de alteracao de senha -->
         <div class="profile-card register-author" id="target3">
-            <div class="profile-tile-box"><span class="dashboard-title">Cadastrar autor</span></div>
+            <div class="profile-tile-box"><span class="dashboard-title">Cadastrar autores</span></div>
             <form action="#" class="d-flex flex-column justify-content-center align-items-center form">
             @csrf
                 <div class="form-center d-flex">

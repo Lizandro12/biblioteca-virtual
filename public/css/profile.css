@@ -1,4 +1,8 @@
 @import url(style.css);
+
+.section{
+    padding-bottom: 3rem;
+}
 .profile-content{
     padding: 30px 145px;
     gap: 1rem;

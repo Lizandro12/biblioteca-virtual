@@ -30,7 +30,7 @@
                     <i class="bi bi-people-fill"></i>
                     Cadastrar Autores
                 </a>
-                <a class="profile-link" href="{{ route('catalogbooks.profile') }}" data-target="target3">
+                <a class="profile-link" href="{{ route('categorys.form') }}" data-target="target3">
                     <i class="bi bi-bookmarks-fill"></i>
                     Cadastrar Categorias
                 </a>
