@@ -48,6 +48,6 @@ class User extends Authenticatable
 
     public function contact()
     {
-        return $this->hasOne(Contact::class, 'user_id');
+        return $this->hasOne(Contact::class);
     }
 }

@@ -12,11 +12,12 @@ class Contact extends Model
     protected $table = 'users_contacts';
 
     protected $fillable = [
-        'idicative', 'phone', 'number', 'address',
+        
+        'user_id','idicative', 'phone', 'number', 'address',
     ];
 
     public function user()
     {
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(User::class);
     }
 }

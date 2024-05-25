@@ -95,14 +95,19 @@
     gap: 1rem;
 }
 
-.account-details,
-.change-password{
+.account-details{
     border: 1px solid #cdcdcd;
     width: 70%;
     height: 340px;
     margin: 35px 0 35px 0;
     padding: 2rem;
-    display: none;
+}
+.change-password{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: 500px;
+    margin: 35px 0 35px 0;
+    padding: 2rem;
 }
 
 .form-top,
@@ -138,5 +143,27 @@
     margin-top: 1rem;
 }
 
+.success-message{
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 75px;
+    right: 50px;
+    text-align: center;
+    animation: fade-down 0.5s;
+}
 
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateX(-8px);
+    }
+}

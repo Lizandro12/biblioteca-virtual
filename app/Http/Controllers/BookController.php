@@ -7,13 +7,24 @@ use Illuminate\Http\Request;
 class BookController extends Controller
 {
 
-    public function index()
+
+    public function authors()
     {
-        return view('bookstore');
+        return view('registerauthors');
     }
 
-    public function store()
+    public function registerauthors()
     {
 
+    }
+
+    public function catalogbooks()
+    {
+        return view('catalogbooks');
+    }
+
+    public function storecatalogbooks()
+    {
+        return view('catalogbooks');
     }
 }

@@ -25,9 +25,12 @@ Route::post('/reset-password', [UserController::class, 'updatepassword'])->middl
 
 /* Profile */
 Route::get('/profile', [ProfileController::class, 'profile'])->middleware('auth')->name('user.profile');
+Route::get('profile/account-details', [ProfileController::class, 'accountdetails'])->middleware('auth')->name('accountdetails.profile');
+Route::put('profile/account-details', [ProfileController::class, 'updateaccountdetails'])->middleware('auth')->name('updateaccountdetails.profile');
 
-Route::post('/profile', [ProfileController::class, 'update'])->middleware('auth')->name('update.profile');
 
 /* Book store */
-Route::get('/book-store', [BookController::class, 'index'])->middleware('auth')->name('book.form');
-Route::post('/book-store', [BookController::class, 'store'])->middleware('auth')->name('book.store');
+Route::get('profile/catalog-books', [ProfileController::class, 'catalogbooks'])->middleware('auth')->name('catalogbooks.profile');
+Route::post('profile/catalog-books', [ProfileController::class, 'storecatalogbooks'])->middleware('auth')->name('storecatalogbooks.profile');
+Route::get('/book-store', [BookController::class, 'authors'])->middleware('auth')->name('authors.form');
+Route::post('/book-store', [BookController::class, 'registerauthors'])->middleware('auth')->name('registerauthors.store');
