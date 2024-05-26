@@ -1,0 +1,430 @@
+@import url(style.css);
+
+nav {
+    top: 40px;
+  }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: poppins;
+}
+
+
+.navbar-logo img {
+    margin-left: 140px;
+    height: 90px;
+}
+
+.navbar-search {
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input[type="text"] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: 0px;
+    width: 350px;
+
+}
+.navbar-buttons { margin-right: 130px;}
+.navbar-search .btn.btn-orange {
+    background-color: orange;
+    border: none;
+    padding-bottom: 5px;
+    margin-bottom:15px;
+    margin-right: 5px;
+    padding: 6px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.navbar-search .btn.btn-orange i {
+    font-size: 16px;
+}
+
+.navbar-buttons .btn1,
+.navbar-buttons .btn2 {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.navbar-buttons .btn1 {
+    margin-top: 1px;
+    background-color:orange;
+    color: white;
+}
+
+.navbar-buttons .btn2 {
+    background-color: orange;
+    color: white;
+}
+
+
+.navbar-light.bg-custom {
+    height: 40px;
+    background-color:#0D2226;
+}
+
+.nav-item  {
+    padding-right: 5px;
+    color: white;
+}
+
+
+.navbar-nav .nav-link:hover {
+
+    color: orange
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link .a:hover {
+    background-color: orange;
+    color:#fff;
+}
+
+
+.pes{
+    border: 5px solid #DFDFDF;
+    height:1200px;
+    width: 320px;
+    border-radius: 15px;
+    margin-top: -5px;
+    margin-right: 18px;
+    margin-left: 35px;
+}
+
+.col{
+    border: 5px solid #DFDFDF;
+    border-radius:5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+.bt {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 2px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 1,5rem;
+  margin: 5px;
+}
+
+.bt.bt-primar {
+  color: #fff;
+  width: 180px;
+  height: 35px;
+  background-color: orange;
+  border-color: orange;
+}
+
+.bt-primar:hover {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+
+}
+
+.bt-secondar {
+  color: black;
+  background-color: transparent;
+  border-color:  orange;
+  width: 50px;
+  height: 40px;
+}
+
+.bt-secondar:hover {
+  color: #fff;
+  background-color: orange;
+  border-color:  orange;
+
+}
+
+
+
+.section {
+    position:relative;
+    text-align: left;
+    color: white;
+    padding-bottom:30px;
+}
+
+.background-image {
+    background-image: url('/img/livros.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:none;
+    height: 300px;
+}
+
+.section h1 {
+    text-align: left;
+    margin-left:90px;
+    margin-top:40px;
+    height: 50px
+}
+
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+} */
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left:40px;
+    padding: 10px 20px;
+    background-color:orange;
+    color:white;
+    text-decoration:none;
+    border-radius: 5px;
+
+}
+.row {
+    margin-top:20px;
+    margin: 90px;
+}
+
+.row h3 {
+    margin-top: 10px 10px;
+    margin: 20px;
+}
+
+
+/* swiper.css */
+
+
+
+.swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+            background-color:orange;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 100%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color:orange(0, 0, 0, 0.7);
+        }
+        .swiper-button-prev {
+            left: 10px;
+        }
+        .swiper-button-next {
+            right: 10px;
+        }
+
+.swiper-container {
+    width:100%;
+    height: 300px;
+    margin-bottom: 100px;
+
+  }
+
+
+
+  .row .swiper-slide {
+    text-align: center;
+    font-size: 300px;
+
+  }
+
+   section.swiper-slide {
+    background-color:orange;
+    text-align: center;
+    font-size: 300px;
+
+  }
+
+  .swiper-slide img {
+    padding: 10px 20px;
+    justify-content: center;
+
+}
+
+.card {
+    width: 260px; /* largura do cartão */
+    border: 1px solid #ccc; /* borda */
+    border-radius: 4px; /* bordas arredondadas */
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1); /* sombra */
+    margin-bottom: 90px; /* espaço entre cartões */
+  }
+
+  .card-img-top {
+    width: 100%; /* imagem do cartão ocupando toda a largura do cartão */
+    height:300px;
+    border-top-left-radius:none; /* borda arredondada superior esquerda */
+    border-top-right-radius:none; /* borda arredondada superior direita */
+  }
+
+  .card-body {
+    padding: 10px; /* preenchimento interno */
+  }
+
+  .card-title {
+    font-size: 15px; /* tamanho da fonte do título */
+    margin-bottom: 1px; /* espaço abaixo do título */
+  }
+
+  .card-text {
+    font-size: 10px; /* tamanho da fonte do texto */
+    margin-bottom:1px; /* espaço abaixo do texto */
+  }
+
+  .btn-primary {
+    background-color: white; /* cor de fundo do botão */
+    color: orange; /* cor do texto do botão */
+    border-color: orange; /* sem borda */
+    border-radius:4px; /* bordas arredondadas */
+    padding: 5px 50px; /* preenchimento interno */
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:5px;
+    text-decoration: none; /* sem sublinhado */
+    display:inline-block /* exibir como bloco */
+  }
+
+  .btn-primary:hover {
+    background-color: orange; /* cor ao passar o cursor */
+
+  }
+
+  section h3  {
+    color: #fff;
+}
+
+section p {
+    margin-top: 1px;
+    margin: 10px;
+    color: #fff;
+}
+
+section {
+    background-color:#0D2226;
+    padding-top:0px
+
+}
+
+
+
+.col-sm-4 {
+    width: 33,33%; /* 4 colunas em uma linha */
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-left:10px;
+
+}
+
+.col-sm-3{
+    width: 25%; /* 4 colunas em uma linha */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+   h6 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+button:hover {
+    background-color: orange; /* Cor do botão ao passar o mouse */
+}
+
+/* -------------------------Estilos para os botões do carrousel---------------------------------- */
+
+.containerca {
+    margin-right: 120px;
+    margin-top: -180px;
+  }
+  .pagination .page-link{border: none;color: black;font-size: 20px;}
+
+  .page-link i {width: 100px;height: 100px;color: orange;border: none;}
+
+/*---------------------------------------------------------------------------------------------*/
+/* Estilos para o footer */
+
+        .footer{
+
+
+            background-color:#0D2226;
+            color: white;
+            padding: 20px;
+            padding-left: 140px;
+            margin-top: 5px
+
+
+        }
+
+        /* Estilos para a terceira coluna */
+
+        .footer .col-md-4:nth-child(3) {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
+
+
+
+
+}
+
+/* Estilos para os ícones das redes sociais */
+
+
+.social-icons a {
+    padding: 4px;
+}
+
+.social-icons a i {
+    color: white;
+}
+
+/* Estilo para o texto no rodapé */
+.footer-text {
+    text-align: center;
+    font-family: Poppins;
+}
+
+.textbody{
+    margin-right: 130px;
+    margin-left: 130px;
+}
+.textbody.h3{
+    font-size: 32px;
+}
