@@ -3,6 +3,9 @@
 
 body{
     font-family: Poppins;
+    position: relative;
+    width: 100%;
+    height: 80vh;
 }
 /* Estilo para a barra de navegação */
 .header-top{
@@ -126,7 +129,7 @@ body{
              margin-top: -5px;
              margin-right: 18px;
              margin-left: 35px;
-            font-family: poppins;
+             font-family: poppins;
         }
 
 
@@ -138,15 +141,6 @@ body{
 
             }
 
-            .navbar2-search{margin-left: 10px;}
-
-            .barl {
-                background-color: #DFDFDF;
-                border-radius: 8px;
-                border-color: #DFDFDF;
-                height: 38px;
-                width: 200px;
-            }
 
             .btn.btn-orangel {
                 background-color: #F18324;
@@ -156,8 +150,6 @@ body{
                 cursor: pointer;
                 border-radius: 6px;
                 font-family: Poppins;
-
-
             }
 
 
@@ -168,7 +160,7 @@ body{
               }
 
               .grid-item1{
-                margin-top: 40px;
+                margin-top: 5px;
                 border: 1px solid#DFDFDF; /* Apenas para visualização */
               }
               .grid-item {
@@ -178,39 +170,55 @@ body{
 /*------------------------------ Estilo para o lado da pesquisa'-------------------------------------- */
 
 
-/* Estilo para a classe 'navbar-search' */
-
-
-.navbar-search2{
+.navbar-search-container {
+    display: flex;
+    align-items: center;
     padding: 10px;
-    padding-left: 10px;
+
+
+}
+
+.navbar-search-container .form-control {
+    flex-grow: 1;
+    margin-right: 8px; /* Espaço entre a barra de pesquisa e o botão */
+    background-color: #DFDFDF;
+
+
+}
+
+.navbar-search-container .form-control:hover,
+.navbar-search-container .form-control:active{background-color: #DFDFDF;}
+
+.navbar-search-container .btn {
+    flex-shrink: 0;
     margin-right: 10px;
-    font-family: Poppins;
+}
+.btn.btn-orangel:hover,
+.btn.btn-orangel:active {background-color:#F18324;}
 
+.btn.btn-orangel{margin-right: -1px;}
+
+
+
+
+
+.modal-body1{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-/* Estilo para o botão com classe 'btn' */
-.btn {
-    background-color: #F18324;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /* Outros estilos */
-}
+.grid-item{padding-right: 10px;padding-left: 10px;}
 
-/* Estilo para o botão com classe 'btn-orange' */
-.btn-orange {
-    background-color: #F18324;
-    /* Outros estilos */
-}
-
+.leftp{margin-left: -10px;}
 
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
 
-.liv{border: 5px solid #DFDFDF;border-radius: 15px;margin-top: 20px; margin-right: 32px;}
+.liv{border: 5px solid #DFDFDF;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-right: 32px;
+height: 185px;}
 
 
 
@@ -277,32 +285,34 @@ body{
   font-family: Poppins;
 }
 
-.bt-primar:hover {
-  color: #fff;
-  background-color: #F18324;
-  border-color: #F18324;
 
-}
 
-.bt-secondar {
+.bdetalhes{
+  margin-top: 6px;
   color: black;
-  background-color: transparent;
-  border-color: #6c757d;
+  background-color:white;
+  border: 2px solid  #6c757d;
+  border-radius: 25px;
   width: 160px;
   height: 35px;
   font-family: Poppins;
 
+
 }
 
-.bt-secondar:hover {
-  color: #fff;
-  background-color: #5a6268;
+.bdetalhes:hover {
+  color: black;
+  background-color: transparent;
   border-color: #4e555b;
 
 
 }
 
+.resumo{padding-right: 50px;}
+
 .imagli{height:50px;width: 110px;}
+
+.alitex{text-align: justify; padding-right: 60px;}
 
 
 /* -------------------------Estilos para os botões do carrousel---------------------------------- */
