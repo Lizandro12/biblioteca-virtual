@@ -68,7 +68,8 @@ class UserController extends Controller
             $user->name = $request->name;
             $user->email = $request->email;
             $user->password = bcrypt($request->password);
-            //$user->is_admin = 1;
+            //$user->is_admin = true;
+            //$user->is_client = false;
 
             $user->save();
             Auth::login($user);
@@ -138,7 +139,7 @@ class UserController extends Controller
                 $user->password = bcrypt($password);
                 $user->save();
 
-                event(new PasswordReset($user));
+                /*event(new PasswordReset($user));*/
             }
         );
 

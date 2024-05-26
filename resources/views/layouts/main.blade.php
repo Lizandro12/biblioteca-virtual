@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/profile.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/books.css">
 </head>
 <body>
     <header>
@@ -29,8 +30,10 @@
             </div>
             <div class="navbar-buttons d-flex">
             @if(!Auth::check())
-                <a href="/login"><button class="btn--dif">Entrar</button></a>
+                <a href="{{ route('login') }}"><button class="btn--dif">Entrar</button></a>
                 <a href="/register"><button class="btn--dif">Cadastrar</button></a>
+            @else
+            <a href="{{ route('user.profile') }}"><button class="btn--dif">Meu Perfil</button></a>
             @endif
             </div>
         </div>

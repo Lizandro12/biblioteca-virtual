@@ -1,0 +1,22 @@
+.author-name-box,
+.biografy-box{
+    width: 100%;
+}
+
+.birthday-box,
+.nationality-box{
+    width: 50%;
+}
+
+#biography{
+    height: 150px;
+}
+
+.register-author,
+.register-category{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: auto;
+    margin: 35px 0 35px 0;
+    padding: 2rem;
+}

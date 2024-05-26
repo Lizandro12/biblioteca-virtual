@@ -1,4 +1,8 @@
 @import url(style.css);
+
+.section{
+    padding-bottom: 3rem;
+}
 .profile-content{
     padding: 30px 145px;
     gap: 1rem;
@@ -95,14 +99,19 @@
     gap: 1rem;
 }
 
-.account-details,
+.account-details{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: auto;
+    margin: 35px 0 35px 0;
+    padding: 2rem;
+}
 .change-password{
     border: 1px solid #cdcdcd;
     width: 70%;
-    height: 340px;
+    height: auto;
     margin: 35px 0 35px 0;
     padding: 2rem;
-    display: none;
 }
 
 .form-top,
@@ -111,11 +120,13 @@
     gap: 1rem;
 }
 
-.form-top-content{
-    width: 100%;
+.email-box,
+.name-box{
+    width: 50%;
 }
 
-.form-center-content{
+.phone-box,
+.birthday-box{
     width: 50%;
 }
 
@@ -138,5 +149,27 @@
     margin-top: 1rem;
 }
 
+.success-message{
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 75px;
+    right: 50px;
+    text-align: center;
+    animation: fade-down 0.5s;
+}
 
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateX(-8px);
+    }
+}
