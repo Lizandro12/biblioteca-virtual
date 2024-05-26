@@ -22,63 +22,60 @@
 </head>
 <body >
 
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <img src="/img/logotipo.png" alt="Logo">
-            </div>
-            <div class="navbar-search">
-                <input style="background-color:#DFDFDF"type="text" placeholder="">
-                <button class="btn btn-orange">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-            <div class="navbar-buttons">
-                <a href="/login"><button class="btn1">Entrar</button></a>
-                <a href="/cadastrar"><button class="btn2">Cadastrar</button></a>
-            </div>
-        </nav>
-
-
-<!--segunda barra ----------------------------------------------------------------------- -->
-
-      <div class="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-dark">
-            <div class="container">
-                <ul class="navbar-nav ms-auto">
-                    < class="nav-item">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Livros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Autores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Categorias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="bi-cart3" style="color: white;"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<nav class="navbar">
+    <div class="navbar-logo">
+        <img src="/img/logotipo.png" alt="Logo">
     </div>
+    <div class="navbar-search">
+        <input style="background-color:#DFDFDF"type="text" placeholder="">
+        <button class="btn btn-orange">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div class="navbar-buttons">
+        <a href="/login"><button class="btn1">Entrar</button></a>
+        <a href="/cadastrar"><button class="btn2">Cadastrar</button></a>
+    </div>
+</nav>
 
-    <div class="section">
-        <div class="background-image">
-            <h1>Descubra Novos Livros</h1>
-            <a href="#" class="btn">Começar Agora</a>
+<div class="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container">
+            <ul class="navbar-nav ms-auto">
+                < class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Livros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Autores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi-cart3" style="color: white;"></i></a>
+                </li>
+            </ul>
         </div>
+    </nav>
+</div>
+
+<div class="section">
+    <div class="background-image">
+        <h1>Descubra Novos Livros</h1>
+        <a href="#" class="btn">Começar Agora</a>
     </div>
+</div>
     <div class="row">
     <h3>Livros Mais Comprados</h3>
   <div class="swiper-container">
-  <div class="swiper-wrapper">
+    <div class="swiper-wrapper">
     <div class="col-sm-3">
         <div class="swiper-slide">
         <div class="card">
@@ -293,7 +290,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+
 
 </body>
 </html>
