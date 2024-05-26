@@ -1,5 +1,6 @@
 @import url(style.css);
 
+<<<<<<< HEAD
 .section{
     padding-bottom: 3rem;
 }
@@ -173,3 +174,148 @@
         transform: translateX(-8px);
     }
 }
+=======
+/* Estilo para a barra de navegação */
+.header-top{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 140px;
+    transition: all .5s;
+
+}
+
+.navbar-logo{
+    width: 20%;
+}
+
+.navbar-logo img {
+    width: 70%;
+}
+
+.navbar-search {
+    align-items: center;
+    gap: 0.1rem;
+    width: 35%;
+
+}
+
+.header-top .navbar-search .form-control{
+    width: 100%;
+    background-color: #DFDFDF;
+}
+
+.navbar-search .btn.btn-orange {
+    background-color: #F18324;
+    border: none;
+    padding: 7px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: Poppins;
+
+
+}
+
+.navbar-search .btn.btn-orange i {
+    font-size: 16px;
+
+}
+
+.navbar-buttons{
+    gap: 1rem;
+}
+
+.btn--dif {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color:#F18324;
+    color: #ffffff;
+}
+
+.header{
+    background-color: #0D2226;
+}
+
+.navbar-nav{
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    color:#F18324;
+}
+
+.bi-cart3 {
+    font-size: 1.5rem;/* Adicione estilos conforme necessário */
+    display: flex;
+    color: #ffffff;
+    transition: all .5s;
+}
+
+.bi-cart3:hover{
+    color: #F18324;
+}
+
+/* Estilos para o footer */
+
+.footer{
+
+
+    background-color:#0D2226;
+    color: white;
+    padding: 20px;
+    padding-left: 140px;
+    padding-right: 70px;
+
+}
+.footer .foo .row .col-md-4 a {
+    text-decoration: none;
+    color: white;
+
+}
+/* Estilos para a terceira coluna */
+
+.footer .col-md-4:nth-child(3) {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+/* Estilos para os ícones das redes sociais */
+
+
+.social-icons a {
+    padding: 4px;
+}
+
+.social-icons a i {
+    color: white;
+}
+
+/* Estilo para o texto no rodapé */
+.footer-text {
+    text-align: center;
+    font-family: Poppins;
+}
+.textbody{
+    margin-right: 130px;
+    margin-left: 130px;
+}
+.textbody.h3{
+    font-size: 32px;
+}
+
+
+
+>>>>>>> Search-Page

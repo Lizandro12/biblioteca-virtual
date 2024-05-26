@@ -4,11 +4,18 @@ use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\StartController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use Symfony\Component\HttpKernel\Profiler\Profile;
 
 Route::get('/', [StartController::class, 'start']);
+
+
+Route::get('/search', [SearchController::class, 'search']);
+Route::get('/authorpage', [SearchController::class, 'authorpage']);
+Route::get('/categorypage', [SearchController::class, 'categorypage']);
+
 
 /* Auth */
 Route::get('/login', [UserController::class, 'login'])->middleware('guest')->name('login');

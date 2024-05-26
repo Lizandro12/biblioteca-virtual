@@ -1,0 +1,223 @@
+
+@import url(style.css);
+
+body{
+    font-family: Poppins;
+    position: relative;
+            width: 100%;
+            height: 80vh;
+}
+/* Estilo para a barra de navegação */
+.header-top{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 140px;
+    font-family: Poppins;
+
+}
+.navbar-logo{
+    width: 20%;
+}
+/* Estilo para o logotipo */
+.navbar-logo img {
+    width: 70%;
+}
+
+/* Estilo para a barra de pesquisa */
+.navbar-search {
+    align-items: center;
+    gap: 0.1rem;
+    width: 35%;
+
+}
+
+.header-top .navbar-search .form-control{
+    width: 100%;
+    background-color: #DFDFDF;
+}
+
+.navbar-search .btn.btn-orange {
+    background-color: #F18324;
+    border: none;
+    padding: 7px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: Poppins;
+
+
+}
+
+.navbar-search .btn.btn-orange i {
+    font-size: 16px;
+
+}
+
+/* Estilo para os botões de navegação */
+.navbar-buttons .btn1,
+.navbar-buttons .btn2 {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* Estilo específico para o botão "Entrar" e "Cadastrar" */
+.navbar-buttons .btn1,
+.navbar-buttons .btn2 {
+    background-color:#F18324;
+    color: white;
+}
+
+
+/* ----CSS da Segunda Barra --------------------------------------------- */
+
+    .navbar-light.bg-custom {
+      height: 40px;
+      background-color: #0D2226;
+    }
+
+    .nav-item  {
+        font-family: Poppins;
+        padding-right: 5px;
+        color: white; /* Substitua #ffffff pela cor desejada */}
+
+
+
+
+    .header .container .navbar-nav .nav-item .nav-link {color: white;}
+
+    .header .container .navbar-nav .nav-item .nav-link :hover {color:#F18324;}
+
+     .bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
+    display: flex;
+    color: white; }
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+.textbody h3{color: #BDBDBD;}
+.textbody{margin-top:60px;}
+
+    .textbody hr.linha
+    {border: none;
+        border-radius: 2px;
+        height: 6px; /* Ajuste a altura conforme necessário */
+        background-color: #F18324;}
+
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 80vh; /* altura da div igual à altura da tela */
+            background-image: url('/img/fundo.jpeg'); /* substitua pelo caminho da sua imagem */
+            background-size: cover; /* faz com que a imagem cubra toda a div */
+            background-position: center; /* centraliza a imagem na div */
+            font-family: Poppins;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra no texto para melhor visibilidade */
+        }
+
+        .containerliv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .text-center {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-family: Poppins;
+            color: #F18324;
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+            width: 100%;
+        }
+
+        .column {
+
+            padding: 2px;
+            text-align: left;
+
+        }
+
+        .links:hover{
+            text-decoration: none; /* Remove o sublinhado */
+            color: black; /* Define a cor preta */}
+
+        .links{
+            text-decoration: none; /* Remove o sublinhado */
+            color: black; /* Define a cor preta */
+        }
+
+/*---------------------------------------------------------------------------------------------*/
+/* Estilos para o footer */
+
+.footer{
+
+
+    background-color:#0D2226;
+    color: white;
+    margin-top:140px;
+    padding: 20px;
+    padding-left: 140px;
+    padding-right: 70px;
+
+}
+.footer .foo .row .col-md-4 a {
+    text-decoration: none;
+    color: white;
+
+}
+/* Estilos para a terceira coluna */
+
+.footer .col-md-4:nth-child(3) {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+/* Estilos para os ícones das redes sociais */
+
+
+.social-icons a {
+    padding: 4px;
+}
+
+.social-icons a i {
+    color: white;
+}
+
+/* Estilo para o texto no rodapé */
+.footer-text {
+    text-align: center;
+    font-family: Poppins;
+}
+.textbody{
+    margin-right: 130px;
+    margin-left: 130px;
+}
+.textbody.h3{
+    font-size: 32px;
+}
