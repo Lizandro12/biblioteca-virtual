@@ -23,7 +23,6 @@ class UserController extends Controller
 
     public function auth( Request $request)
     {
-
         $credencial = $request->validate([
             'email' => ['required'],
             'password' => ['required'],
@@ -34,7 +33,6 @@ class UserController extends Controller
 
         if(Auth::attempt($credencial)){
             $request->session()->regenerate();
-
 
             return redirect()->intended('/profile');
         }
@@ -114,7 +112,6 @@ class UserController extends Controller
 
     public function newpassword( string $token)
     {
-
         return view('auth.newpassword', ['token' => $token]);
     }
 
