@@ -39,7 +39,6 @@ class ProfileController extends Controller
             'email.string' => 'O formato de email é invalido',
             'email.email' => 'O formato de email é invalido',
             'phone.string' => 'Formato de telefone invalido',
-            'phone.regex' => 'O telefone deve ter apenas números',
             'phone.digits' => 'O telefone deve ter apenas 9 digitos',
         ]);
 

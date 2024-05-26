@@ -93,7 +93,7 @@
                         <input type="email" name="email" id="email" class="form-control">
                     </div>
                 </div>
-                <input type="submit" value="Alterar senha" class="align-self-end btn-savechanges">
+                <input type="submit" value="Catalogar" class="align-self-end btn-savechanges">
             </form>
         </div>
 

@@ -65,21 +65,41 @@
                 <div class="form-top d-flex">
                     <div class="name-box d-flex flex-column">
                         <label for="name" class="label">Nome completo</label>
-                        <input type="text" name="name" id="name" class="form-control" value="{{ $user->name }}">
+                        <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ $user->name }}">
+                        @error('name')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                     <div class="email-box d-flex flex-column">
                         <label for="email" class="label">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}">
+                        <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" value="{{ $user->email }}">
+                        @error('email')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                 </div>
                 <div class="form-center d-flex">
                     <div class="phone-box d-flex flex-column">
                         <label for="phone" class="label">Telefone</label>
-                        <input type="text" name="phone" id="phone" class="form-control" value="{{ $contact->phone }}">
+                        <input type="text" name="phone" id="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $contact->phone }}">
+                        @error('phone')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                     <div class="birthday-box d-flex flex-column">
                         <label for="address" class="label">Endereço</label>
-                        <input type="text" name="address" id="address" class="form-control" value="{{ $contact->address }}">
+                        <input type="text" name="address" id="address" class="form-control @error('address') is-invalid @enderror" value="{{ $contact->address }}">
+                        @error('address')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                 </div>
                 <input type="submit" value="Salvar alterações" class="align-self-end btn-savechanges">

@@ -50,31 +50,57 @@
     </div>
     <div class="profile-dashboard">
 
+        @if(session('message'))
+        <span class="text text-success success-message">
+            {{ session('message')}}
+        </span>
+        @endif
+
         <!-- Formulario de alteracao de senha -->
         <div class="profile-card register-author" id="target3">
             <div class="profile-tile-box"><span class="dashboard-title">Cadastrar autores</span></div>
-            <form action="#" class="d-flex flex-column justify-content-center align-items-center form">
+            <form action="{{ route('registerauthors.store') }}" method="POST" class="d-flex flex-column justify-content-center align-items-center form">
             @csrf
                 <div class="form-center d-flex">
                     <div class="author-name-box d-flex flex-column">
                         <label for="name" class="label">Nome do autor</label>
-                        <input type="text" name="name" id="name" class="form-control">
+                        <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" placeholder="Informe o nome do autor" value="{{ old('name') }}">
+                        @error('name')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                 </div>
                 <div class="form-center d-flex">
                     <div class="birthday-box d-flex flex-column">
                         <label for="birthday" class="label">Aniversario</label>
-                        <input type="date" name="birthday" id="birthday" class="form-control">
+                        <input type="date" name="birthday" id="birthday" class="form-control @error('birthday') is-invalid @enderror">
+                        @error('birthday')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                     <div class="nationality-box d-flex flex-column">
                         <label for="nationality" class="label">Nacionalidade</label>
-                        <input type="text" name="nationality" id="nationality" class="form-control">
+                        <input type="text" name="nationality" id="nationality" class="form-control @error('nationality') is-invalid @enderror" placeholder="Nacionalidade do autor" value="{{ old('nationality') }}">
+                        @error('nationality')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                 </div>
                 <div class="form-center d-flex">
                     <div class="biografy-box d-flex flex-column">
                         <label for="biography" class="label">Biografia</label>
-                        <textarea name="biography" id="biography" class="form-control"></textarea>
+                        <textarea name="biography" id="biography" class="form-control @error('biography') is-invalid @enderror" placeholder="Escreva a biografia" value="{{ old('biography') }}"></textarea>
+                        @error('biography')
+                        <p class="text invalid-feedback">
+                                {{ $message }}
+                        </p>
+                        @enderror
                     </div>
                 </div>
                 <input type="submit" value="Cadastrar" class="align-self-end btn-savechanges">
@@ -83,4 +109,13 @@
 
     </div>
 </section>
+
+<script>
+    let message = document.querySelector('.success-message');
+
+    setTimeout(()=>{
+        if(message) message.style.display = 'none';
+    }, 3000);
+
+</script>
 @endsection
