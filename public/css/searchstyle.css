@@ -123,8 +123,8 @@ body{
 
 
         .pes{border: 5px solid #DFDFDF;
-             height:1200px;
-             width: 320px;
+             height:1300px;
+             width: 327px;
              border-radius: 15px;
              margin-top: -5px;
              margin-right: 18px;
@@ -210,6 +210,32 @@ body{
 .grid-item{padding-right: 10px;padding-left: 10px;}
 
 .leftp{margin-left: -10px;}
+
+/* css da chek list com scroll*/
+.checklist-container {
+    width: 300px;
+    padding: 6px;
+    background-color: #fff;
+
+
+}
+
+.checklist {
+    max-height: 140px;
+    overflow-y: auto;
+    padding-right: 10px; /* para evitar que o texto seja coberto pela barra de rolagem */
+}
+
+.checklist label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.checklist input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
