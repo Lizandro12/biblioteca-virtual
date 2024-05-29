@@ -11,16 +11,18 @@ use Illuminate\Support\Str;
 
 class UserController extends Controller
 {
-    public function login(){
+    public function login()
+    {
         return view('auth.login');
     }
 
-    public function cadastrar(){
+    public function cadastrar()
+    {
         return view('auth.register');
     }
 
-    public function auth( Request $request){
-
+    public function auth( Request $request)
+    {
         $credencial = $request->validate([
             'email' => ['required'],
             'password' => ['required'],
@@ -32,8 +34,7 @@ class UserController extends Controller
         if(Auth::attempt($credencial)){
             $request->session()->regenerate();
 
-
-            return redirect()->intended('/');
+            return redirect()->intended('/profile');
         }
 
         return back()->withErrors([
@@ -42,14 +43,15 @@ class UserController extends Controller
 
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
 
         $request->validate( [
             'name' =>['required', 'string' , 'regex:/^[a-zA-Z\s]+$/', 'min:5','max:255'],
             'email' => ['required', 'string','email'],
             'password' => ['required', 'string', 'min:8'],
         ], [
-            'name.required' => 'O campo email é obrigatório',
+            'name.required' => 'O campo nome é obrigatório',
             'name.string' => 'O formato é invalido',
             'name.regex' => 'O nome não deve ter números',
             'name.min' => 'O nome deve ter pelo menos 5 caracteres',
@@ -64,16 +66,18 @@ class UserController extends Controller
             $user->name = $request->name;
             $user->email = $request->email;
             $user->password = bcrypt($request->password);
-            //$user->is_admin = 1;
+            //$user->is_admin = true;
+            //$user->is_client = false;
 
             $user->save();
             Auth::login($user);
-            return redirect('/');
+            return redirect('/profile');
 
 
     }
 
-    public function logout(Request $request){
+    public function logout(Request $request)
+    {
 
         Auth::logout();
 
@@ -84,7 +88,8 @@ class UserController extends Controller
         return redirect('/login');
     }
 
-    public function forgotpassword(){
+    public function forgotpassword()
+    {
         return view('auth.recoverpassword');
     }
 
@@ -105,12 +110,13 @@ class UserController extends Controller
                     : back()->withErrors(['email' => __($status)]);
     }
 
-    public function newpassword( string $token){
-
+    public function newpassword( string $token)
+    {
         return view('auth.newpassword', ['token' => $token]);
     }
 
-    public function updatepassword( Request $request){
+    public function updatepassword( Request $request)
+    {
 
         $request->validate([
             'token' => ['required'],
@@ -130,7 +136,7 @@ class UserController extends Controller
                 $user->password = bcrypt($password);
                 $user->save();
 
-                event(new PasswordReset($user));
+                /*event(new PasswordReset($user));*/
             }
         );
 

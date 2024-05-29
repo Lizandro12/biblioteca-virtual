@@ -17,7 +17,7 @@
 </head>
 <body >
 
-    </div><nav class="navbar">
+        <nav class="navbar">
             <div class="navbar-logo">
                 <img src="/img/logotipo.png" alt="Logo">
             </div>
@@ -41,7 +41,8 @@
             <div class="container">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Início</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color: white;">Livros</a>
@@ -63,12 +64,12 @@
         </nav>
     </div>
 
-    <div class="section">
-        <div class="background-image">
-            <h1>Descubra Novos Livros</h1>
-            <a href="#" class="btn">Começar Agora</a>
-        </div>
+<div class="section">
+    <div class="background-image">
+        <h1>Descubra Novos Livros</h1>
+        <a href="#" class="btn">Começar Agora</a>
     </div>
+</div>
     <div class="row">
     <h3>Livros Mais Comprados</h3>
     <div class="col-sm-3">
@@ -228,7 +229,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
+    
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 @import url(style.css);
 
 nav {
-    top:40px; /* Altura do cabeçalho, ajuste conforme necessário */
+    top: 40px;
   }
 
 
@@ -15,13 +15,12 @@ nav {
     font-family:poppins;
 }
 
-/* Estilo para o logotipo */
+
 .navbar-logo img {
     margin-left:140px;
     height:90px;
 }
 
-/* Estilo para a barra de pesquisa */
 .navbar-search {
 
     display:flex;
@@ -54,7 +53,6 @@ nav {
     font-size:16px;
 }
 
-/* Estilo para os botões de navegação */
 .navbar-buttons .btn1,
 .navbar-buttons .btn2 {
     padding:8px 16px;
@@ -65,27 +63,22 @@ nav {
     margin-left:20px;
 }
 
-/* Estilo específico para o botão "Entrar" */
 .navbar-buttons .btn1 {
     margin-top:1px;
     background-color:orange;
     color:white;
 }
 
-/* Estilo específico para o botão "Cadastrar" */
 .navbar-buttons .btn2 {
     background-color:orange;
     color:white;
 }
 
 
-/* ----CSS da  Segunda Barra --------------------------------------------- */
-
     .navbar-light.bg-custom {
-      height:40px;
+      height: 40px;
       background-color:#0D2226; /* Substitua #ff0000 pela cor desejada */
     }
-
     .nav-item  {
         font-family:Poppins;
         padding-right:5px;
@@ -94,40 +87,32 @@ nav {
 
     .navbar-nav .nav-link:hover {
 
-        color:orange;
-         /* cor dos links ao passar o mouse */
-    }
+    color:orange;   
+}
 
     .navbar-nav .nav-link {
-        color:white;
+        color: white;
     }
 
     .navbar-nav .nav-link .a:hover {
-        background-color:orange;
+        background-color: orange;
         color:#fff;
     }
 
-
-/*---------------------------------------------------------------------------------------------*/
-
-
-        .pes{border:5px solid #DFDFDF;
+        .pes{border: 5px solid #DFDFDF;
              height:1200px;
-             width:320px;
-             border-radius:15px;
-             margin-top:-5px;
-             margin-right:18px;
-             margin-left:35px;
-            font-family:poppins;}
-
-           
-            
+             width: 320px;
+             border-radius: 15px;
+             margin-top: -5px;
+             margin-right: 18px;
+             margin-left: 35px;
+            font-family: poppins;}
 
 
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
 
-.col{border:5px solid#DFDFDF;border-radius:5px; margin-top:5px; margin-right:5px;}
+.col{border: 5px solid #DFDFDF;border-radius:5px; margin-top: 5px; margin-right: 5px;}
 
 
 /* Estilos para os botões */
@@ -145,6 +130,7 @@ nav {
   border-radius:1,5rem;
   margin:5px;
 }
+
 
 .bt.bt-primar {
   color:#fff;
@@ -191,53 +177,44 @@ nav {
     background-repeat:no-repeat;
     background-position:center;
     margin-top:none;
-    height:300px; /* Ajuste do beckground-image */
+    height: 300px; /* Ajuste do beckground-image */
 }
 
 .section h1 {
-    text-align:center;
+    text-align: left;
     margin-left:90px; 
     margin-top:40px;
     height:50px;
 }
 
-
 /* .overlay {
-    position:absolute;
-    top:0;
-    left:0;
-   
-    width:100%;
-    height:100%;
-    background-color:rgba(1, 1, 1, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
 } */
 
 
 .btn {
-    display:inline-block;
-    margin-top:20px; /* Ajuste o topo */
+    display: inline-block;
+    margin-top: 20px; /* Ajuste o topo */
     margin-left:40px;
-    padding:10px 20px;
+    padding: 10px 20px;
     background-color:orange; /* Cor do botão */
     color:white;
     text-decoration:none;
-    border-radius:5px;
+    border-radius: 5px;
 }
 .row {
     margin-top:20px;
-    margin:90px; 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-left:15px;
+    margin: 90px; 
 }
 
 .row h3 {
-    margin-top:10px;
-    margin:20px; 
-    margin-left:15px;
-    margin-right:15;
-    font-size:21px;
+    margin-top: 10px 10px;
+    margin: 20px; 
 }
 
 
@@ -251,30 +228,30 @@ nav {
     margin:10px;
     padding:3px;
   }
-  
+
   .card-img-top {
     width:100%; /* imagem do cartão ocupando toda a largura do cartão */
     height:280px;
     border-top-left-radius:none; /* borda arredondada superior esquerda */
     border-top-right-radius:none; /* borda arredondada superior direita */
   }
-  
+
   .card-body {
     padding:10px; /* preenchimento interno */
   }
-  
+
   .card-title {
     font-size:10px; /* tamanho da fonte do título */
     margin-bottom:1px; /* espaço abaixo do título */
     text-align:center;
   }
-  
+
   .card-text {
     font-size:9px; /* tamanho da fonte do texto */
     margin-bottom:1px; /* espaço abaixo do texto */
     text-align:center;
   }
-  
+
   .btn-primary {
     background-color:white; /* cor de fundo do botão */
     color:orange; /* cor do texto do botão */
@@ -290,9 +267,8 @@ nav {
   
   .btn-primary:hover {  
     background-color:orange; /* cor ao passar o cursor */
-
   }
- 
+
   section h3  {
     color:#fff;
 }
@@ -310,8 +286,10 @@ section {
 
 .col-sm-4 {
     width:33,33%; /* 3 colunas em uma linha */
-    
     box-sizing:border-box; 
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin-left:10px;
 }
 
 .col-sm-3 {
@@ -326,15 +304,27 @@ section {
 
 
 button:hover {
-    background-color:orange; /* Cor do botão ao passar o mouse */
+    background-color: orange; /* Cor do botão ao passar o mouse */
 }
 
 
 /*---------------------------------------------------------------------------------------------*/
 /* Estilos para o footer */
 
-.footer{
+   .footer{
 
+            background-color:#0D2226;
+            color: white;
+            padding: 20px;
+            padding-left: 140px;
+            margin-top: 5px;
+        }
+        /* Estilos para a terceira coluna */
+
+        .footer .col-md-4:nth-child(3) {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
     background-color:#0D2226;
     color: white;
     margin-top:140px;
