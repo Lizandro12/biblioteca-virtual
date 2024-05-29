@@ -1,108 +1,109 @@
 @import url(style.css);
 
 nav {
-    top: 40px; /* Altura do cabeçalho, ajuste conforme necessário */
+    top:40px; /* Altura do cabeçalho, ajuste conforme necessário */
   }
 
 
 /* Estilo para a barra de navegação */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-    font-family: poppins;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:white;
+    padding:10px 20px;
+    font-family:poppins;
 }
 
 /* Estilo para o logotipo */
 .navbar-logo img {
-    margin-left: 140px;
-    height: 90px;
+    margin-left:140px;
+    height:90px;
 }
 
 /* Estilo para a barra de pesquisa */
 .navbar-search {
 
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items:center;
 }
 
 .navbar-search input[type="text"] {
-    padding: 5px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-left: 0px;
-    width: 350px;
+    padding:5px;
+    border:2px solid #ccc;
+    border-radius:5px;
+    margin-left:0px;
+    width:350px;
 
 }
-.navbar-buttons { margin-right: 130px;}
+.navbar-buttons { margin-right:120px;}
 .navbar-search .btn.btn-orange {
-    background-color: orange;
-    border: none;
-    padding-bottom: 5px;
-    margin-bottom:15px;
-    margin-right: 5px;
-    padding: 6px 10px;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
+    background-color:orange;
+    border:none;
+    padding-bottom:5px;
+    margin-bottom:19px;
+    margin-left:0px;
+    padding:6px 10px;
+    color:white;
+    cursor:pointer;
+    border-radius:4px;
 
 }
 
 .navbar-search .btn.btn-orange i {
-    font-size: 16px;
+    font-size:16px;
 }
 
 /* Estilo para os botões de navegação */
 .navbar-buttons .btn1,
 .navbar-buttons .btn2 {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-left: 20px;
+    padding:8px 16px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:14px;
+    margin-left:20px;
 }
 
 /* Estilo específico para o botão "Entrar" */
 .navbar-buttons .btn1 {
-    margin-top: 1px;
+    margin-top:1px;
     background-color:orange;
-    color: white;
+    color:white;
 }
 
 /* Estilo específico para o botão "Cadastrar" */
 .navbar-buttons .btn2 {
-    background-color: orange;
-    color: white;
+    background-color:orange;
+    color:white;
 }
 
 
 /* ----CSS da  Segunda Barra --------------------------------------------- */
 
     .navbar-light.bg-custom {
-      height: 40px;
+      height:40px;
       background-color:#0D2226; /* Substitua #ff0000 pela cor desejada */
     }
 
     .nav-item  {
-        font-family: Poppins;
-        padding-right: 5px;
-        color: white; /* Substitua #ffffff pela cor desejada */}
+        font-family:Poppins;
+        padding-right:5px;
+        color:white; /* Substitua #ffffff pela cor desejada */}
 
 
     .navbar-nav .nav-link:hover {
 
-        color: orange /* cor dos links ao passar o mouse */
+        color:orange;
+         /* cor dos links ao passar o mouse */
     }
 
     .navbar-nav .nav-link {
-        color: white;
+        color:white;
     }
 
     .navbar-nav .nav-link .a:hover {
-        background-color: orange;
+        background-color:orange;
         color:#fff;
     }
 
@@ -110,14 +111,14 @@ nav {
 /*---------------------------------------------------------------------------------------------*/
 
 
-        .pes{border: 5px solid #DFDFDF;
+        .pes{border:5px solid #DFDFDF;
              height:1200px;
-             width: 320px;
-             border-radius: 15px;
-             margin-top: -5px;
-             margin-right: 18px;
-             margin-left: 35px;
-            font-family: poppins;}
+             width:320px;
+             border-radius:15px;
+             margin-top:-5px;
+             margin-right:18px;
+             margin-left:35px;
+            font-family:poppins;}
 
            
             
@@ -126,52 +127,52 @@ nav {
 /* -----------------Estilo geral para a visualização dos livros ----------- */
 
 
-.col{border: 5px solid #DFDFDF;border-radius:5px; margin-top: 5px; margin-right: 5px;}
+.col{border:5px solid#DFDFDF;border-radius:5px; margin-top:5px; margin-right:5px;}
 
 
 /* Estilos para os botões */
 .bt {
-  font-family: Poppins;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 2px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 1,5rem;
-  margin: 5px;
+  font-family:Poppins;
+  display:inline-block;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:middle;
+  user-select:none;
+  border:2px solid transparent;
+  padding:0.375rem 0.75rem;
+  font-size:14px;
+  line-height:1.5;
+  border-radius:1,5rem;
+  margin:5px;
 }
 
 .bt.bt-primar {
-  color: #fff;
-  width: 180px;
-  height: 35px;
-  background-color: orange;
-  border-color: orange;
+  color:#fff;
+  width:180px;
+  height:35px;
+  background-color:orange;
+  border-color:orange;
 }
 
 .bt-primar:hover {
-  color: #fff;
-  background-color: orange;
-  border-color: orange;
+  color:#fff;
+  background-color:orange;
+  border-color:orange;
 
 }
 
 .bt-secondar {
-  color: black;
-  background-color: transparent;
-  border-color:  orange;
-  width: 50px;
-  height: 40px;
+  color:black;
+  background-color:transparent;
+  border-color:orange;
+  width:50px;
+  height:40px;
 }
 
 .bt-secondar:hover {
-  color: #fff;
-  background-color: orange;
-  border-color:  orange;
+  color:#fff;
+  background-color:orange;
+  border-color:orange;
 
 }
 
@@ -179,246 +180,186 @@ nav {
 
 .section {
     position:relative;
-    text-align: left;
-    color: white;
+    text-align:center;
+    color:white;
     padding-bottom:30px;
 }
 
 .background-image {
-    background-image: url('/img/livros.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image:url('/img/livros.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
     margin-top:none;
-    height: 300px; /* Ajuste do beckground-image */
+    height:300px; /* Ajuste do beckground-image */
 }
 
 .section h1 {
-    text-align: left;
+    text-align:center;
     margin-left:90px; 
     margin-top:40px;
-    height: 50px
+    height:50px;
 }
 
 
 /* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position:absolute;
+    top:0;
+    left:0;
    
-    width: 100%;
-    height: 100%;
-    background-color: rgba(1, 1, 1, 0.5);
+    width:100%;
+    height:100%;
+    background-color:rgba(1, 1, 1, 0.5);
 } */
 
 
 .btn {
-    display: inline-block;
-    margin-top: 20px; /* Ajuste o topo */
+    display:inline-block;
+    margin-top:20px; /* Ajuste o topo */
     margin-left:40px;
-    padding: 10px 20px;
+    padding:10px 20px;
     background-color:orange; /* Cor do botão */
     color:white;
     text-decoration:none;
-    border-radius: 5px;
-   
+    border-radius:5px;
 }
 .row {
     margin-top:20px;
-    margin: 90px;  
+    margin:90px; 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:15px;
 }
 
 .row h3 {
-    margin-top: 10px 10px;
-    margin: 20px; 
+    margin-top:10px;
+    margin:20px; 
+    margin-left:15px;
+    margin-right:15;
+    font-size:21px;
 }
 
 
-/* swiper.css */
-
-
-
-.swiper-button-next,
-        .swiper-button-prev {
-            color: white;
-            background-color:orange;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 100%;
-            transform: translateY(-50%);
-            z-index: 10;
-        }
-        .swiper-button-next:hover,
-        .swiper-button-prev:hover {
-            background-color:orange(0, 0, 0, 0.7);
-        }
-        .swiper-button-prev {
-            left: 10px;
-        }
-        .swiper-button-next {
-            right: 10px;
-        }
-
-.swiper-container {
-    width:100%;
-    height: 300px;
-    margin-bottom: 100px;
-    
-  }
-
-
-  
-  .row .swiper-slide {
-    text-align: center;
-    font-size: 300px;
-   
-  }
-
-   section.swiper-slide {
-    background-color:orange;
-    text-align: center;
-    font-size: 300px;
-   
-  }
-
-  .swiper-slide img { 
-    padding: 10px 20px;
-    justify-content: center;
-   
-} 
-
+/* cads.css */
 .card {
-    width: 260px; /* largura do cartão */
-    border: 1px solid #ccc; /* borda */
-    border-radius: 4px; /* bordas arredondadas */
-    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1); /* sombra */
-    margin-bottom: 90px; /* espaço entre cartões */
+    width:220px; /* largura do cartão */
+    border:6px solid white; /* borda */
+    border-radius:4px; /* bordas arredondadas */
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.1); /* sombra */
+    margin-bottom:90px;/* espaço entre cartões */
+    margin:10px;
+    padding:3px;
   }
   
   .card-img-top {
-    width: 100%; /* imagem do cartão ocupando toda a largura do cartão */
-    height:300px;
+    width:100%; /* imagem do cartão ocupando toda a largura do cartão */
+    height:280px;
     border-top-left-radius:none; /* borda arredondada superior esquerda */
     border-top-right-radius:none; /* borda arredondada superior direita */
   }
   
   .card-body {
-    padding: 10px; /* preenchimento interno */
+    padding:10px; /* preenchimento interno */
   }
   
   .card-title {
-    font-size: 15px; /* tamanho da fonte do título */
-    margin-bottom: 1px; /* espaço abaixo do título */
+    font-size:10px; /* tamanho da fonte do título */
+    margin-bottom:1px; /* espaço abaixo do título */
+    text-align:center;
   }
   
   .card-text {
-    font-size: 10px; /* tamanho da fonte do texto */
+    font-size:9px; /* tamanho da fonte do texto */
     margin-bottom:1px; /* espaço abaixo do texto */
+    text-align:center;
   }
   
   .btn-primary {
-    background-color: white; /* cor de fundo do botão */
-    color: orange; /* cor do texto do botão */
-    border-color: orange; /* sem borda */
+    background-color:white; /* cor de fundo do botão */
+    color:orange; /* cor do texto do botão */
+    border-color:orange; /* sem borda */
     border-radius:4px; /* bordas arredondadas */
-    padding: 5px 50px; /* preenchimento interno */
-    margin-left:30px;
-    margin-right:30px;
-    margin-bottom:5px;
-    text-decoration: none; /* sem sublinhado */
-    display:inline-block /* exibir como bloco */
+    padding:4px 40px; /* preenchimento interno */
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:4px;
+    text-decoration:none; /* sem sublinhado */
+    display:inline; /* exibir como bloco */
   }
   
   .btn-primary:hover {  
-    background-color: orange; /* cor ao passar o cursor */
+    background-color:orange; /* cor ao passar o cursor */
 
   }
  
   section h3  {
-    color: #fff;
+    color:#fff;
 }
 
 section p {
-    margin-top: 1px;
-    margin: 10px;
-    color: #fff;
+    margin-top:1px;
+    margin:10px;
+    color:#fff;
 }
 
 section {
     background-color:#0D2226;
-    padding-top:0px
-    
+    padding-top:0px; 
 }
-
-
 
 .col-sm-4 {
-    width: 33,33%; /* 4 colunas em uma linha */
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin-left:10px;
-   
+    width:33,33%; /* 3 colunas em uma linha */
+    
+    box-sizing:border-box; 
 }
 
-.col-sm-3{
-    width: 25%; /* 4 colunas em uma linha */
-    padding: 0 15px;
-    box-sizing: border-box;
+.col-sm-3 {
+    width:25%; /* 4 colunas em uma linha */
+    padding:15px;
+    box-sizing:border-box;
 }
    h6 {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top:10px;
+    font-size:18px;
 }
 
 
 button:hover {
-    background-color: orange; /* Cor do botão ao passar o mouse */
+    background-color:orange; /* Cor do botão ao passar o mouse */
 }
 
-/* -------------------------Estilos para os botões do carrousel---------------------------------- */
-
-.containerca {
-    margin-right: 120px;
-    margin-top: -180px;
-  }
-  .pagination .page-link{border: none;color: black;font-size: 20px;}
-
-  .page-link i {width: 100px;height: 100px;color: orange;border: none;}
 
 /*---------------------------------------------------------------------------------------------*/
 /* Estilos para o footer */
 
-        .footer{
+.footer{
 
-
-            background-color:#0D2226;
-            color: white;
-            padding: 20px;
-            padding-left: 140px;
-            margin-top: 5px
-
-
-        }
-       
-        /* Estilos para a terceira coluna */
-
-        .footer .col-md-4:nth-child(3) {
-    text-decoration: none;
-    text-align: left;
-    padding-left: 10px;
-
-
-
+    background-color:#0D2226;
+    color: white;
+    margin-top:140px;
+    padding: 20px;
+    padding-left: 140px;
+    padding-right: 70px;
 
 }
 
-/* Estilos para os ícones das redes sociais */
+      
+.footer .foo .row .col-md-4 a {
+    text-decoration: none;
+    color: white;
 
+}
+/* Estilos para a terceira coluna */
+
+.footer .col-md-4:nth-child(3) {
+    text-decoration:none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* Estilos para os ícones das redes sociais */
 
 .social-icons a {
     padding: 4px;
@@ -426,6 +367,7 @@ button:hover {
 
 .social-icons a i {
     color: white;
+    padding-left: 5px;
 }
 
 /* Estilo para o texto no rodapé */
@@ -433,7 +375,6 @@ button:hover {
     text-align: center;
     font-family: Poppins;
 }
-
 .textbody{
     margin-right: 130px;
     margin-left: 130px;
