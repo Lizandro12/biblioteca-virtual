@@ -9,16 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <!-- CSS no swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/home.css">
-    <script src="/js/home.js"></script>
-
-
-
 </head>
 <body >
 
@@ -74,10 +69,7 @@
 </div>
     <div class="row">
     <h3>Livros Mais Comprados</h3>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
     <div class="col-sm-3">
-        <div class="swiper-slide">
         <div class="card">
             <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
@@ -85,37 +77,29 @@
             <a href="#" class="btn btn-primary">Ler livro</a>
         </div>
         </div>
-    </div>
+
     <div class="col-sm-3">
-    <div class="swiper-slide">
     <div class="card">
     <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
             <p  class="card-text">Antoine de Saint-Exupéry</p>
             <a href="#" class="btn btn-primary">Ler livro</a>
         </div>
-        </div>
     </div>
     <div class="col-sm-3">
-    <div class="swiper-slide">
-    <div class="card">
-    <img  class="card-img-top" src="img/principe.png" alt="card image">
+        <div class="card">
+            <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
             <p  class="card-text">Antoine de Saint-Exupéry</p>
             <a href="#" class="btn btn-primary">Ler livro</a>
         </div>
         </div>
-    </div>
     <div class="col-sm-3">
-    <div class="swiper-slide">
-    <div class="card">
-    <img  class="card-img-top" src="img/principe.png" alt="card image">
+        <div class="card">
+            <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
             <p  class="card-text">Antoine de Saint-Exupéry</p>
             <a href="#" class="btn btn-primary">Ler livro</a>
-        </div>
-        </div>
-    </div>
         </div>
         </div>
     <!-- Outros livros mais lidos aqui -->
@@ -130,44 +114,25 @@
     <div class="row">
     <h3>Principais Autores</h3>
     <p> Autores mais lidos e vendidos no Universo Literário</p>
-    <div class="swiper-container">
-     <div class="swiper-wrapper">
          <div class="col-sm-3">
-           <div class="swiper-slide">
                 <img src="img/autores.png" alt="Autor 1">
             </div>
-          </div>
          <div class="col-sm-3">
-           <div class="swiper-slide">
                 <img src="img/autores.png" alt="Autor 1">
             </div>
-          </div>
         <div class="col-sm-3">
-            <div class="swiper-slide">
                 <img src="img/autores.png" alt="Autor 1">
-            </div>
         </div>
         <div class="col-sm-3">
-            <div class="swiper-slide">
               <img src="img/autores.png" alt="Autor 1">
             </div>
-        </div>
         <!-- Outros autores principais aqui -->
-    </div>
-    <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-    </div>
     </div>
 </section>
 
 <div class="row">
     <h3>Livros Mais Lidos</h3>
-    <div class="swiper-container">
-    <div class="swiper-wrapper">
     <div class="col-sm-3">
-    <div class="swiper-slide">
     <div class="card">
     <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
@@ -175,9 +140,7 @@
             <a href="#" class="btn btn-primary">Comprar</a>
         </div>
     </div>
-    </div>
     <div class="col-sm-3">
-    <div class="swiper-slide">
     <div class="card">
     <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
@@ -185,9 +148,7 @@
             <a href="#" class="btn btn-primary">Comprar</a>
         </div>
     </div>
-    </div>
     <div class="col-sm-3">
-    <div class="swiper-slide">
     <div class="card">
     <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
@@ -195,10 +156,7 @@
             <a href="#" class="btn btn-primary">Comprar</a>
         </div>
     </div>
-    </div>
-
     <div class="col-sm-3">
-    <div class="swiper-slide">
     <div class="card">
     <img  class="card-img-top" src="img/principe.png" alt="card image">
             <h6 class="card-title">O Pequeno Príncipe</h6>
@@ -206,65 +164,48 @@
             <a href="#" class="btn btn-primary">Comprar</a>
         </div>
         </div>
-    </div>
     <!-- Outros livros mais lidos aqui -->
-</div>
-<div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-</div>
 </div>
 <div class="row">
     <h3>ler mais</h3>
-    <div class="swiper-container">
-   <div class="swiper-wrapper">
     <div class="col-sm-4">
-    <div class="swiper-slide">
       <a href="#">
          <img src="img/classicos.png" alt="Livro 1">
       </a>
     </div>
-    </div>
     <div class="col-sm-4">
-    <div class="swiper-slide">
        <a href="#">
             <img src="img/novoslancamentos.png" alt="Livro 1">
             </a>
-        </div>
     </div>
     <div class="col-sm-4">
-    <div class="swiper-slide">
        <a href="#">
             <img src="img/parajovens.png" alt="Livro 1">
             </a>
-        </div>
     </div>
     <!-- Outros livros mais lidos aqui -->
     </div>
-    <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-    </div>
-    </div>
-     <!-- Rodapé -->
-     <div class="footer">
+   <!------------------------------------------------------------------------------------------------------------------->
+
+
+   <!-- Rodapé -->
+   <div class="footer">
         <div class="foo">
             <div class="row">
                 <!-- Primeira coluna -->
                 <div class="col-md-4">
                     <h3>Institucional</h3>
-                    <p>Quem somos</p>
-                    <p>Direitos Autorias</p>
-                    <p>Blog</p>
+                    <a href="#"><p>Quem somos</p></a>
+                    <a href="#"><p>Direitos Autorias</p></a>
+                    <a href="#"><p>Blog</p></a>
                 </div>
                 <!-- Segunda coluna -->
                 <div class="col-md-4">
                     <h3>Ajuda</h3>
-                    <p></p>
+                    <a href="#"><p>Quem somos</p></a>
+                    <a href="#"><p>Direitos Autorias</p></a>
+                    <a href="#"><p>Blog</p></a>
                 </div>
-
 
                 <!-- Terceira coluna -->
                 <div class="col-md-4">
