@@ -24,7 +24,7 @@
 
 <nav class="navbar">
     <div class="navbar-logo">
-        <img src="/img/logotipo.png" alt="Logo">
+        <a href=""><img src="/img/logotipo.png" alt="Logo"></a>
     </div>
     <div class="navbar-search">
         <input style="background-color:#DFDFDF"type="text" placeholder="">

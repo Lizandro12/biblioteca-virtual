@@ -9,7 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use Symfony\Component\HttpKernel\Profiler\Profile;
 
-Route::get('/', [StartController::class, 'start']);
+Route::get('/', [StartController::class, 'start'])->name('home');
 
 
 Route::get('/search', [SearchController::class, 'search']);

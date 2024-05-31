@@ -22,7 +22,7 @@
     <header>
         <div class="header-top">
             <div class="navbar-logo">
-                <img src="/img/logotipo.png" alt="Logo">
+                <a href="{{ route('home')}}"><img src="/img/logotipo.png" alt="Logo"></a>
             </div>
             <div class="navbar-search d-flex">
                 <input type="text" placeholder="Procure por um livro..." class="form-control">
