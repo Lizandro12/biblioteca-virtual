@@ -103,12 +103,42 @@
                 <div class="modal-body">
                     <h3 class="leftp">Estantes</h3>
                     <input type="text" placeholder="" class="form-control">
+                    <div class="checklist-container">
+                        <div class="checklist">
+                            <label><input type="checkbox"> Item 1</label>
+                            <label><input type="checkbox"> Item 2</label>
+                            <label><input type="checkbox"> Item 3</label>
+                            <label><input type="checkbox"> Item 4</label>
+                            <label><input type="checkbox"> Item 5</label>
+                            <label><input type="checkbox"> Item 6</label>
+                            <label><input type="checkbox"> Item 7</label>
+                            <label><input type="checkbox"> Item 8</label>
+                            <label><input type="checkbox"> Item 9</label>
+                            <label><input type="checkbox"> Item 10</label>
+                        </div>
+                    </div>
+
                 </div>
               </div>
             <div class="grid-item">
                 <div class="modal-body">
                     <h3 class="leftp">Autores</h3>
                     <input type="text" placeholder="" class="form-control">
+                    <div class="checklist-container">
+                        <div class="checklist">
+                            <label><input type="checkbox"> Item 1</label>
+                            <label><input type="checkbox"> Item 2</label>
+                            <label><input type="checkbox"> Item 3</label>
+                            <label><input type="checkbox"> Item 4</label>
+                            <label><input type="checkbox"> Item 5</label>
+                            <label><input type="checkbox"> Item 6</label>
+                            <label><input type="checkbox"> Item 7</label>
+                            <label><input type="checkbox"> Item 8</label>
+                            <label><input type="checkbox"> Item 9</label>
+                            <label><input type="checkbox"> Item 10</label>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -116,6 +146,21 @@
                 <div class="modal-body">
                 <h3 class="leftp">Titulos</h3>
                 <input type="text" placeholder="" class="form-control">
+                <div class="checklist-container">
+                    <div class="checklist">
+                        <label><input type="checkbox"> Item 1</label>
+                        <label><input type="checkbox"> Item 2</label>
+                        <label><input type="checkbox"> Item 3</label>
+                        <label><input type="checkbox"> Item 4</label>
+                        <label><input type="checkbox"> Item 5</label>
+                        <label><input type="checkbox"> Item 6</label>
+                        <label><input type="checkbox"> Item 7</label>
+                        <label><input type="checkbox"> Item 8</label>
+                        <label><input type="checkbox"> Item 9</label>
+                        <label><input type="checkbox"> Item 10</label>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -123,6 +168,21 @@
                 <div class="modal-body">
                     <h3 class="leftp">Editoras</h3>
                     <input type="text" placeholder="" class="form-control">
+                    <div class="checklist-container">
+                        <div class="checklist">
+                            <label><input type="checkbox"> Item 1</label>
+                            <label><input type="checkbox"> Item 2</label>
+                            <label><input type="checkbox"> Item 3</label>
+                            <label><input type="checkbox"> Item 4</label>
+                            <label><input type="checkbox"> Item 5</label>
+                            <label><input type="checkbox"> Item 6</label>
+                            <label><input type="checkbox"> Item 7</label>
+                            <label><input type="checkbox"> Item 8</label>
+                            <label><input type="checkbox"> Item 9</label>
+                            <label><input type="checkbox"> Item 10</label>
+                        </div>
+                    </div>
+
                 </div>
 
 
