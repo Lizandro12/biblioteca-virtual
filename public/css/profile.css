@@ -1,5 +1,180 @@
 @import url(style.css);
 
+<<<<<<< HEAD
+.section{
+    padding-bottom: 3rem;
+}
+.profile-content{
+    padding: 30px 145px;
+    gap: 1rem;
+}
+
+
+.photo-upload{
+    position: absolute;
+    cursor: pointer;
+    line-height: 30px;
+    opacity: 0;
+}
+
+
+.btn-upload{
+    border: none;
+    padding: 0.4rem 0.5rem;
+    border-radius: 6px;
+    background-color: #F18324;
+    color: #ffffff;
+}
+
+.bi-cloud-arrow-up-fill{
+    margin-right: 6px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.user-name{
+    font-weight: 700;
+}
+.profile-options{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #cdcdcd;
+    width: 300px;
+    justify-content: center;
+}
+
+.profile-link{
+    color: #0d2226;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: all 0.5s;
+
+}
+
+.selected{
+    background-color: #F18324;
+    color: #ffffff;
+}
+
+.profile-link:hover{
+    background-color: #F18324;
+    cursor: pointer;
+    color: #ffffff !important;
+}
+
+.btn-logout{
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.profile-dashboard{
+    width: 69%;
+
+}
+
+.profile-card{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: 200px;
+    margin-top: 35px;
+    padding: 2rem;
+    color: #0d2226;
+    transition: all 1s;
+}
+
+.profile-tile-box{
+    border-bottom: dashed 1px #cdcdcd;
+    padding: 0 0 0.5rem 0;
+    margin-bottom: 0.8rem;
+}
+
+.dashboard-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form{
+    gap: 1rem;
+}
+
+.account-details{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: auto;
+    margin: 35px 0 35px 0;
+    padding: 2rem;
+}
+.change-password{
+    border: 1px solid #cdcdcd;
+    width: 70%;
+    height: auto;
+    margin: 35px 0 35px 0;
+    padding: 2rem;
+}
+
+.form-top,
+.form-center {
+    width: 100%;
+    gap: 1rem;
+}
+
+.email-box,
+.name-box{
+    width: 50%;
+}
+
+.phone-box,
+.birthday-box{
+    width: 50%;
+}
+
+.label{
+    font-size: 16px;
+    margin-bottom: 0.3rem;
+}
+
+.form-control:focus{
+    border-color: #F18324 !important;
+    box-shadow: none !important;
+}
+
+.btn-savechanges{
+    padding: 0.5rem;
+    background-color: #0d2226;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+.success-message{
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 75px;
+    right: 50px;
+    text-align: center;
+    animation: fade-down 0.5s;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-8px);
+    }
+}
+=======
 /* Estilo para a barra de navegação */
 .header-top{
     background-color: #ffffff;
@@ -143,3 +318,4 @@
 
 
 
+>>>>>>> Search-Page
