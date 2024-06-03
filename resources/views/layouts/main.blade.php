@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/profile.css">
+<!--     <link rel="stylesheet" href="/css/home.css"> -->
+    <link rel="stylesheet" href="/css/searchstyle.css">
+<!--     <link rel="stylesheet" href="/css/authorpage.css">
+    <link rel="stylesheet" href="/css/profile.css"> -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/books.css">
+<!--     <link rel="stylesheet" href="/css/books.css"> -->
 </head>
 <body>
     <header>
@@ -26,7 +29,7 @@
             </div>
             <div class="navbar-search d-flex">
                 <input type="text" placeholder="Procure por um livro..." class="form-control">
-                <button class="btn btn-orange"><i class="bi bi-search"></i></button>
+                <button class="btn btn-search-main"><i class="bi bi-search"></i></button>
             </div>
             <div class="navbar-buttons d-flex">
             @if(!Auth::check())
@@ -53,12 +56,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/categorypage" >Categorias</a>
                         </li>
-                        <li class="nav-item">
+<!--                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link"><i class="bi-cart3"></i></a>
-                        </li>
+                        </li> -->
                     </ul>
             </div>
             </nav>

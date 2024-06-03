@@ -29,14 +29,13 @@
     background-color: #DFDFDF;
 }
 
-.navbar-search .btn.btn-orange {
+.navbar-search .btn-search-main {
     background-color: #F18324;
     border: none;
     padding: 7px 10px;
     color: #ffffff;
     cursor: pointer;
     border-radius: 6px;
-    font-family: Poppins;
 
 
 }

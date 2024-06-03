@@ -1,200 +1,16 @@
 @import url(style.css);
 
-nav {
-    top: 40px;
-  }
-
-
-/* Estilo para a barra de navegação */
-.navbar {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background-color:white;
-    padding:10px 20px;
-    font-family:poppins;
-}
-
-
-.navbar-logo img {
-    margin-left:140px;
-    height:90px;
-}
-
-.navbar-search {
-
-    display:flex;
-    align-items:center;
-}
-
-.navbar-search input[type="text"] {
-    padding:5px;
-    border:2px solid #ccc;
-    border-radius:5px;
-    margin-left:0px;
-    width:350px;
-
-}
-.navbar-buttons { margin-right:120px;}
-.navbar-search .btn.btn-orange {
-    background-color:orange;
-    border:none;
-    padding-bottom:5px;
-    margin-bottom:19px;
-    margin-left:0px;
-    padding:6px 10px;
-    color:white;
-    cursor:pointer;
-    border-radius:4px;
-
-}
-
-.navbar-search .btn.btn-orange i {
-    font-size:16px;
-}
-
-.navbar-buttons .btn1,
-.navbar-buttons .btn2 {
-    padding:8px 16px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:14px;
-    margin-left:20px;
-}
-
-.navbar-buttons .btn1 {
-    margin-top:1px;
-    background-color:orange;
-    color:white;
-}
-
-.navbar-buttons .btn2 {
-    background-color:orange;
-    color:white;
-}
-
-
-    .navbar-light.bg-custom {
-      height: 40px;
-      background-color:#0D2226; /* Substitua #ff0000 pela cor desejada */
-    }
-    .nav-item  {
-        font-family:Poppins;
-        padding-right:5px;
-        color:white; /* Substitua #ffffff pela cor desejada */}
-
-
-    .navbar-nav .nav-link:hover {
-
-    color:orange;   
-}
-
-    .navbar-nav .nav-link {
-        color: white;
-    }
-
-    .navbar-nav .nav-link .a:hover {
-        background-color: orange;
-        color:#fff;
-    }
-
-        .pes{border: 5px solid #DFDFDF;
-             height:1200px;
-             width: 320px;
-             border-radius: 15px;
-             margin-top: -5px;
-             margin-right: 18px;
-             margin-left: 35px;
-            font-family: poppins;}
-
-
-/* -----------------Estilo geral para a visualização dos livros ----------- */
-
-
-.col{border: 5px solid #DFDFDF;border-radius:5px; margin-top: 5px; margin-right: 5px;}
-
-
-/* Estilos para os botões */
-.bt {
-  font-family:Poppins;
-  display:inline-block;
-  text-align:center;
-  white-space:nowrap;
-  vertical-align:middle;
-  user-select:none;
-  border:2px solid transparent;
-  padding:0.375rem 0.75rem;
-  font-size:14px;
-  line-height:1.5;
-  border-radius:1,5rem;
-  margin:5px;
-}
-
-
-.bt.bt-primar {
-  color:#fff;
-  width:180px;
-  height:35px;
-  background-color:orange;
-  border-color:orange;
-}
-
-.bt-primar:hover {
-  color:#fff;
-  background-color:orange;
-  border-color:orange;
-
-}
-
-.bt-secondar {
-  color:black;
-  background-color:transparent;
-  border-color:orange;
-  width:50px;
-  height:40px;
-}
-
-.bt-secondar:hover {
-  color:#fff;
-  background-color:orange;
-  border-color:orange;
-
-}
-
-
-
-.section {
-    position:relative;
+.section-home {
+    width: 100vw;
+    height: 60vh;
     text-align:center;
     color:white;
-    padding-bottom:30px;
-}
-
-.background-image {
     background-image:url('/img/livros.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
     margin-top:none;
-    height: 300px; /* Ajuste do beckground-image */
 }
-
-.section h1 {
-    text-align: left;
-    margin-left:90px; 
-    margin-top:40px;
-    height:50px;
-}
-
-/* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(1, 1, 1, 0.5);
-} */
 
 
 .btn {
@@ -209,12 +25,12 @@ nav {
 }
 .row {
     margin-top:20px;
-    margin: 90px; 
+    margin: 90px;
 }
 
 .row h3 {
     margin-top: 10px 10px;
-    margin: 20px; 
+    margin: 20px;
 }
 
 
@@ -264,8 +80,8 @@ nav {
     text-decoration:none; /* sem sublinhado */
     display:inline; /* exibir como bloco */
   }
-  
-  .btn-primary:hover {  
+
+  .btn-primary:hover {
     background-color:orange; /* cor ao passar o cursor */
   }
 
@@ -281,12 +97,12 @@ section p {
 
 section {
     background-color:#0D2226;
-    padding-top:0px; 
+    padding-top:0px;
 }
 
 .col-sm-4 {
     width:33,33%; /* 3 colunas em uma linha */
-    box-sizing:border-box; 
+    box-sizing:border-box;
     padding: 0px 15px;
     box-sizing: border-box;
     margin-left:10px;
@@ -334,7 +150,7 @@ button:hover {
 
 }
 
-      
+
 .footer .foo .row .col-md-4 a {
     text-decoration: none;
     color: white;

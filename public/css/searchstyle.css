@@ -1,174 +1,71 @@
 
 @import url(style.css);
 
-body{
-    font-family: Poppins;
-    position: relative;
-    width: 100%;
-    height: 80vh;
-}
-/* Estilo para a barra de navegação */
-.header-top{
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 140px;
-    font-family: Poppins;
-
-}
-.navbar-logo{
-    width: 20%;
-}
-/* Estilo para o logotipo */
-.navbar-logo img {
-    width: 70%;
-}
-
-/* Estilo para a barra de pesquisa */
-.navbar-search {
-    align-items: center;
-    gap: 0.1rem;
-    width: 35%;
-
-}
-
-.header-top .navbar-search .form-control{
-    width: 100%;
-    background-color: #DFDFDF;
-}
-
-.navbar-search .btn.btn-orange {
-    background-color: #F18324;
-    border: none;
-    padding: 7px 10px;
-    color: white;
-    cursor: pointer;
-    border-radius: 6px;
-    font-family: Poppins;
-
-
-}
-
-.navbar-search .btn.btn-orange i {
-    font-size: 16px;
-
-}
-
-/* Estilo para os botões de navegação */
-.navbar-buttons .btn1,
-.navbar-buttons .btn2 {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-left: 20px;
-}
-
-/* Estilo específico para o botão "Entrar" e "Cadastrar" */
-.navbar-buttons .btn1,
-.navbar-buttons .btn2 {
-    background-color:#F18324;
-    color: white;
-}
-
-
-/* ----CSS da Segunda Barra --------------------------------------------- */
-
-    .navbar-light.bg-custom {
-      height: 40px;
-      background-color: #0D2226;
-    }
-
-    .nav-item  {
-        font-family: Poppins;
-        padding-right: 5px;
-        color: white; /* Substitua #ffffff pela cor desejada */}
-
-
-
-
-    .header .container .navbar-nav .nav-item .nav-link {color: white;}
-
-    .header .container .navbar-nav .nav-item .nav-link :hover {color:#F18324;}
-
-     .bi-cart3 { font-size: 1.5rem;/* Adicione estilos conforme necessário */
-    display: flex;
-    color: white; }
-
-
-/*---------------------------------------------------------------------------------------------*/
-
 .textbody{margin-top:60px;
 }
 
 .list {
-            display: flex;
-            width: 90%;
-            margin-left: 100px;
+    display: flex;
+    width: 90%;
+    margin-left: 100px;
 
-        }
+}
 
-        .right {
+.right {
 
-            margin-top: -24px;
-            margin-right: 60px;
-            width: 70%;
-        }
-        .left {
-            width: 30%;
-            border-right: 20px
-        }
-
-
-        .pes{border: 5px solid #DFDFDF;
-             height:1300px;
-             width: 327px;
-             border-radius: 15px;
-             margin-top: -5px;
-             margin-right: 18px;
-             margin-left: 35px;
-             font-family: poppins;
-        }
+    margin-top: -24px;
+    margin-right: 60px;
+    width: 70%;
+}
+.left {
+    width: 30%;
+    border-right: 20px
+}
 
 
-
-            .list .pes h3{
-                padding-top:40px;
-
-                padding-left:10px;
-
-            }
-
-
-            .btn.btn-orangel {
-                background-color: #F18324;
-                border: none;
-                padding: 7px 10px;
-                color: white;
-                cursor: pointer;
-                border-radius: 6px;
-                font-family: Poppins;
-            }
+.pes{border: 5px solid #DFDFDF;
+        height:1300px;
+        width: 327px;
+        border-radius: 15px;
+        margin-top: -5px;
+        margin-right: 18px;
+        margin-left: 35px;
+        font-family: poppins;
+}
 
 
-            .grid-container {
-                display: grid;
-                grid-template-rows: repeat(4, 1fr);
-                height: 160vh; /* Ajuste conforme necessário */
-              }
 
-              .grid-item1{
-                margin-top: 5px;
-                border: 1px solid#DFDFDF; /* Apenas para visualização */
-              }
-              .grid-item {
-                border: 1px solid#DFDFDF; /* Apenas para visualização */
-              }
+.list .pes h3{
+padding-top:40px;
 
-/*------------------------------ Estilo para o lado da pesquisa'-------------------------------------- */
+padding-left:10px;
 
+}
+
+
+.btn.btn-filter {
+background-color: #F18324;
+border: none;
+padding: 7px 10px;
+color: white;
+cursor: pointer;
+border-radius: 6px;
+}
+
+
+.grid-container {
+display: grid;
+grid-template-rows: repeat(4, 1fr);
+height: 160vh;
+}
+
+.grid-item1{
+margin-top: 5px;
+border: 1px solid#DFDFDF;
+}
+.grid-item {
+border: 1px solid#DFDFDF;
+}
 
 .navbar-search-container {
     display: flex;
@@ -180,14 +77,11 @@ body{
 
 .navbar-search-container .form-control {
     flex-grow: 1;
-    margin-right: 8px; /* Espaço entre a barra de pesquisa e o botão */
+    margin-right: 8px;
     background-color: #DFDFDF;
 
 
 }
-
-.navbar-search-container .form-control:hover,
-.navbar-search-container .form-control:active{background-color: #DFDFDF;}
 
 .navbar-search-container .btn {
     flex-shrink: 0;
@@ -237,24 +131,20 @@ body{
 }
 
 
-/* -----------------Estilo geral para a visualização dos livros ----------- */
-
-
 .liv{border: 5px solid #DFDFDF;
     border-radius: 15px;
     margin-top: 20px;
     margin-right: 32px;
-height: 185px;}
+    height: 185px;
+}
 
 
 
-/* Estilo para a classe book-row, adicionando margem entre as linhas de livros */
 .book-row {
     padding: 1px;
 }
 
 
-/* Classe book-cover para a capa do livro */
 .book-cover img {
   max-width: 100%;
   height: auto;
@@ -263,7 +153,6 @@ height: 185px;}
   margin-right: -68px;
 }
 
-/* Classe book-details para detalhes do livro */
 .book-details {
   padding: 10px;
   margin-left: -68px;
@@ -274,11 +163,9 @@ height: 185px;}
 
 }
 
-/* Classe book-actions para as ações do livro */
 .book-actions {
   text-align: center;
   padding: 20px;
-  padding-: 70px;
 }
 
 .book-actions p {
@@ -286,7 +173,6 @@ height: 185px;}
   margin-left: 75px;
 }
 
-/* Estilos para os botões */
 .bt {
   font-family: Poppins;
   display: inline-block;
@@ -334,70 +220,33 @@ height: 185px;}
 
 }
 
-.resumo{padding-right: 50px;}
+.resumo{
+    padding-right: 50px;
+}
 
-.imagli{height:50px;width: 110px;}
+.imagli{
+    height:50px;
+    width: 110px;
+}
 
-.alitex{text-align: justify; padding-right: 60px;}
+.alitex{
+    text-align: justify;
+    padding-right: 60px;
+}
 
-
-/* -------------------------Estilos para os botões do carrousel---------------------------------- */
 
 .containerca {
-    margin-right: 120px;
-  }
-  .pagination .page-link{border: none;color: black;font-size: 20px;}
-
-  .page-link i {width: 100px;height: 100px;color: #F18324;border: none;}
-
-/*---------------------------------------------------------------------------------------------*/
-/* Estilos para o footer */
-
-.footer{
-
-
-    background-color:#0D2226;
-    color: white;
-    padding: 20px;
-    padding-left: 140px;
-    padding-right: 70px;
-
+margin-right: 120px;
 }
-.footer .foo .row .col-md-4 a {
-    text-decoration: none;
-    color: white;
-
-}
-/* Estilos para a terceira coluna */
-
-.footer .col-md-4:nth-child(3) {
-    text-decoration: none;
-    text-align: left;
-    padding-left: 10px;
+.pagination .page-link{
+border: none;
+color: black;
+font-size: 20px;
 }
 
-
-
-/* Estilos para os ícones das redes sociais */
-
-
-.social-icons a {
-    padding: 4px;
-}
-
-.social-icons a i {
-    color: white;
-}
-
-/* Estilo para o texto no rodapé */
-.footer-text {
-    text-align: center;
-    font-family: Poppins;
-}
-.textbody{
-    margin-right: 130px;
-    margin-left: 130px;
-}
-.textbody.h3{
-    font-size: 32px;
+.page-link i {
+width: 100px;
+height: 100px;
+color: #F18324;
+border: none;
 }
