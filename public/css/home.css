@@ -118,14 +118,6 @@ section {
     padding-top:0px;
 }
 
-/* .col-sm-4 {
-    width:33,33%;
-    box-sizing:border-box;
-    padding: 0px 15px;
-    box-sizing: border-box;
-    margin-left:10px;
-}
- */
 .col-sm-3 {
     width:25%;
     padding:15px;
@@ -135,9 +127,3 @@ section {
     margin-top:10px;
     font-size:18px;
 }
-
-/*
-button:hover {
-    background-color: orange;
-}
- */

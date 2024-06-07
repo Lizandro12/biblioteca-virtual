@@ -23,13 +23,11 @@ class BookController extends Controller
         $request->validate([
             'name' =>['required','string','max:255'],
             'birthday' => ['date'],
-/*             'nationality' => ['string', 'max:255'], */
             'biography' => ['string', 'max:1000'],
         ] , [
             'name.required' => 'O campo nome é obrigatório',
             'name.string' => 'O formato é inválido',
             'name.max' => 'O nome deve ter no máximo 255 caracteres',
-/*             'birthday.date' => 'A data de aniversário deve estar no formato DD-MM-YYYY', */
             'nationality.string' => 'O formato de nacionalidade é inválido',
             'nationality.max' => 'A nacionalidade deve ter no máximo 255 caracteres',
             'biography.string' => 'O formato da biografia é inválido',
@@ -39,7 +37,6 @@ class BookController extends Controller
         $author = new Author();
 
         $author->name = $request->name;
-/*         $author->birth_date = $request->birthday; */
         $author->nationality = $request->nationality;
         $author->biography = $request->biography;
         $author->save();
@@ -96,7 +93,6 @@ class BookController extends Controller
             'publishingcompany' => ['required','string', 'max:255'],
             'publicationdate' => ['required','date'],
             'isbn' => ['required'],
-/*             'photo' => ['string'], */
             'synopsis' => ['max:1000'],
         ] , [
             'title.required' => 'O campo título é obrigatório',

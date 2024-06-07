@@ -19,7 +19,6 @@
             <div class="grid-item">
                 <div class="modal-body">
                     <h3 class="left">Estantes</h3>
-                    <!-- <input type="text" placeholder="" class="form-control"> -->
                     <form action="{{ route('search.books') }}" method="GET" id="category-search-form" class="category-search-form">
                     @csrf
                         <div class="checklist-container">
@@ -35,7 +34,6 @@
             <div class="grid-item">
                 <div class="modal-body">
                     <h3 class="leftp">Autores</h3>
-                    <!-- <input type="text" placeholder="" class="form-control"> -->
                     <form action="{{ route('search.books') }}" method="GET" id="author-search-form" class="author-search-form">
                     @csrf
                         <div class="checklist-container">
@@ -68,36 +66,10 @@
                 <div class="col-md-3 book-actions">
                     <a href="{{ route('books.download', $book->id) }}" class="bt bt-primar">Baixar Livro</a>
                     <div class="verdet">
-<!--                         <button type="button" class="bdetalhes" data-toggle="modal" data-target="#bookInfoModal">
-                            Ver detalhes
-                        </button> -->
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="modal fade" id="bookInfoModal" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="bookInfoModalLabel">Detalhes do Livro</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h3>{{ $book->title }}</h3>
-                        <p class="alitex"><strong>Autor:</strong>André Luiz Villar Formentini</p>
-                        <p class="alitex"><strong>Categoria:</strong> Educacional</p>
-                        <p class="alitex"><strong>Data de Lançamento:</strong>{{$book->publication_date}}</p>
-                        <p class="alitex"><strong>Resumo:</strong>{{ $book->synopsis }}</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         @endforeach
         @if(count($books) == 0 && $search)
             <p class="result-message">Nenhum resultado para a sua pesquisa por <strong>{{ $search }}</strong>! <a href="{{ route('search.books')}}">Ver todos os livros</a></p>
@@ -112,21 +84,21 @@
 <link rel="stylesheet" href="/css/searchstyle.css">
 
 <script>
-        document.addEventListener('DOMContentLoaded', function(){
-        document.querySelectorAll('.category-search-form').forEach((checkbox)=>{
-            checkbox.addEventListener('change', ()=>{
-                document.getElementById('category-search-form').submit();
-            });
-        });
+document.addEventListener('DOMContentLoaded', function(){
+document.querySelectorAll('.category-search-form').forEach((checkbox)=>{
+    checkbox.addEventListener('change', ()=>{
+        document.getElementById('category-search-form').submit();
     });
+});
+});
 
-    document.addEventListener('DOMContentLoaded', function(){
-        document.querySelectorAll('.author-search-form').forEach((checkbox)=>{
-            checkbox.addEventListener('change', ()=>{
-                document.getElementById('author-search-form').submit();
-            });
-        });
+document.addEventListener('DOMContentLoaded', function(){
+document.querySelectorAll('.author-search-form').forEach((checkbox)=>{
+    checkbox.addEventListener('change', ()=>{
+        document.getElementById('author-search-form').submit();
     });
+});
+});
 </script>
 @endsection
 
