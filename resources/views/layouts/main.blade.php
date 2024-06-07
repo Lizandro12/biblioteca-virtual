@@ -53,12 +53,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/categorypage" >Categorias</a>
                         </li>
-<!--                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi-cart3"></i></a>
-                        </li> -->
                     </ul>
             </div>
             </nav>

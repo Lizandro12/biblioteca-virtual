@@ -9,9 +9,7 @@
         <div>
             <img src="/img/user.jpg" alt="">
         </div>
-        <div>
-<!--             <input type="file" id="photo-upload" class="photo-upload">
-            <button class="btn-upload"><i class="bi bi-cloud-arrow-up-fill"></i>Adicionar foto</button> -->
+    <div>
         </div>
         @if(Auth::check())
         <h4 class="user-name">{{Auth::user()->name}}</h4>

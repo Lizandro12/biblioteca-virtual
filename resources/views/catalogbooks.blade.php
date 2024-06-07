@@ -10,8 +10,6 @@
             <img src="/img/user.jpg" alt="">
         </div>
         <div>
-            <!-- <input type="file" id="photo-upload" class="photo-upload"> -->
-            <!-- <button class="btn-upload"><i class="bi bi-cloud-arrow-up-fill"></i>Adicionar foto</button> -->
         </div>
         @if(Auth::check())
         <h4 class="user-name">{{Auth::user()->name}}</h4>
@@ -169,4 +167,13 @@
 
     </div>
 </section>
+
+<script>
+    let message = document.querySelector('.success-message');
+
+    setTimeout(()=>{
+        if(message) message.style.display = 'none';
+    }, 3000);
+
+</script>
 @endsection
