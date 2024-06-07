@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Nova Senha</title>
     <!-- Font do google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,8 @@
             <div class="left-side d-flex flex-column">
                 <form action="{{ route('password.update') }}" method="POST" class="form form-newpassword d-flex flex-column">
                     @csrf
-                    <div class="image-container">
-                            <a href="/"><img src="/img/logotipo.png" alt="" class="logo-form"></a>
-                    </div>
                     <div class="header-form">
+                    <a href="/"><img src="/img/logotipo.png" alt="" class="logoim"></a>
                     <p class="text text-center">Informe a sua nova senha</p>
                     </div>
                     <input type="hidden" name="token" value="{{ $token }}">

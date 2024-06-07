@@ -1,21 +1,22 @@
-
 @import url(style.css);
 
-.textbody{margin-top:60px;
+.textbody{
+    margin:60px 0 50px 0;
+    padding:0 140px 0 140px;
 }
 
 .list {
     display: flex;
-    width: 90%;
-    margin-left: 100px;
-
+    padding: 0 140px 0 140px;
+    gap: 20px;
+    width: 100%;
 }
 
-.right {
+.right{
 
     margin-top: -24px;
     margin-right: 60px;
-    width: 70%;
+    width: 100%;
 }
 .left {
     width: 30%;
@@ -23,46 +24,33 @@
 }
 
 
-.pes{border: 5px solid #DFDFDF;
-        height:1300px;
-        width: 327px;
-        border-radius: 15px;
-        margin-top: -5px;
-        margin-right: 18px;
-        margin-left: 35px;
-        font-family: poppins;
+.pes{
+    border: 5px solid #DFDFDF;
+    height:620px;
+    width: 327px;
+    border-radius: 15px;
+    margin-top: -5px;
+
 }
 
 
 
 .list .pes h3{
-padding-top:40px;
-
-padding-left:10px;
+    padding-top:40px;
+    padding-left:10px;
 
 }
 
 
 .btn.btn-filter {
-background-color: #F18324;
-border: none;
-padding: 7px 10px;
-color: white;
-cursor: pointer;
-border-radius: 6px;
+    background-color: #F18324;
+    border: none;
+    padding: 7px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
-
-.grid-container {
-display: grid;
-grid-template-rows: repeat(4, 1fr);
-height: 160vh;
-}
-
-.grid-item1{
-margin-top: 5px;
-border: 1px solid#DFDFDF;
-}
 .grid-item {
 border: 1px solid#DFDFDF;
 }
@@ -88,9 +76,13 @@ border: 1px solid#DFDFDF;
     margin-right: 10px;
 }
 .btn.btn-orangel:hover,
-.btn.btn-orangel:active {background-color:#F18324;}
+.btn.btn-orangel:active {
+    background-color:#F18324;
+}
 
-.btn.btn-orangel{margin-right: -1px;}
+.btn.btn-orangel{
+    margin-right: -1px;
+}
 
 
 
@@ -101,11 +93,15 @@ border: 1px solid#DFDFDF;
     margin-right: 10px;
 }
 
-.grid-item{padding-right: 10px;padding-left: 10px;}
+.grid-item{
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
-.leftp{margin-left: -10px;}
+.left{
+    margin-left: -10px;
+}
 
-/* css da chek list com scroll*/
 .checklist-container {
     width: 300px;
     padding: 6px;
@@ -117,7 +113,7 @@ border: 1px solid#DFDFDF;
 .checklist {
     max-height: 140px;
     overflow-y: auto;
-    padding-right: 10px; /* para evitar que o texto seja coberto pela barra de rolagem */
+    padding-right: 10px;
 }
 
 .checklist label {
@@ -131,41 +127,48 @@ border: 1px solid#DFDFDF;
 }
 
 
-.liv{border: 5px solid #DFDFDF;
+.liv{
+    border: 4px solid #DFDFDF;
     border-radius: 15px;
     margin-top: 20px;
-    margin-right: 32px;
-    height: 185px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
+.book-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
-
-.book-row {
-    padding: 1px;
+}
+.book-data{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-
+.book-cover{
+    width: 130px;
+}
 .book-cover img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 6px;
-  margin-right: -68px;
 }
 
-.book-details {
-  padding: 10px;
-  margin-left: -68px;
-  margin-right: 60px;
-}
-
-.book-details p {
-
+.book-details{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 10px;
+    gap: 0.5rem;
 }
 
 .book-actions {
   text-align: center;
-  padding: 20px;
+
 }
 
 .book-actions p {
@@ -173,19 +176,19 @@ border: 1px solid#DFDFDF;
   margin-left: 75px;
 }
 
+.book-actions a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
 .bt {
-  font-family: Poppins;
   display: inline-block;
   text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 2px solid transparent;
+  border:none;
   padding: 0.375rem 0.75rem;
   font-size: 14px;
-  line-height: 1.5;
-  border-radius: 1rem;
-  margin: 5px;
+  border-radius: 6px;
 }
 
 .bt.bt-primar {
@@ -194,7 +197,6 @@ border: 1px solid#DFDFDF;
   height: 35px;
   background-color: #F18324;
   border-color: #F18324;
-  font-family: Poppins;
 }
 
 
@@ -207,7 +209,6 @@ border: 1px solid#DFDFDF;
   border-radius: 25px;
   width: 160px;
   height: 35px;
-  font-family: Poppins;
 
 
 }
@@ -238,15 +239,27 @@ border: 1px solid#DFDFDF;
 .containerca {
 margin-right: 120px;
 }
-.pagination .page-link{
-border: none;
-color: black;
-font-size: 20px;
+
+
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px 50px 0 0;
+
 }
 
-.page-link i {
-width: 100px;
-height: 100px;
-color: #F18324;
-border: none;
+.result-message{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.result-message a{
+    text-decoration:none;
+    color: #F18324;
+}
+
+.result-message a:hover{
+    color: #d6721a;
+
 }

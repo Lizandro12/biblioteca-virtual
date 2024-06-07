@@ -1,8 +1,13 @@
 
 @import url(style.css);
 
-
-/*Background*/
+.containerliv{
+    height: 500px;
+}
+.content-title{
+    font-size: 2.5rem;
+    margin: 30px 140px 5px 140px;
+}
 .background-container{
     position: relative;
     width: 100%;
@@ -10,24 +15,31 @@
     background-image: url('/img/fundo.jpeg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
 }
 
-.text-overlay{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.background-container--title{
     color: white;
-    font-size: 4em;
+    font-size: 5rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/*Tables*/
 .thead{
     border-top: 3px solid #f18324;
     border-bottom: 3px dashed #999999;
-    letter-spacing: 0.020em;
+}
+
+tr{
+    height: 20px;
+}
+
+.tr-all{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .th{
@@ -43,23 +55,14 @@
 }
 
 .containerliv{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0 140px;
 }
 
-/*Título h1*/
-.textbody h1{
-    margin-top: 42px;
-    margin-left: -49px;
-    margin-bottom: 15px;
-    font-size: 26px;
+tbody{
+    margin-bottom: 60px;
 }
 
-.tr{
-    text-align: center;
-}
 
-/*Tag a behavior*/
 .a:link{
     color: #0d2226;
     text-decoration: none;
@@ -70,8 +73,9 @@
 }
 
 .a:hover{
-    color: #E5C287;
+    color: #f18324;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .a:active{

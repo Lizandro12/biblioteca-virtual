@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\Profiler\Profile;
 Route::get('/', [StartController::class, 'start'])->name('home');
 
 
-Route::get('/search', [SearchController::class, 'search']);
+Route::get('/search', [SearchController::class, 'search'])->name('search.books');
 Route::get('/authorpage', [SearchController::class, 'authorpage']);
 Route::get('/categorypage', [SearchController::class, 'categorypage']);
 
@@ -38,8 +38,9 @@ Route::put('profile/account-details', [ProfileController::class, 'updateaccountd
 
 /* Book store */
 Route::get('/catalog-books', [BookController::class, 'catalogbooks'])->middleware('auth')->name('catalogbooks.profile');
-Route::post('/catalog-books', [BookController::class, 'storecatalogbooks'])->middleware('auth')->name('storecatalogbooks.profile');
+Route::post('/catalog-books', [BookController::class, 'storecatalogedbooks'])->middleware('auth')->name('storecatalogedbooks.profile');
 Route::get('/book-authors', [BookController::class, 'authors'])->middleware('auth')->name('authors.form');
 Route::post('/book-authors', [BookController::class, 'registerauthors'])->middleware('auth')->name('registerauthors.store');
 Route::get('/book-categorys', [BookController::class, 'categorys'])->middleware('auth')->name('categorys.form');
 Route::post('/book-categorys', [BookController::class, 'registercategorys'])->middleware('auth')->name('registercategorys.store');
+Route::get('/books/download/{id}', [BookController::class, 'downloadbook'])->middleware('auth')->name('books.download');

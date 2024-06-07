@@ -16,6 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('author_id');
             $table->unsignedBigInteger('category_id');
             $table->string('title');
+            $table->string('author_name')->nullable();
+            $table->string('category_name')->nullable();
             $table->string('publishing_company')->nullable();
             $table->date('publication_date')->nullable();
             $table->string('isbn')->nullable();
@@ -23,9 +25,11 @@ return new class extends Migration
             $table->string('language')->nullable();
             $table->integer('numb_page')->nullable();
             $table->decimal('price', 10, 2)->nullable();
-            $table->decimal('availability')->default(true);
+            $table->integer('availability')->default(true);
             $table->string('contry_code')->nullable();
             $table->integer('edition')->nullable();
+            $table->string('image')->nullable();
+            $table->string('book_url')->nullable();
             $table->timestamps();
 
             $table->foreign('author_id')->references('id')->on('authors')->onDelete('cascade');

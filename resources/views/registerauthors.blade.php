@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="form-center d-flex">
-                    <div class="birthday-box d-flex flex-column">
+<!--                     <div class="birthday-box d-flex flex-column">
                         <label for="birthday" class="label">Aniversario</label>
                         <input type="date" name="birthday" id="birthday" class="form-control @error('birthday') is-invalid @enderror">
                         @error('birthday')
@@ -81,7 +81,7 @@
                                 {{ $message }}
                         </p>
                         @enderror
-                    </div>
+                    </div> -->
                     <div class="nationality-box d-flex flex-column">
                         <label for="nationality" class="label">Nacionalidade</label>
                         <input type="text" name="nationality" id="nationality" class="form-control @error('nationality') is-invalid @enderror" placeholder="Nacionalidade do autor" value="{{ old('nationality') }}">

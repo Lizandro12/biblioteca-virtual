@@ -3,127 +3,53 @@
 @section('title', 'Início')
 
 @section('content')
-<div class="section-home">
-    <div>
-        <h1>Descubra Novos Livros</h1>
-        <a href="#" class="btn">Começar Agora</a>
-    </div>
-</div>
-    <div class="row">
-    <h3>Livros Mais Comprados</h3>
-    <div class="col-sm-3">
-        <div class="card">
-            <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Ler livro</a>
-        </div>
-        </div>
 
-    <div class="col-sm-3">
-    <div class="card">
-    <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Ler livro</a>
+<div class="news">
+    <div class="section-home">
+        <div>
+            <h1 class="section-home--title">Descubra Novos Livros</h1>
+            <a href="/register" class="btn btn-cta">Começar Agora</a>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div class="card">
-            <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Ler livro</a>
-        </div>
-        </div>
-    <div class="col-sm-3">
-        <div class="card">
-            <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Ler livro</a>
-        </div>
-        </div>
-    <!-- Outros livros mais lidos aqui -->
+    <div class="row i-rows">
+        <h3>Novidades</h3>
+            <div class="b-row">
+                @foreach($news as $new)
+                <div class="card">
+                    <img  class="card-img-top" src="img/bookscovers/{{ $new->image}}" alt="card image">
+                    <h6 class="card-title">{{ $new->title}}</h6>
+                    <p  class="card-text">{{ $new->author_name}}</p>
+                    <a href="{{ route('search.books',  ['id' => $new->id]) }}" class="btn btn-download">Ver</a>
+                </div>
+                @endforeach
+            </div>
     </div>
-    <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
+    <div class="row i-rows">
+        <h3>Mais lidos</h3>
+            <div class="b-row">
+                @foreach($mostreadeds as $mostreaded)
+                <div class="card">
+                    <img  class="card-img-top" src="img/bookscovers/{{ $mostreaded->image }}" alt="card image">
+                    <h6 class="card-title">{{ $mostreaded->title}}</h6>
+                    <p  class="card-text">{{ $mostreaded->author_name }}</p>
+                    <a href="{{ route('search.books',  ['id' => $mostreaded->id]) }}" class="btn btn-download">Ver</a>
+                </div>
+                @endforeach
+            </div>
     </div>
-    </div>
-<section>
-<div class="row">
-<h3>Principais Autores</h3>
-<p> Autores mais lidos e vendidos no Universo Literário</p>
-        <div class="col-sm-3">
-            <img src="img/autores.png" alt="Autor 1">
-        </div>
-        <div class="col-sm-3">
-            <img src="img/autores.png" alt="Autor 1">
-        </div>
-    <div class="col-sm-3">
-            <img src="img/autores.png" alt="Autor 1">
-    </div>
-    <div class="col-sm-3">
-            <img src="img/autores.png" alt="Autor 1">
-        </div>
-    <!-- Outros autores principais aqui -->
-</div>
-</section>
-
-<div class="row">
-    <h3>Livros Mais Lidos</h3>
-    <div class="col-sm-3">
-    <div class="card">
-    <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-    </div>
-    <div class="col-sm-3">
-    <div class="card">
-    <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-    </div>
-    <div class="col-sm-3">
-    <div class="card">
-    <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-    </div>
-    <div class="col-sm-3">
-    <div class="card">
-    <img  class="card-img-top" src="img/principe.png" alt="card image">
-            <h6 class="card-title">O Pequeno Príncipe</h6>
-            <p  class="card-text">Antoine de Saint-Exupéry</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-        </div>
-    <!-- Outros livros mais lidos aqui -->
-</div>
-<div class="row">
-    <h3>ler mais</h3>
-    <div class="col-sm-4">
-        <a href="#">
-            <img src="img/classicos.png" alt="Livro 1">
-        </a>
-    </div>
-    <div class="col-sm-4">
-        <a href="#">
-            <img src="img/novoslancamentos.png" alt="Livro 1">
-            </a>
-    </div>
-    <div class="col-sm-4">
-        <a href="#">
-            <img src="img/parajovens.png" alt="Livro 1">
-            </a>
+    <div class="row i-rows">
+        <h3>Romances</h3>
+            <div class="b-row">
+                @foreach($romances as $romance)
+                <div class="card">
+                    <img  class="card-img-top" src="img/bookscovers/{{ $romance->image }}" alt="card image">
+                    <h6 class="card-title">{{ $romance->title}}</h6>
+                    <p  class="card-text">{{ $romance->author_name }}</p>
+                    <a href="{{ route('search.books',  ['id' => $romance->id]) }}" class="btn btn-download">Baixar</a>
+                </div>
+                @endforeach
+            </div>
     </div>
 </div>
+<link rel="stylesheet" href="/css/home.css">
 @endsection

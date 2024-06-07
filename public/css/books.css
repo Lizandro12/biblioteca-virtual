@@ -1,10 +1,25 @@
 .author-name-box,
-.biografy-box{
+.biografy-box,
+.title-box,
+.isbn-box,
+.nationality-box,
+.photo-box{
     width: 100%;
 }
 
+.synopsis-box{
+    width: 100%;
+}
+
+#synopsis{
+    height: 150px;
+}
+
 .birthday-box,
-.nationality-box{
+.publishingcompany-box,
+.publicationdate-box,
+.category-box--dif,
+.author-box--dif{
     width: 50%;
 }
 

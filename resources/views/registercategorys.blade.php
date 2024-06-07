@@ -54,7 +54,6 @@
         {{ session('message')}}
     </span>
     @endif
-        <!-- Formulario de alteracao de senha -->
         <div class="profile-card register-category" id="target3">
             <div class="profile-tile-box"><span class="dashboard-title">Cadastrar categorias</span></div>
             <form action="{{ route('registercategorys.store') }}" method="POST" class="d-flex flex-column justify-content-center align-items-center form">

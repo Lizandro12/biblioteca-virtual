@@ -135,8 +135,6 @@ class UserController extends Controller
             function (User $user, string $password) {
                 $user->password = bcrypt($password);
                 $user->save();
-
-                /*event(new PasswordReset($user));*/
             }
         );
 

@@ -14,12 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
-<!--     <link rel="stylesheet" href="/css/home.css"> -->
-    <link rel="stylesheet" href="/css/searchstyle.css">
-<!--     <link rel="stylesheet" href="/css/authorpage.css">
-    <link rel="stylesheet" href="/css/profile.css"> -->
+    <link rel="stylesheet" href="/css/profile.css">
     <link rel="stylesheet" href="/css/main.css">
-<!--     <link rel="stylesheet" href="/css/books.css"> -->
+    <link rel="stylesheet" href="/css/books.css">
 </head>
 <body>
     <header>
@@ -27,16 +24,16 @@
             <div class="navbar-logo">
                 <a href="{{ route('home')}}"><img src="/img/logotipo.png" alt="Logo"></a>
             </div>
-            <div class="navbar-search d-flex">
-                <input type="text" placeholder="Procure por um livro..." class="form-control">
-                <button class="btn btn-search-main"><i class="bi bi-search"></i></button>
-            </div>
+            <form method="GET" action="{{ route('search.books') }}" class="navbar-search d-flex">
+                <input type="text" placeholder="Procure por um livro..." class="form-control" name="search">
+                <button class="btn btn-search-main" type="submit"><i class="bi bi-search"></i></button>
+            </form>
             <div class="navbar-buttons d-flex">
             @if(!Auth::check())
                 <a href="{{ route('login') }}"><button class="btn--dif">Entrar</button></a>
                 <a href="/register"><button class="btn--dif">Cadastrar</button></a>
             @else
-            <a href="{{ route('user.profile') }}"><button class="btn--dif">Meu Perfil</button></a>
+                <a href="{{ route('user.profile') }}"><button class="btn--dif">Meu Perfil</button></a>
             @endif
             </div>
         </div>
@@ -67,9 +64,9 @@
             </nav>
         </div>
     </header>
-
-    @yield('content')
-
+    <div class="yield-content--dif">
+        @yield('content')
+    </div>
     <div class="footer">
         <div class="foo">
             <div class="row">
@@ -98,5 +95,15 @@
             <p>© 2024 Universo Literário - Todos os direitos reservados</p>
         </div>
     </div>
+
+        <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

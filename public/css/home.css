@@ -1,91 +1,109 @@
 @import url(style.css);
 
+.news{
+   overflow-x: hidden;
+}
 .section-home {
     width: 100vw;
     height: 60vh;
-    text-align:center;
     color:white;
     background-image:url('/img/livros.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
-    margin-top:none;
+    padding: 0 140px 0 140px;
+    display: flex;
+    align-items: center;
+}
+
+.section-home--title{
+    font-size: 80px;
+    font-weight: 700;
+    width: 70%;
 }
 
 
-.btn {
-    display: inline-block;
-    margin-top: 20px; /* Ajuste o topo */
-    margin-left:40px;
-    padding: 10px 20px;
-    background-color:orange; /* Cor do botão */
+.btn-cta {
+    margin-top: 20px;
+    padding: 14px 25px;
+    background-color:#F18324;
     color:white;
     text-decoration:none;
     border-radius: 5px;
-}
-.row {
-    margin-top:20px;
-    margin: 90px;
-}
-
-.row h3 {
-    margin-top: 10px 10px;
-    margin: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.5s;
 }
 
+.btn-cta:hover{
+    border: solid 1px #F18324;
+    color: #F18324;
+}
 
-/* cads.css */
+.i-rows{
+    padding: 20px 140px 20px 140px;
+    margin-top: 30px;
+}
+
+.i-rows h3 {
+    margin: 20px 0;
+}
+
+.b-row{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
 .card {
-    width:220px; /* largura do cartão */
-    border:6px solid white; /* borda */
-    border-radius:4px; /* bordas arredondadas */
-    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.1); /* sombra */
-    margin-bottom:90px;/* espaço entre cartões */
-    margin:10px;
+    width:250px;
+    border:6px solid white;
+    border-radius:4px;
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.1);
     padding:3px;
   }
 
-  .card-img-top {
-    width:100%; /* imagem do cartão ocupando toda a largura do cartão */
-    height:280px;
-    border-top-left-radius:none; /* borda arredondada superior esquerda */
-    border-top-right-radius:none; /* borda arredondada superior direita */
-  }
+.card-img-top {
+    width:100%;
+    height: 280px;
+}
 
-  .card-body {
-    padding:10px; /* preenchimento interno */
-  }
+.card-body {
+    padding:10px;
+}
 
-  .card-title {
-    font-size:10px; /* tamanho da fonte do título */
-    margin-bottom:1px; /* espaço abaixo do título */
+.card-title {
+    font-size:14px;
+    margin-bottom:4px;
     text-align:center;
-  }
+}
 
-  .card-text {
-    font-size:9px; /* tamanho da fonte do texto */
-    margin-bottom:1px; /* espaço abaixo do texto */
+.card-text {
+    font-size:12px;
+    margin-bottom:4px;
     text-align:center;
-  }
+}
 
-  .btn-primary {
-    background-color:white; /* cor de fundo do botão */
-    color:orange; /* cor do texto do botão */
-    border-color:orange; /* sem borda */
-    border-radius:4px; /* bordas arredondadas */
-    padding:4px 40px; /* preenchimento interno */
+.btn-download {
+    background-color:white;
+    color:#F18324;
+    border-color:#F18324;
+    border-radius:4px;
+    padding:4px 40px;
     margin-left:20px;
     margin-right:20px;
-    margin-bottom:4px;
-    text-decoration:none; /* sem sublinhado */
-    display:inline; /* exibir como bloco */
+    margin-bottom:6px;
+    text-decoration:none;
+    display:inline;
+}
+
+  .btn-download:hover {
+    background-color:#F18324;
+    color: #ffffff;
+    transition: all 0.5s;
   }
 
-  .btn-primary:hover {
-    background-color:orange; /* cor ao passar o cursor */
-  }
-
-  section h3  {
+section h3  {
     color:#fff;
 }
 
@@ -100,16 +118,16 @@ section {
     padding-top:0px;
 }
 
-.col-sm-4 {
-    width:33,33%; /* 3 colunas em uma linha */
+/* .col-sm-4 {
+    width:33,33%;
     box-sizing:border-box;
     padding: 0px 15px;
     box-sizing: border-box;
     margin-left:10px;
 }
-
+ */
 .col-sm-3 {
-    width:25%; /* 4 colunas em uma linha */
+    width:25%;
     padding:15px;
     box-sizing:border-box;
 }
@@ -118,73 +136,8 @@ section {
     font-size:18px;
 }
 
-
+/*
 button:hover {
-    background-color: orange; /* Cor do botão ao passar o mouse */
+    background-color: orange;
 }
-
-
-/*---------------------------------------------------------------------------------------------*/
-/* Estilos para o footer */
-
-   .footer{
-
-            background-color:#0D2226;
-            color: white;
-            padding: 20px;
-            padding-left: 140px;
-            margin-top: 5px;
-        }
-        /* Estilos para a terceira coluna */
-
-        .footer .col-md-4:nth-child(3) {
-    text-decoration: none;
-    text-align: left;
-    padding-left: 10px;
-    background-color:#0D2226;
-    color: white;
-    margin-top:140px;
-    padding: 20px;
-    padding-left: 140px;
-    padding-right: 70px;
-
-}
-
-
-.footer .foo .row .col-md-4 a {
-    text-decoration: none;
-    color: white;
-
-}
-/* Estilos para a terceira coluna */
-
-.footer .col-md-4:nth-child(3) {
-    text-decoration:none;
-    text-align: left;
-    padding-left: 10px;
-}
-
-
-/* Estilos para os ícones das redes sociais */
-
-.social-icons a {
-    padding: 4px;
-}
-
-.social-icons a i {
-    color: white;
-    padding-left: 5px;
-}
-
-/* Estilo para o texto no rodapé */
-.footer-text {
-    text-align: center;
-    font-family: Poppins;
-}
-.textbody{
-    margin-right: 130px;
-    margin-left: 130px;
-}
-.textbody.h3{
-    font-size: 32px;
-}
+ */

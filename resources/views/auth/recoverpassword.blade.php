@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo Literário</title>
+    <title>Redefinir senha</title>
     <!-- Font do google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,9 +26,9 @@
                 <form action="{{ route('password.email')}}" method="POST" class="form form-recoverpassword form-login d-flex flex-column">
                     @csrf
                     <div class="image-container">
-                            <a href="/"><img src="/img/logotipo.png" alt="" class="logo-form"></a>
                     </div>
                     <div class="header-form">
+                        <a href="/"><img src="/img/logotipo.png" alt="" class="logoim"></a>
                         <p class="text text-center">Informe o seu e-mail</p>
                     </div>
                     <div class="mb-3 d-flex flex-column">
