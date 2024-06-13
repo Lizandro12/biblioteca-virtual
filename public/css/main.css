@@ -40,6 +40,11 @@
 
 }
 
+.btn-search-main:hover{
+    background-color: #dd7922;
+    transition: all 0.5s;
+}
+
 .navbar-search .btn.btn-orange i {
     font-size: 16px;
 
@@ -59,6 +64,10 @@
     color: #ffffff;
 }
 
+.btn--dif:hover{
+    background-color: #dd7922;
+    transition: all 0.5s;
+}
 .header{
     background-color: #0D2226;
 }

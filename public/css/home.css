@@ -7,7 +7,7 @@
     width: 100vw;
     height: 60vh;
     color:white;
-    background-image:url('/img/livros.png');
+    background-image:url('/img/Book-background.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
@@ -26,7 +26,7 @@
 .btn-cta {
     margin-top: 20px;
     padding: 14px 25px;
-    background-color:#F18324;
+    background-color:var(--detail-color);
     color:white;
     text-decoration:none;
     border-radius: 5px;
@@ -36,8 +36,7 @@
 }
 
 .btn-cta:hover{
-    border: solid 1px #F18324;
-    color: #F18324;
+    background-color: #dd7922;
 }
 
 .i-rows{
@@ -84,10 +83,10 @@
     text-align:center;
 }
 
-.btn-download {
+.btn-see{
     background-color:white;
-    color:#F18324;
-    border-color:#F18324;
+    color: var(--detail-color);
+    border-color:var(--detail-color);
     border-radius:4px;
     padding:4px 40px;
     margin-left:20px;
@@ -97,7 +96,7 @@
     display:inline;
 }
 
-  .btn-download:hover {
+  .btn-see:hover {
     background-color:#F18324;
     color: #ffffff;
     transition: all 0.5s;

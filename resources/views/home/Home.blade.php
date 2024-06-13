@@ -19,7 +19,7 @@
                     <img  class="card-img-top" src="img/bookscovers/{{ $new->image}}" alt="card image">
                     <h6 class="card-title">{{ $new->title}}</h6>
                     <p  class="card-text">{{ $new->author_name}}</p>
-                    <a href="{{ route('search.books',  ['id' => $new->id]) }}" class="btn btn-download">Ver</a>
+                    <a href="{{ route('search.books',  ['id' => $new->id]) }}" class="btn btn-see">Ver</a>
                 </div>
                 @endforeach
             </div>
@@ -32,7 +32,7 @@
                     <img  class="card-img-top" src="img/bookscovers/{{ $mostreaded->image }}" alt="card image">
                     <h6 class="card-title">{{ $mostreaded->title}}</h6>
                     <p  class="card-text">{{ $mostreaded->author_name }}</p>
-                    <a href="{{ route('search.books',  ['id' => $mostreaded->id]) }}" class="btn btn-download">Ver</a>
+                    <a href="{{ route('search.books',  ['id' => $mostreaded->id]) }}" class="btn btn-see">Ver</a>
                 </div>
                 @endforeach
             </div>
@@ -45,7 +45,7 @@
                     <img  class="card-img-top" src="img/bookscovers/{{ $romance->image }}" alt="card image">
                     <h6 class="card-title">{{ $romance->title}}</h6>
                     <p  class="card-text">{{ $romance->author_name }}</p>
-                    <a href="{{ route('search.books',  ['id' => $romance->id]) }}" class="btn btn-download">Baixar</a>
+                    <a href="{{ route('search.books',  ['id' => $romance->id]) }}" class="btn btn-see">ver</a>
                 </div>
                 @endforeach
             </div>

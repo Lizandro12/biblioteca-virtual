@@ -65,17 +65,17 @@
         <div class="foo">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Institucional</h3>
+                    <h4>Institucional</h4>
                     <a href="#"><p>Quem somos</p></a>
                     <a href="#"><p>Direitos Autorias</p></a>
                     <a href="#"><p>Blog</p></a>
                 </div>
                 <div class="col-md-4">
-                    <h3>Ajuda</h3>
+                    <h4>Ajuda</h4>
                     <p></p>
                 </div>
                 <div class="col-md-4">
-                    <h3>Nossas Redes Sociais</h3>
+                    <h4>Nossas Redes Sociais</h4>
                     <div class="social-icons">
                         <a href="#"><i class="bi bi-facebook"></i></a>
                         <a href="#"><i class="bi bi-instagram"></i></a>

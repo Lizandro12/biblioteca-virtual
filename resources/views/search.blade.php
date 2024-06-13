@@ -66,6 +66,32 @@
                 <div class="col-md-3 book-actions">
                     <a href="{{ route('books.download', $book->id) }}" class="bt bt-primar">Baixar Livro</a>
                     <div class="verdet">
+                    <!--Botão de Detalhes -->
+                    <button type="button" class="bt-detalhes" data-toggle="modal" data-target="#bookInfoModal{{ $book->id }}">
+                      Ver detalhes
+                    </button>
+
+                    <!-- os detalhes do Livro-->
+                    <div class="modal fade" id="bookInfoModal{{ $book->id }}" tabindex="-1" role="dialog" aria-labelledby="bookInfoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bookInfoModalLabel">Detalhes do Livro</h5>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3>{{ $book->title }}</h3>
+                            <p class="alitex"><strong>Data de publicação:</strong> {{ \Carbon\Carbon::parse($book->publication_date)->format('d/m/y') }}</p>
+                            <p class="alitex"><strong>Resumo:</strong> {{ $book->synopsis }}</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     </div>
                 </div>
             </div>

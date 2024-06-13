@@ -63,21 +63,13 @@ tbody{
 }
 
 
-.a:link{
+.a{
     color: #0d2226;
     text-decoration: none;
-}
-
-.a:visited{
-    color: #f18324;
 }
 
 .a:hover{
     color: #f18324;
     text-decoration: none;
     transition: all 0.5s;
-}
-
-.a:active{
-    color: #f18324;
 }
